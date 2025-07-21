@@ -2,7 +2,7 @@
 title: Cookie vs Token: Anatomia dell'autenticazione web
 description: Un'analisi approfondita delle differenze tra cookie e token nell'autenticazione web, con focus su sicurezza, usabilità e implementazione.
 author: dua2z3rr
-date: 2025-07-21
+date: 2025-07-21 23:00:00 +0100
 categories: [Approfondimenti]
 tags: [Web Security, API, Sistemi di Autenticazione]
 pin: true
