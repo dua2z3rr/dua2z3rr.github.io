@@ -35,7 +35,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: dua2z3rr
-  email: dua2z3rr@gmail.com # change to your email address
+  email: dua2z3rr@gmail.com # change to  ssh-keygen -t ed25519 -C "la-tua-email@nuovoaccount.com" your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/dua2z3rr # change to your Twitter homepage
