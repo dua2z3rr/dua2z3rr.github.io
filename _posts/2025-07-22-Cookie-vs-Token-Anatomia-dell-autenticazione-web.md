@@ -4,7 +4,7 @@ description: Un'analisi approfondita delle differenze tra cookie e token nell'au
 author: dua2z3rr
 date: 2025-07-22 7:00:00
 categories: [Approfondimenti]
-tags: ["Web Security", "API", "Sistemi di Autenticazione"]
+tags: ["Approfondimento: Web Security", "Approfondimento: API", "Approfondimento: Sistemi di Autenticazione"]
 ---
 
 ![Desktop View](/assets/img/Cookie_vs_Token/cookie.png)
