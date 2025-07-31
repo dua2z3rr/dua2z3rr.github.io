@@ -7,7 +7,7 @@ categories: [Approfondimenti]
 tags: ["Web Security", "API", "Sistemi di Autenticazione"]
 ---
 
-![Desktop View](/assets/lib/2025-07-22/cookie.png)
+![Desktop View](/assets/lib/Cookie_vs_Token/cookie.png)
 
 Assicurarsi che gli utenti possano accedere in modo sicuro e senza problemi è fondamentale per qualsiasi applicazione web. Due dei metodi più comuni per gestire l'autenticazione degli utenti sono i cookie e i token. In questo articolo, esploreremo le differenze tra questi due approcci, i loro vantaggi e svantaggi, e come scegliere quello giusto per la tua applicazione.
 
