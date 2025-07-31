@@ -5,7 +5,7 @@ author: dua2z3rr
 date: 2025-07-31 7:00:00
 categories: [Walkthrough]
 tags: ["Categoria: Web Application", "Area di Interesse: Databases", "Area di Interesse: Common Applications", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Misconfiguration", "Vulnerabilità: Insecure Design", "Codice: Java", "Codice: Python"]
-image: /assets/lib/bizness/bizness-logo-resized.png
+image: /assets/img/bizness/bizness-logo-resized.png
 ---
 
 ## Enumerazione Esterna
@@ -115,7 +115,7 @@ ff02::2    ip6-allrouters
 
 Il sito HTTPS presenta una pagina iniziale minimalista senza collegamenti navigabili.
 
-![Desktop View](/assets/lib/bizness/bizness-site.png)
+![Desktop View](/assets/img/bizness/bizness-site.png)
 
 Proviamo a fuzzare il sito con ffuf per delle directory:
 
@@ -150,7 +150,7 @@ control                 [Status: 200, Size: 34633, Words: 10468, Lines: 492, Dur
 
 scopriamo */control*: directory critica che espone un'interfaccia di gestione di Apache OFBiz, un framework ERP open source.
 
-![Desktop View](/assets/lib/bizness/apache-ofbiz.png)
+![Desktop View](/assets/img/bizness/apache-ofbiz.png)
 
 Iniziamo un altro scan ricorsivo con ffuf partendo dalla pagina */control*.
 
@@ -190,11 +190,11 @@ forgotPassword          [Status: 200, Size: 11060, Words: 1442, Lines: 175, Dura
 
 La pagina che ci interessa maggiormente è */login*.
 
-![Desktop View](/assets/lib/bizness/control-login.png)
+![Desktop View](/assets/img/bizness/control-login.png)
 
 Vediamo sulla pagina di login la versione di Apache OFBiz. 
 
-![Desktop View](/assets/lib/bizness/OFBiz-version.png)
+![Desktop View](/assets/img/bizness/OFBiz-version.png)
 
 L'identificazione della versione di OFBiz è fondamentale, poiché versioni specifiche sono affette da vulnerabilità note.
 
@@ -202,11 +202,11 @@ L'identificazione della versione di OFBiz è fondamentale, poiché versioni spec
 
 Adesso che abbiamo la versione, possiamo cercare se esistono vulnerabilità conosciute che ci permettano di superare la pagina di login, o meglio ancora, ottenere una shell.
 
-![Desktop View](/assets/lib/bizness/CVE-2023-49070.png)
+![Desktop View](/assets/img/bizness/CVE-2023-49070.png)
 
 La versione 18.12.10 di Apache OFBiz è affetta da una vulnerabilità di Remote Code Execution (RCE) pre-autenticazione in Apache OFBiz, identificata come [CVE-2023-49070](https://nvd.nist.gov/vuln/detail/CVE-2023-49070)
 
-![Desktop View](/assets/lib/bizness/github-exploit.png)
+![Desktop View](/assets/img/bizness/github-exploit.png)
 
 Procediamo a clonare la repository da github e scaricare il file necessario per l'exploit. Fatto questo, passiamo ad utilizzare l'exploit.
 
@@ -237,7 +237,7 @@ Una volta stabilita la shell, otteniamo accesso come utente ofbiz e recuperiamo 
 
 Con le informazioni che abbiamo ottenuto fin ora (Backend con apache OFBiz e presenza di una pagina di login) è facile assumere che esista un database. Cerchiamo online e nella documentazione che database utilizzi Apache OFBiz di default.
 
-![Desktop View](/assets/lib/bizness/ricerca-database-default.png)
+![Desktop View](/assets/img/bizness/ricerca-database-default.png)
 
 La documentazione di OFBiz indica che utilizza Apache Derby come database predefinito. Leggendo la documentazione, capiamo che per accederci, dobbiamo utilizzare un tool (installato di default assieme a Derby) chiamato *ij*. sfortunatamente, il tool non è installato sulla macchina che ospita il database.
 
