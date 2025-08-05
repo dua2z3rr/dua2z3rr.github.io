@@ -1,6 +1,6 @@
 ---
 title: "Analytics Walkthrough"
-description: "Analytics è una macchina Linux di difficoltà bassa con servizi HTTP e SSH esposti. L'enumerazione del sito web rivela un'istanza di Metabase, vulnerabile a una Remote Code Execution in fase Pre-Autenticazione ([CVE-2023-38646](https://nvd.nist.gov/vuln/detail/CVE-2023-38646)), sfruttata per ottenere un punto d'appoggio (foothold) all'interno di un container Docker. Enumerando il container, si osservano variabili d'ambiente contenenti credenziali utilizzabili per accedere via SSH all'host. L'enumerazione post-exploitation rivela che la versione del kernel dell'host è vulnerabile a GameOverlay, sfruttata per ottenere i privilegi di root."
+description: "Analytics è una macchina Linux di difficoltà easy con servizi HTTP e SSH esposti. L'enumerazione del sito web rivela un'istanza di Metabase, vulnerabile a una Remote Code Execution in fase Pre-Autenticazione ([CVE-2023-38646](https://nvd.nist.gov/vuln/detail/CVE-2023-38646)), sfruttata per ottenere un punto d'appoggio (foothold) all'interno di un container Docker. Enumerando il container, si osservano variabili d'ambiente contenenti credenziali utilizzabili per accedere via SSH all'host. L'enumerazione post-exploitation rivela che la versione del kernel dell'host è vulnerabile a GameOverlay, sfruttata per ottenere i privilegi di root."
 author: dua2z3rr
 date: 2025-08-04 1:00:00
 categories: [Walkthrough]
