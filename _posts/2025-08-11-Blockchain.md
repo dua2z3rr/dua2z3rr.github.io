@@ -30,7 +30,6 @@ Gli obiettivi di questo post sono chiarire i concetti fondamentali della blockch
 
 ### Struttura di un Ledger Distribuito
 ```python
-# Esempio di codice per la sottosezione "Struttura di un Ledger Distribuito"
 
 class Block:
     def __init__(self, index, timestamp, data, previous_hash):
@@ -104,11 +103,6 @@ if __name__ == "__main__":
 
 ### Smart Contract e Turing-Completezza
 ```
-// Esempio di Smart Contract in Solidity per dimostrare la Turing-Completezza
-// Sezione: Fondamenti Tecnologici
-// Sottosezione: Smart Contract e Turing-Completezza
-// Tema: Blockchain
-
 pragma solidity ^0.8.0;
 
 contract TuringCompleteExample {
