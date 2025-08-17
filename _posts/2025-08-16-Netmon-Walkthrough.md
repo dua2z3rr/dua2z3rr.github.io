@@ -5,7 +5,7 @@ author: dua2z3rr
 date: 2025-08-16 1:00:00
 categories: [Walkthrough]
 tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Anonymous/Guest Access"]
-image: /assets/img/cap/cap-resized.png"
+image: /assets/img/netmon/netmon-resized.png"
 ---
 
 ## Enumerazione Esterna
