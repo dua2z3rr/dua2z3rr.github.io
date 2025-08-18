@@ -2,7 +2,7 @@
 title: "Cap Walkthrough"
 description: "Cap è una macchina Linux di difficoltà easy che esegue un server HTTP con funzionalità amministrative, inclusa l'esecuzione di network captures. Controlli inadeguati generano una vulnerabilità Insecure Direct Object Reference (IDOR) che consente l'accesso alla cattura di un altro utente. La cattura contiene credenziali in plaintext e può essere sfruttata per ottenere un foothold iniziale. Una Linux capability viene poi utilizzata per eseguire l'escalation dei privilegi fino a root."
 author: dua2z3rr
-date: 2025-08-18 1:00:00
+date: 2025-09-18 1:00:00
 categories: [Walkthrough]
 tags: ["Area di Interesse: Common Security Controls", "Area di Interesse: Log Analysis", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Security Operations", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: File System Configuration", "Vulnerabilità: Insecure Direct Object Reference (IDOR)", "Codice: Python"]
 image: /assets/img/cap/cap-resized.png"
