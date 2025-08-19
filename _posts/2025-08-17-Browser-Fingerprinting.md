@@ -1,5 +1,5 @@
 ---
-title: "Browser Fingerprinting: L'impronta digitale digitale"
+title: "Browser Fingerprinting: L'impronta digitale"
 description: "Esplora il concetto di Browser Fingerprinting, cos'è e perché minaccia la privacy, confrontandolo con i cookie, analizzando tecniche come Canvas e WebGL fingerprinting, mostrando esempi pratici, suggerendo contromisure e discutendo il futuro del tracciamento, con best practice per sviluppatori e utenti."
 author: dua2z3rr
 date: 2025-08-17 1:00:00
