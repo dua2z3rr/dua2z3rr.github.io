@@ -2,7 +2,7 @@
 title: "Return Walkthrough"
 description: "Return è una macchina Windows a difficoltà easy che presenta un pannello di amministrazione per stampanti di rete che memorizza credenziali LDAP. Tali credenziali possono essere intercettate inserendo un server LDAP malevolo, consentendo così di ottenere un foothold sul server tramite il servizio WinRM. L’utente risulta membro di un gruppo privilegiato, sfruttato ulteriormente per ottenere accesso di sistema."
 author: dua2z3rr
-date: 2025-08-25 1:00:00
+date: 2025-08-27 1:00:00
 categories: [Walkthrough]
 tags: ["Area di Interesse: Active Directory", "Area di Interesse: Protocols", "Area di Interesse: Common Services", "Area di Interesse: Authentication", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Group Membership", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Information Disclosure"]
 image: /assets/img/return/return-resized.png"
