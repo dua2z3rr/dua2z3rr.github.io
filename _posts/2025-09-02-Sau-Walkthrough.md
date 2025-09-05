@@ -2,9 +2,9 @@
 title: "Sau Walkthrough"
 description: "Sau è una macchina Linux a difficoltà facile che presenta un’istanza di Request Baskets vulnerabile a Server-Side Request Forgery (SSRF) tramite CVE-2023-27163. Sfruttando questa vulnerabilità otteniamo accesso a una istanza Maltrail vulnerabile a OS Command Injection non autenticato, che ci permette di ottenere una reverse shell sulla macchina come utente puma. Una errata configurazione di sudo viene poi sfruttata per ottenere una shell root."
 author: dua2z3rr
-date: 2025-08-27 1:00:00
+date: 2025-09-02 1:00:00
 categories: [Walkthrough]
-tags: ["Area di Interesse: Injections", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità: Server Side Request Forgery (SSRF)", "Vulnerabilità: Bash"]
+tags: ["Area di Interesse: Injections", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità: Server Side Request Forgery (SSRF)", "Codice: Bash"]
 image: /assets/img/sau/sau-resized.png"
 ---
 
