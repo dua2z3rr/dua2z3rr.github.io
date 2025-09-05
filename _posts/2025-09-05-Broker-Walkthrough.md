@@ -343,6 +343,6 @@ drwx------  2 root root 4096 Sep  5 09:42 .ssh
 
 Prendiamo la root flag e terminiamo la box.
 
-## Medofo alternativo per la privilege escalation
+## Metodo alternativo per la privilege escalation
 
 Il metodo alternativo sarebbe fare quello che fa lo script in modo manuale, quindi creare manualmente il file di configurazione temporaneo e poi creare le chiavi ssh dopo esserci collegati alla porta creata attraverso nginx. Infine, il procedimento è lo stesso dello script.
