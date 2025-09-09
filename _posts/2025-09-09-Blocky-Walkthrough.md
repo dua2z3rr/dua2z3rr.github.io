@@ -1,8 +1,8 @@
 ---
 title: "Blocky Walkthrough"
-description: "Optimum è una macchina di livello beginner che si concentra principalmente sull’enumerazione dei servizi con exploit conosciuti. Entrambi gli exploit sono facili da ottenere e dispongono di moduli associati in Metasploit, rendendo questa macchina piuttosto semplice da completare."
+description: "Blocky è una macchina abbastanza semplice, basata su una reale. Dimostra i rischi legati a cattive pratiche nella gestione delle password e all’esposizione di file interni su sistemi accessibili pubblicamente. Inoltre, mette in evidenza un potenziale vettore d’attacco enorme: Minecraft. Esistono decine di migliaia di server pubblici, spesso gestiti da amministratori inesperti e giovani, diventando facile bersaglio."
 author: dua2z3rr
-date: 2025-09-10 1:00:00
+date: 2025-09-09 1:00:00
 categories: [Walkthrough]
 tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Misconfiguration", "Vulnerabilità:  Hard-coded Credentials", "Codice: Java"]
 image: /assets/img/blocky/blocky-resized.png"
@@ -48,7 +48,7 @@ PORT      STATE  SERVICE   REASON         VERSION
 Service Info: Host: 127.0.1.1; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
-Analiziamo l'output di nmap. Abbiamo delle porte classiche come la 21 (ftp), la 22 (ssh) e la 80 (http). poi abbiamo una porta chiusa con servizio sophos.
+Analiziamo l'output di nmap. Abbiamo delle porte classiche come la 21 (ftp), la 22 (ssh) e la 80 (http). Abbiamo una porta chiusa con servizio sophos.
 
 > Sophos Remote Management System (RMS) allows administrators to remotely manage, update, and monitor Sophos security products across an enterprise. It leverages a proprietary communication protocol to facilitate command delivery, status reporting, and policy update enforcement between endpoint agents and the management console..
 
@@ -60,16 +60,94 @@ Accediamo alla porta 80.
 
 ![Desktop View](/assets/img/blocky/blocky-home-page.png)
 
-Sì, questa box si basa su un server di minecraft. Continuiamo a esplorare la homepage del sito in questione.
+Questa box si basa interamente su minecraft. Continuiamo a esplorare la homepage del sito in questione.
 
 ![Desktop View](/assets/img/blocky/blocky-home-page-2.png)
 
-In fondo alla home page scopriamo che il sito è di wordpress e che ci potrebbe essere la presenza di un plugin per le statistiche dei giocatori. Possiamo inoltre accedere ad una pagina di log in su wordpress, ma non abbiamo le credenziali. Enumeriamo gli altri servizi aperti prima di prcedere ad un brute-force o fuzzing.
+In fondo alla home page scopriamo che il sito è stato creato con wordpress e che ci potrebbe essere la presenza di un plugin per le statistiche dei giocatori. Possiamo inoltre accedere ad una pagina di **log in** su wordpress, ma non abbiamo le credenziali. Enumeriamo gli altri servizi aperti prima di prcedere con un brute-force o fuzzing.
+
+L'unico post è stato scritto da uno user chiamato notch (ovviamente...). Questo potrebbe servirci in futuro.
 
 ### FTP
 
-L'anonymous access non è abilitato, quindi non possiamo accedere al server ftp. 
+L'anonymous access non è abilitato, quindi non possiamo accedere al server ftp. ci serviranno delle credenziali.
 
 ### Ricerca Exploit
 
 Cerchiamo se esistono exploit per questa versione di ftp.
+
+![Desktop View](/assets/img/blocky/blocky-ftp-vuln-1.png)
+
+Proviamo con questo.
+
+```shell
+┌─[✗]─[dua2z3rr@parrot]─[~/Boxes/blocky/exploit-CVE-2015-3306]
+└──╼ $python3 exploit.py --host 10.10.10.37 --port 21 --path "/var/www/wordpress/"
+[+] CVE-2015-3306 exploit by t0kx
+[+] Exploiting 10.10.10.37:21
+[!] Failed
+```
+
+L'exploit fallisce. Continuiamo la nostra enumerazione
+
+### Fuzzing
+
+Dopo aver utilizzato il comando `ffuf -w /home/dua2z3rr/SecLists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-small.txt:FUZZ -u http://blocky.htb/FUZZ -ic -fw 20 -recursion` veniamo a conoscenza della directory `plugins` dove possiamo scaricare 2 file jar.
+
+![Desktop View](/assets/img/blocky/blocky-plugins-dir.png)
+
+Scarichiamoli.
+
+## Reverse Engineering
+
+### BlockyCore.class
+
+Nel primo JAR troviamo il source code del primo plugin.
+
+![Desktop View](/assets/img/blocky/blocky-plugin-source.png)
+
+Utilizziamo un sito per leggere il bytecode.
+
+![Desktop View](/assets/img/blocky/blocky-class.png)
+
+Troviamo la stringa `8YsqfCTnvxAUeduzjNSXe22` per accedere a un database. Proviamola come password nel server ftp con user notch.
+
+### FTP
+
+```shell
+┌─[dua2z3rr@parrot]─[~]
+└──╼ $ftp 10.10.10.37
+Connected to 10.10.10.37.
+220 ProFTPD 1.3.5a Server (Debian) [::ffff:10.10.10.37]
+Name (10.10.10.37:dua2z3rr): notch
+331 Password required for notch
+Password: 
+230 User notch logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> 
+```
+
+Prendiamo la user flag.
+
+## Shell come notch
+
+Colleghiamoci come notch con ssh con le credenziali utilizzate per ftp e utilizziamo il comando `sudo -l`.
+
+```shell
+notch@Blocky:~$ sudo -l
+Matching Defaults entries for notch on Blocky:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User notch may run the following commands on Blocky:
+    (ALL : ALL) ALL
+```
+
+Non dobbiamo fare alcuna privilege escalation. Possiamo diventare root semplicemente utilizzando `sudo -i`.
+
+```shell
+notch@Blocky:~$ sudo -i
+root@Blocky:~#
+```
+
+Prendiamo la root flag e terminiamo la box.
