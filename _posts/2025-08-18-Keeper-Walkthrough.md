@@ -3,7 +3,7 @@ title: "Keeper Walkthrough"
 description: "Keeper è una macchina Linux di difficoltà easy che include un sistema di ticketing di supporto con credenziali predefinite. Enumerando il servizio, è possibile individuare credenziali in chiaro che consentono l'accesso SSH. Tramite l'accesso SSH, si ottiene un dump del database KeePass, sfruttabile per recuperare la password principale. Dopo l'accesso al database KeePass, si acquisiscono le chiavi SSH di root, utilizzate per ottenere una shell privilegiata sull'host."
 author: dua2z3rr
 date: 2025-08-18 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Default Credentials", "Codice: Bash"]
 image: /assets/img/keeper/keeper-resized.png"
 ---

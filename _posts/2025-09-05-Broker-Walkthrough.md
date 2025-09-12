@@ -3,7 +3,7 @@ title: "Broker Walkthrough"
 description: "Broker è una macchina Linux easy che ospita una versione di Apache ActiveMQ. L’enumerazione della versione di Apache ActiveMQ rivela che è vulnerabile a Unauthenticated Remote Code Execution, vulnerabilità sfruttata per ottenere accesso user sulla macchina target. L’enumerazione post-exploitation rivela una misconfigurazione di sudo che permette all’utente activemq di eseguire sudo /usr/sbin/nginx; questa falla, analoga a quanto riscontrato nel recente disclosure Zimbra, viene sfruttata per ottenere l’accesso root."
 author: dua2z3rr
 date: 2025-09-05 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment","Vulnerabilità: Remote Code Execution", "Vulnerabilità: Misconfiguration"]
 image: /assets/img/broker/broker-resized.png"
 ---

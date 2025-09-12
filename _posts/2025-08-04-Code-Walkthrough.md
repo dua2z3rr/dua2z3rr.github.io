@@ -3,7 +3,7 @@ title: "Code Walkthrough"
 description: "Code è una macchina Linux di difficoltà easy che include un'applicazione web Python Code Editor vulnerabile a remote code execution (RCE) tramite un bypass di una Python Jail. Dopo aver ottenuto l'accesso come utente app-production, è possibile trovare credenziali crackabili in un file di database sqlite3. Utilizzando queste credenziali, si ottiene l'accesso a un altro utente, martin, che dispone di permessi sudo per uno script di backup, backy.sh. Questo script contiene una sezione di codice vulnerabile che, se sfruttata, consente di effettuare una privilage escalation creando una copia della cartella root."
 author: dua2z3rr
 date: 2025-08-05 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Custom Applications", "Area di Interesse: Databases", "Area di Interesse: Security Tools", "Area di Interesse: Source Code Analysis", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Misconfiguraion", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Directory Traversal", "Codice: Bash", "Codice: JavaScript", "Codice: Python", "Codice: SQL"]
 image: /assets/img/code/code-resized-2.png
 ---

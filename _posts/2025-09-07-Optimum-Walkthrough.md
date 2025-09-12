@@ -3,7 +3,7 @@ title: "Optimum Walkthrough"
 description: "Optimum è una macchina di livello beginner che si concentra principalmente sull’enumerazione dei servizi con exploit conosciuti. Entrambi gli exploit sono facili da ottenere e dispongono di moduli associati in Metasploit, rendendo questa macchina piuttosto semplice da completare."
 author: dua2z3rr
 date: 2025-09-07 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Injections", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: OS Command Injection", "Codice: Python"]
 image: /assets/img/optimum/optimum-resized.png"
 ---

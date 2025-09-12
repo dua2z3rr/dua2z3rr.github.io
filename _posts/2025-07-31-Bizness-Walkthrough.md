@@ -3,7 +3,7 @@ title: "Bizness Walkthrough"
 description: "Bizness è una macchina Linux di difficoltà easy che dimostra come sfruttare una vulnerabilità Remote Code Execution (RCE) pre-autenticazione in Apache OFBiz, identificata come [CVE-2023-49070](https://nvd.nist.gov/vuln/detail/CVE-2023-49070). L'exploit consente di ottenere una shell sul sistema nemico. Successivamente, l'enumerazione della configurazione di OFBiz rivela un hash di una password nel database Derby. Attraverso ricerca e analisi del codice, si converte l'hash in un formato standard riconoscibile dagli strumenti di cracking. La password decifrata viene infine utilizzata per ottenere l'accesso root."
 author: dua2z3rr
 date: 2025-07-31 7:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Categoria: Web Application", "Area di Interesse: Databases", "Area di Interesse: Common Applications", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Misconfiguration", "Vulnerabilità: Insecure Design", "Codice: Java", "Codice: Python"]
 image: /assets/img/bizness/bizness-logo-resized.png
 ---

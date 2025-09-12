@@ -3,7 +3,7 @@ title: "Legacy Walkthrough"
 description: "Legacy è una macchina abbastanza semplice di livello easy che dimostra i potenziali rischi per la sicurezza del protocollo SMB su Windows. È sufficiente un unico exploit disponibile pubblicamente per ottenere accesso come amministratore."
 author: dua2z3rr
 date: 2025-08-12 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution"]
 image: /assets/img/legacy/legacy-resized.png"
 ---

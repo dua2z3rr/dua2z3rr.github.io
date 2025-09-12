@@ -3,7 +3,7 @@ title: "Blue Walkthrough"
 description: "Blue, sebbene sia probabilmente la macchina più easy su Hack The Box, dimostra la gravità dell'exploit EternalBlue, utilizzato in molteplici attacchi su larga scala di ransomware e crypto-mining dopo la sua divulgazione pubblica."
 author: dua2z3rr
 date: 2025-08-09 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution"]
 image: /assets/img/blue/blue-resized.png"
 ---

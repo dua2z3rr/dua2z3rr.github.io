@@ -3,7 +3,7 @@ title: "Netmon Walkthrough"
 description: "Netmon è una macchina Windows di difficoltà easy con enumerazione semplice e sfruttamento diretto. Un servizio PRTG Network Monitor è attivo sulla porta HTTP, mentre un server FTP con accesso anonimo consente la lettura dei file di configurazione di PRTG. La versione di PRTG (18.1.37.13946) è vulnerabile a Remote Code Execution (RCE) identificata come CVE-2018-9276, sfruttabile per ottenere una shell con privilegi SYSTEM."
 author: dua2z3rr
 date: 2025-08-16 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Anonymous/Guest Access"]
 image: /assets/img/netmon/netmon-resized.png"
 ---

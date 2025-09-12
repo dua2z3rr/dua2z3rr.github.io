@@ -3,7 +3,7 @@ title: "Jerry Walkthrough"
 description: "Jerry è una macchina Windows di difficoltà easy che dimostra come sfruttare Apache Tomcat, ottenendo una shell di NT Authority \ SYSTEM e compromettendo completamente il target."
 author: dua2z3rr
 date: 2025-08-14 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Common Services", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Arbitrary File Upload", "Vulnerabilità: Default Credentials", "Codice: Java"]
 image: /assets/img/jerry/jerry-resized.png"
 ---

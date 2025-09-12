@@ -3,7 +3,7 @@ title: "Bashed Walkthrough"
 description: "Bashed è una macchina abbastanza easy che si concentra principalmente sul fuzzing e sull'individuazione di file importanti. L'accesso base al crontab è limitato."
 author: dua2z3rr
 date: 2025-08-25 1:00:00
-categories: [Walkthrough]
+categories: [Machines]
 tags: ["Area di Interesse: Common Applications", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità: File System Configuration", "Vulnerabilità: Code Execution"]
 image: /assets/img/bashed/bashed-resized.png"
 ---
