@@ -2,10 +2,9 @@
 title: "Brutus Walkthrough"
 description: "In questo Sherlock molto facile, ti familiarizzerai con i log Unix auth.log e wtmp. Esploreremo uno scenario in cui un server Confluence è stato compromesso tramite brute-force sul servizio SSH. Dopo aver ottenuto l’accesso, l’attaccante ha svolto ulteriori attività rilevabili tramite auth.log. Anche se auth.log viene usato principalmente per l’analisi dei brute-force, andremo a sfruttare tutto il suo potenziale nell’indagine, inclusi aspetti di privilege escalation, persistenza e persino visibilità sull’esecuzione di comandi."
 author: dua2z3rr
-date: 2025-09-14 1:00:00
+date: 2025-09-13 1:00:00
 categories: [Sherlocks]
 tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Misconfiguration", "Vulnerabilità:  Hard-coded Credentials", "Codice: Java"]
-image: /assets/img/brutus/brutus-resized.png"
 ---
 
 ## Introduzione
@@ -22,7 +21,11 @@ image: /assets/img/brutus/brutus-resized.png"
 
 ### Overview
 
-Per completare lo sherlock ci viene fornita una zip. Questa zip contiene 3 file:
+Per completare questo sherlock ci viene fornita una zip. Questa zip contiene 3 file:
+
+1. **auth.log**: file di testo che salva tutti i login (che hanno successo o no), tentativi di sudo e altri passaggi nell'autenticazione. normalmente si trova in `/var/log/auth.log`.
+2. **wtmp**: file che traccia login e logout di un sistema linux. È possibile leggere il contenuto tramite il comando `utmpdump`. Si trova in `/var/log/btmp`.
+3. **utmp.py**: script di python per leggere wtmp.
 
 ## Risposte
 
@@ -64,7 +67,7 @@ Risposta: `root`
 
 ### Identifica il timestamp UTC in cui l’attaccante ha effettuato manualmente l’accesso al server e ha avviato una sessione terminale per raggiungere i suoi obiettivi. L’orario di login sarà diverso da quello di autenticazione e si trova nell’artifact wtmp.
 
-Utilizzando lo script di python `utmp.py` nella zip possiamo vedere le date dei login. Le prime volte in cui l'attaccante si è loggato all'utente **root** era grazie all'attacco brute force. Questo lo capiamo perchè si scollega instantaneamente. Perciò inseriamo la data di quando l'attaccante si è loggato come utente **root** l'ultima volta.
+Utilizzando lo script di python `utmp.py` nella zip possiamo vedere le date dei login. Le prime volte in cui l'attaccante si è autenticato nell'utente **root** era grazie all'attacco brute force. Questo lo capiamo perchè si scollega istantaneamente. Perciò inseriamo la data di quando l'attaccante si è collegato come utente **root** l'ultima volta.
 
 ```txt
 "RUN_LVL"	"53"	"~"	"~~"	"runlevel"	"6.2.0-1018-aws"	"0"	"0"	"0"	"2024/03/06 07:17:29"	"538024"	"0.0.0.0"
@@ -74,14 +77,14 @@ Utilizzando lo script di python `utmp.py` nella zip possiamo vedere le date dei 
 "USER"	"2667"	"pts/1"	"ts/1"	"cyberjunkie"	"65.2.161.68"	"0"	"0"	"0"	"2024/03/06 07:37:35"	"475575"	"65.2.161.68"
 ```
 
-> Ricordati che la risposta deve essere data nella timezone UTC. Visto che nel momento in cui ho usato lo script di python mi trovavo in Italia, devo tornare indietro di un ora.
+> Ricordati che la risposta deve essere fornita nella timezone UTC. Visto che nel momento in cui ho usato lo script di python mi trovavo in Italia, devo tornare indietro di un ora.
 {: .prompt-warning }
 
 Risposta: `2024-03-06 06:32:45`
 
 ### Le sessioni SSH di login vengono tracciate e viene assegnato loro un numero di sessione al momento dell’accesso. Qual è il numero di sessione attribuito alla sessione dell’attaccante per l’utente dalla domanda 2?
 
-Il numero di sezione si può leggere sotto l'entry del log che comunica il login con successo.
+Il numero di sessione si può leggere sotto l'entry del log che comunica il login con successo.
 
 ```log
 Mar  6 06:32:44 ip-172-31-35-28 sshd[2491]: Accepted password for root from 65.2.161.68 port 53184 ssh2
@@ -111,7 +114,7 @@ Cerchiamo online per la risposta.
 
 ![Desktop View](/assets/img/brutus/brutus-mitre-research.png)
 
-Per questa tecnica ci sono più sotto-tecniche basate sul tipo di account creato.
+Per questa tecnica esistono più sotto-tecniche basate sul tipo di account creato.
 
 ![Desktop View](/assets/img/brutus/brutus-mitre-sub-technique.png)
 
