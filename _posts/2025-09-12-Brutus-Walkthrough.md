@@ -4,7 +4,7 @@ description: "In questo Sherlock molto facile, ti familiarizzerai con i log Unix
 author: dua2z3rr
 date: 2025-09-13 1:00:00
 categories: [Sherlocks]
-tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Misconfiguration", "Vulnerabilità:  Hard-coded Credentials", "Codice: Java"]
+tags: []
 ---
 
 ## Introduzione
