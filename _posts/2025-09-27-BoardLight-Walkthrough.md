@@ -12,7 +12,7 @@ image: /assets/img/boardLight/boardLight-resized.png
 
 ### Nmap
 
-Cominciamo con uno scan nmap:
+Cominciamo con uno scan di nmap:
 
 ```shell
 ┌─[✗]─[dua2z3rr@parrot]─[~]
