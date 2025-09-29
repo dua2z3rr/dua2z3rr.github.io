@@ -37,7 +37,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ### HTTP
 
-Andiamo sulla porta 80 attraverso il browser.
+Visitiamo la porta 80 attraverso il browser.
 
 ![Desktop View](/assets/img/boardLight/boardLight-homepage.png)
 
