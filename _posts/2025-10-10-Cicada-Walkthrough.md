@@ -1,11 +1,11 @@
 ---
 title: Cicada Walkthrough
-description: BoardLight è una macchina Linux di difficoltà easy che presenta un'istanza Dolibarr vulnerabile a CVE-2023-30253. Questa vulnerabilità viene sfruttata per ottenere l'accesso come www-data. Dopo aver enumerato e dumpato i contenuti del file di configurazione web, delle credenziali in testo chiaro portano all'accesso SSH sulla macchina. Enumerando il sistema, viene identificato un binario SUID relativo a enlightenment che è vulnerabile all'escalation dei privilegi tramite CVE-2022-37706 e può essere abusato per ottenere una shell con privilegi root.
+description: Cicada è una macchina Windows di difficoltà easy che si concentra sull'enumerazione e sullo sfruttamento di Active Directory per principianti. In questa macchina, i giocatori enumereranno il dominio, identificheranno gli utenti, esploreranno le condivisioni di rete, scopriranno password in chiaro memorizzate in file, eseguiranno un password spray e utilizzeranno il privilegio SeBackupPrivilege per ottenere il compromesso completo del sistema.
 author: dua2z3rr
-date: 2025-09-29 1:00:00
+date: 2025-10-10 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Code Injection", "Codice: PHP", "Codice: Bash"]
-image: /assets/img/boardLight/boardLight-resized.png
+tags: ["Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Active Directory", "Area di Interesse: Protocols", "Area di Interesse: Common Services", "Area di Interesse: Security Tools", "Area di Interesse: Authentication", "Vulnerabilità: Hard-coded Credentials", "Codice: Powershell"]
+image: /assets/img/cicada/cicada-resized.png
 ---
 
 ## Enumerazione Esterna
