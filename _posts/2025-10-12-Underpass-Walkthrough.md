@@ -320,7 +320,7 @@ Siamo dentro! Prendiamo la user flag e procediamo con la privilege escalation.
 
 ### Enumerazione Interna
 
-Facciamo sempre il solito comando dopo aver preso la user flag, `sudo -l`.
+Eseguiamo, come al solito, il comando `sudo -l`.
 
 ```shell
 svcMosh@underpass:~$ sudo -l
