@@ -155,7 +155,7 @@ FAQS                    [Status: 200, Size: 1428, Words: 247, Lines: 43, Duratio
 > Questo process può prendere molto tempo anche con una wordlist piccola come quella che ho scelto. Se vuoi fare come me, e saltare questo procedimento, possiamo andar3e nella repository github di **daloradius** (<https://github.com/lirantal/daloradius>) e cercare manualmente il percorso della pagina di login.
 {: .prompt-warning }
 
-Troviamo la pagina **login.php** all'url <http://10.10.11.48/daloradius/app/operators/login.php> e la visitiamo.
+Troviamo la pagina **login.php** all'url `daloradius/app/operators/login.php` e la visitiamo.
 
 > Esistono molteplici pagine di login. L'amministratore può accedere alla dasshboard solo se si trova nell'url corretto.
 {: .prompt-warning }
