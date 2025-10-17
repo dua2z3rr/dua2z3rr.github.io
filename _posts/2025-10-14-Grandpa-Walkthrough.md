@@ -5,7 +5,7 @@ author: dua2z3rr
 date: 2025-10-14 1:00:00
 categories: [Machines]
 tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Vulnerabilità: Arbitrary File Upload", "Vulnerabilità: Misconfiguration", "Codice: ASP"]
-image: /assets/img/grandpa/grandpa-resized.png
+image: /assets/img/granpa/granpa-resized.png
 ---
 
 ## Enumerazione Esterna
