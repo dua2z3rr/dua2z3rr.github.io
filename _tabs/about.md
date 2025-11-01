@@ -4,9 +4,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# Chi Sono
+#### Benvenuto!
 
-Benvenuto! Sono **dua2z3rr**, e questo sito è nato come archivio personale dei miei progressi nel mondo della cybersecurity.
+Sono **dua2z3rr**, e questo sito è nato come archivio personale dei miei progressi nel mondo della cybersecurity.
 
 ## Il Percorso
 
