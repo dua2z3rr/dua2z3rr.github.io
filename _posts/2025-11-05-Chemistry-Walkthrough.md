@@ -119,11 +119,11 @@ Vediamo che la porta 5000 è una porta HTTP nella quale possiamo uploadare dei f
 
 ### HTTP
 
-[Desktop View](/assets/img/chemistry/chemistry-1.png)
+![Desktop View](/assets/img/chemistry/chemistry-1.png)
 
 Registriamoci e loggiamoci.
 
-[Desktop View](/assets/img/chemistry/chemistry-2.png)
+![Desktop View](/assets/img/chemistry/chemistry-2.png)
 
 Il link sulla pagina ci permette di scaricare un file cif di esempio:
 
@@ -173,7 +173,7 @@ _space_group_magn.name_BNS  "P  n'  m  a'  "
 
 Vediamo che il server restituisce errore. Abbiamo quindi la conferma che la vulnerabilità c'è.
 
-[Desktop View](/assets/img/chemistry/chemistry-3.png)
+![Desktop View](/assets/img/chemistry/chemistry-3.png)
 
 Trovo un exploit pubblico testato sulla box di htb che stiamo facendo, quindi siamo abbastanza sicuri che funzionerà.
 
@@ -628,11 +628,11 @@ Usiamo un tunnel SSH per accedere alla porta solo da localhost.
 
 ### HTTP
 
-[Desktop View](/assets/img/chemistry/chemistry-4.png)
+![Desktop View](/assets/img/chemistry/chemistry-4.png)
 
 Dopo una enumerazione del sito e controllato una lista di servizi sul target host, controllo le richieste web e cerco per vulnerabilità.
 
-[Desktop View](/assets/img/chemistry/chemistry-5.png)
+![Desktop View](/assets/img/chemistry/chemistry-5.png)
 
 Gli header delle risposte http contengono la tipologia di server **aiohttp/3.9.1**. 
 
