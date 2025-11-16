@@ -664,7 +664,7 @@ Possiamo modificare i cronjob esistenti.
 
 Provo a ottenere una reverse shell, senza successo. Allora, punto a leggere la root flag direttamente.
 
-Sostituisco il comando di backup con `/bin/cat /root/root.txt > /home/enzo/ciao.txt`.
+Sostituisco il comando di backup di grafana con `/bin/cat /root/root.txt > /home/enzo/ciao.txt`.
 
 Eseguo il CronJob e controllo la home directory di enzo.
 
