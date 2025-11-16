@@ -462,7 +462,6 @@ PORT      STATE  SERVICE REASON       VERSION
 |   Capabilities flags: 65535
 |   Some Capabilities: LongPassword, FoundRows, LongColumnFlag, InteractiveClient, IgnoreSigpipes, Support41Auth, ConnectWithDatabase, IgnoreSpaceBeforeParenthesis, SupportsLoadDataLocal, SupportsTransactions, DontAllowDatabaseTableColumn, Speaks41ProtocolNew, SwitchToSSLAfterHandshake, Speaks41ProtocolOld, ODBCClient, SupportsCompression, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
 |   Status: Autocommit
-|   Salt: {%\x14kA\x13*ENR\x13f!e4\x04TO0b
 |_  Auth Plugin Name: caching_sha2_password
 8000/tcp  open   http    syn-ack      Node.js Express framework
 | http-auth: 
