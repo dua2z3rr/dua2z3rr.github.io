@@ -116,7 +116,7 @@ Analizzando la **admin dashboard**, scopro che possiamo creare delle nuova pagin
 
 L'upload delle pagine non funziona perchè il codice php non viene formattato correttamente. Allora, vado alla ricerca di un altro punto, d'attacco, i plugin. Scompro che esiste un plugin dove  possiamo fare l'upload di immagini.
 
-Cerco la versione di Nibbleblog andando sulla pagina <http://nibbles.htb/nibbleblog/update.php>. Scopro che  è la versione **4.0.3**.
+Cerco la versione di Nibbleblog andando sulla pagina `http://nibbles.htb/nibbleblog/update.php`. Scopro che  è la versione **4.0.3**.
 
 ![Desktop View](/assets/img/nibbles/nibbles-7.png)
 
