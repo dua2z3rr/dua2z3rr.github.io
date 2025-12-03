@@ -4,7 +4,7 @@ description: "Broker è una macchina Linux easy che ospita una versione di Apach
 author: dua2z3rr
 date: 2025-09-05 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment","Vulnerabilità: Remote Code Execution", "Vulnerabilità: Misconfiguration"]
+tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment","Vulnerabilità: Remote Code Execution", "Vulnerabilità: Misconfiguration", "Servizio: Apache", "Servizio: NGINX", "Tecnica: Reconnaissance", "Tecnica: Exploit Modification", "Tecnica: System Exploitation", "Tecnica: SUDO Exploitation", "Tecnica: Privilege Abuse"]
 image: /assets/img/broker/broker-resized.png"
 ---
 

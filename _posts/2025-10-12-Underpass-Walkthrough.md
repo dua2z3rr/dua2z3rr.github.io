@@ -4,7 +4,7 @@ description: Underpass è una macchina Linux di difficoltà Easy che presenta in
 author: dua2z3rr
 date: 2025-10-12 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Web Application", "Area di Interesse: Common Applications", "Vulnerabilità: Default Credentials"]
+tags: ["Area di Interesse: Web Application", "Area di Interesse: Common Applications", "Vulnerabilità: Default Credentials", "Servizio: SSH", "Servizio: Mosh (mobile shell)", "Tecnica: Password Cracking"]
 image: /assets/img/underpass/underpass-resized.png
 ---
 

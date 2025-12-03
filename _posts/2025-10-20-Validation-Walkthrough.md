@@ -4,7 +4,7 @@ description: Validation è una macchina Linux di difficoltà easy che presenta u
 author: dua2z3rr
 date: 2025-10-20 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Web Application", "Area di Interesse: Injections", "Vulnerabilità: SQL Injection", "Vulnerabilità: Misconfiguration"]
+tags: ["Area di Interesse: Web Application", "Area di Interesse: Injections", "Vulnerabilità: SQL Injection", "Vulnerabilità: Misconfiguration", "Servizio: MySQL", "Tecnica: Reconnaissance"]
 image: /assets/img/validation/validation-resized.png
 ---
 

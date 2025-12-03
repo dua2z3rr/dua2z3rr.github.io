@@ -4,7 +4,7 @@ description: "Sense, pur non richiedendo molti passaggi per essere completato, p
 author: dua2z3rr
 date: 2025-11-14 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Authentication", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: Sensitive Data Exposure", "Codice: PHP"]
+tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Authentication", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: Sensitive Data Exposure", "Codice: PHP", "Servizio: pfSense", "Servizio: LightHTTPD", "Tecnica: Web Site Structure Discovery"]
 image: /assets/img/sense/sense-resized.png
 ---
 

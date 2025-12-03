@@ -4,7 +4,7 @@ description: "Return è una macchina Windows a difficoltà easy che presenta un 
 author: dua2z3rr
 date: 2025-08-27 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Active Directory", "Area di Interesse: Protocols", "Area di Interesse: Common Services", "Area di Interesse: Authentication", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Group Membership", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Information Disclosure"]
+tags: ["Area di Interesse: Active Directory", "Area di Interesse: Protocols", "Area di Interesse: Common Services", "Area di Interesse: Authentication", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Group Membership", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Information Disclosure", "Servizio: SMB", "Servizio: LDAP", "Servizio: WinRM", "Tecnica: Reconnaissance", "Tecnica: Password Capture"]
 image: /assets/img/return/return-resized.png"
 ---
 

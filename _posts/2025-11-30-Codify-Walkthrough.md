@@ -4,7 +4,7 @@ description: "Codify è una macchina Linux di livello easy che presenta un'appli
 author: dua2z3rr
 date: 2025-11-30 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Databases", "Area di Interesse: Custom Applications", "Area di Interesse: Injections", "Area di Interesse: Source Code Analysis", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: Default Credentials", "Vulnerabilità: Misconfiguration", "Codice: Bash", "Codice: JavaScript"]
+tags: ["Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Databases", "Area di Interesse: Custom Applications", "Area di Interesse: Injections", "Area di Interesse: Source Code Analysis", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: Default Credentials", "Vulnerabilità: Misconfiguration", "Codice: Bash", "Codice: JavaScript", "Servizio: MySQL", "Servizio: NodeJS", "Servizio: SQLite", "Tecnica: Reconnaissance", "Tecnica: User Enumeration", "Tecnica: Web Site Structure Discovery", "Tecnica: System Exploitation", "Tecnica: Password Reuse", "Tecnica: Password Cracking", "Tecnica: SUDO Exploitation"]
 image: /assets/img/codify/codify-resized.png
 ---
 

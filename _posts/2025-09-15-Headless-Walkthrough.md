@@ -4,7 +4,7 @@ description: "Headless è una macchina easy-difficulty basata su Linux che ospit
 author: dua2z3rr
 date: 2025-09-15 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Session Management and Hijacking", "Area di Interesse: Injections", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità:  Cross Site Scripting (XSS)", "Vulnerabilità: Misconfiguration", "Codice: Bash", "Codice: JavaScript"]
+tags: ["Area di Interesse: Session Management and Hijacking", "Area di Interesse: Injections", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità:  Cross Site Scripting (XSS)", "Vulnerabilità: Misconfiguration", "Codice: Bash", "Codice: JavaScript", "Servizio: Werkzeug", "Tecnica: Reconnaissance", "Tecnica: Fuzzing", "Tecnica: Cookie Manipulation", "Tecnica: SUDO Exploitation", "Tecnica: Privilege Abuse"]
 image: /assets/img/headless/headless-resized.png"
 ---
 

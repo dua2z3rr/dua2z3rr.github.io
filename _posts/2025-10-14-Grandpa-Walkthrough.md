@@ -4,7 +4,7 @@ description: Grandpa è una delle macchine più semplici su Hack The Box, tuttav
 author: dua2z3rr
 date: 2025-10-14 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Vulnerabilità: Arbitrary File Upload", "Vulnerabilità: Misconfiguration", "Codice: ASP"]
+tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Vulnerabilità: Arbitrary File Upload", "Vulnerabilità: Misconfiguration", "Codice: ASP", "Servizio: IIS", "Servizio: WebDav", "Tecnica: Reconnaissance"]
 image: /assets/img/granpa/granpa-resized.png
 ---
 

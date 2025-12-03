@@ -4,7 +4,7 @@ description: "Keeper è una macchina Linux di difficoltà easy che include un si
 author: dua2z3rr
 date: 2025-08-18 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Default Credentials", "Codice: Bash"]
+tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Default Credentials", "Codice: Bash", "Servizio: KeePass", "Tecnica: Reconnaissance", "Tecnica: System Exploitation"]
 image: /assets/img/keeper/keeper-resized.png"
 ---
 

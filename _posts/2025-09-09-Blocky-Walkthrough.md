@@ -4,7 +4,7 @@ description: "Blocky è una macchina abbastanza semplice, basata su una reale. D
 author: dua2z3rr
 date: 2025-09-09 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Misconfiguration", "Vulnerabilità:  Hard-coded Credentials", "Codice: Java"]
+tags: ["Area di Interesse: Common Applications", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Misconfiguration", "Vulnerabilità:  Hard-coded Credentials", "Codice: Java", "Servizio: Wordpress", "Tecnica: Web Site Structure Discovery", "Tecnica: Password Reuse", "Tecnica: Decompilation"]
 image: /assets/img/blocky/blocky-resized.png"
 ---
 

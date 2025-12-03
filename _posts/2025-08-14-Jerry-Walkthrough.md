@@ -4,7 +4,7 @@ description: "Jerry è una macchina Windows di difficoltà easy che dimostra com
 author: dua2z3rr
 date: 2025-08-14 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Common Services", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Arbitrary File Upload", "Vulnerabilità: Default Credentials", "Codice: Java"]
+tags: ["Area di Interesse: Common Services", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Arbitrary File Upload", "Vulnerabilità: Default Credentials", "Codice: Java", "Servizio: Tomcat", "Tecnica: Brute Force Attack", "Tecnica: Password Dump"]
 image: /assets/img/jerry/jerry-resized.png"
 ---
 

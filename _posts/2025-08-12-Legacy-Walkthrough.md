@@ -4,7 +4,7 @@ description: "Legacy è una macchina abbastanza semplice di livello easy che dim
 author: dua2z3rr
 date: 2025-08-12 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution"]
+tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Servizio: SAMBA"]
 image: /assets/img/legacy/legacy-resized.png"
 ---
 

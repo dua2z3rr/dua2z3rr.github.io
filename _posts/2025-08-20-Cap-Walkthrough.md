@@ -4,7 +4,7 @@ description: "Cap è una macchina Linux di difficoltà easy che esegue un server
 author: dua2z3rr
 date: 2025-08-20 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Common Security Controls", "Area di Interesse: Log Analysis", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Security Operations", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: File System Configuration", "Vulnerabilità: Insecure Direct Object Reference (IDOR)", "Codice: Python"]
+tags: ["Area di Interesse: Common Security Controls", "Area di Interesse: Log Analysis", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Security Operations", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: File System Configuration", "Vulnerabilità: Insecure Direct Object Reference (IDOR)", "Codice: Python", "Tecnica: Packet Capture Analysis", "Tecnica: Password Reuse", "Tecnica: SUID Exploitation"]
 image: /assets/img/cap/cap-resized.png"
 ---
 

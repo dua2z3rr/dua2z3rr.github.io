@@ -4,7 +4,7 @@ description: "CozyHosting è una macchina Linux di difficoltà easy che ospita u
 author: dua2z3rr
 date: 2025-09-23 2:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Databases", "Area di Interesse: Injections", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Codice: Java", "Codice: Bash"]
+tags: ["Area di Interesse: Databases", "Area di Interesse: Injections", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Codice: Java", "Codice: Bash", "Servizio: SSH", "Servizio: NGINX", "Servizio: Spring Boot", "Tecnica: User Enumeration", "Tecnica: Fuzzing", "Tecnica: Configuration Analysis", "Tecnica: Password Cracking"]
 image: /assets/img/cozyHosting/cozyHosting-resized.png
 ---
 ## Enumerazione Esterna

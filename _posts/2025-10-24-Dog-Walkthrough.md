@@ -4,7 +4,7 @@ description: Dog è una macchina Linux di difficoltà easy che comporta la lettu
 author: dua2z3rr
 date: 2025-10-24 1:00:00
 categories: [Machines]
-tags: ["Vulnerabilità: Remote Code Execution", "Vulnerabilità: Arbitrary File Upload", "Codice: PHP", "Codice: SQL", "Codice: Bash"]
+tags: ["Vulnerabilità: Remote Code Execution", "Vulnerabilità: Arbitrary File Upload", "Codice: PHP", "Codice: SQL", "Codice: Bash", "Servizio: MySQL", "Servizio: CMS", "Servizio: Git", "Tecnica: User Enumeration"]
 image: /assets/img/dog/dog-resized.png
 ---
 

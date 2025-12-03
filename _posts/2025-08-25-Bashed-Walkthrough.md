@@ -4,7 +4,7 @@ description: "Bashed è una macchina abbastanza easy che si concentra principalm
 author: dua2z3rr
 date: 2025-08-25 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Common Applications", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità: File System Configuration", "Vulnerabilità: Code Execution"]
+tags: ["Area di Interesse: Common Applications", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità: File System Configuration", "Vulnerabilità: Code Execution", "Servizio: Apache", "Tecnica: Reconnaissance", "Tecnica: Web Site Structure Discovery", "Tecnica: SUDO Exploitation", "Tecnica: Scheduled Job Abuse"]
 image: /assets/img/bashed/bashed-resized.png"
 ---
 

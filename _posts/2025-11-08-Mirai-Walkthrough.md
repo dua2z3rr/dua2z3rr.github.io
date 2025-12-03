@@ -4,7 +4,7 @@ description: "Mirai dimostra uno dei vettori d'attacco in più rapida crescita d
 author: dua2z3rr
 date: 2025-11-08 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Web Application", "Area di Interesse: Forensics", "Area di Interesse: Niche Technologies", "Area di Interesse: IoT", "Area di Interesse: Broken Authentication and Authorization", "Area di Interesse: Host", "Vulnerabilità: Information Disclosure", "Vulnerabilità: Default Credentials"]
+tags: ["Area di Interesse: Web Application", "Area di Interesse: Forensics", "Area di Interesse: Niche Technologies", "Area di Interesse: IoT", "Area di Interesse: Broken Authentication and Authorization", "Area di Interesse: Host", "Vulnerabilità: Information Disclosure", "Vulnerabilità: Default Credentials", "Servizio: Pi Hole", "Tecnica: SUDO Exploitation"]
 image: /assets/img/mirai/mirai-resized.png
 ---
 

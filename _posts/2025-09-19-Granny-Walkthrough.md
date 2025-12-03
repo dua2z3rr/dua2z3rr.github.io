@@ -4,7 +4,7 @@ description: "Granny, pur essendo simile a Grandpa, può essere sfruttata tramit
 author: dua2z3rr
 date: 2025-09-19 2:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Arbitrary File Upload", "Vulnerabilità: Misconfiguration", "Codice: ASP"]
+tags: ["Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Arbitrary File Upload", "Vulnerabilità: Misconfiguration", "Codice: ASP", "Servizio: IIS", "Servizio: WebDav", "Tecnica: Reconnaissance"]
 image: /assets/img/granny/granny-resized.png"
 ---
 

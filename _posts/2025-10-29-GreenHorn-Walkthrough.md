@@ -4,7 +4,7 @@ description: GreenHorn è una macchina di difficoltà easy che sfrutta una vulne
 author: dua2z3rr
 date: 2025-10-29 1:00:00
 categories: [Machines]
-tags: ["Vulnerabilità: Remote File Inclusion", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Information Disclosure", "Codice: PHP"]
+tags: ["Vulnerabilità: Remote File Inclusion", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Information Disclosure", "Codice: PHP", "Servizio: SSH", "Servizio: NGINX", "Servizio: Gitea", "Tecnica: Password Reuse", "Tecnica: Password Cracking"]
 image: /assets/img/greenHorn/greenHorn-resized.png
 ---
 

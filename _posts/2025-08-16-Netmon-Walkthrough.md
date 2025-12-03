@@ -4,7 +4,7 @@ description: "Netmon è una macchina Windows di difficoltà easy con enumerazion
 author: dua2z3rr
 date: 2025-08-16 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Anonymous/Guest Access"]
+tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Anonymous/Guest Access", "Servizio: FTP", "Tecnica: Reconnaissance"]
 image: /assets/img/netmon/netmon-resized.png"
 ---
 

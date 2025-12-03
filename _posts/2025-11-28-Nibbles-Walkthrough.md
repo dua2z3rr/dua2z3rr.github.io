@@ -4,7 +4,7 @@ description: "Nibbles è una macchina abbastanza semplice, tuttavia con l'inclus
 author: dua2z3rr
 date: 2025-11-28 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Default Credentials"]
+tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Default Credentials", "Servizio: Nibbleblog", "Tecnica: User Enumeration", "Tecnica: Web Site Structure Discovery", "Tecnica: Brute Force Attack", "Tecnica: SUDO Exploitation"]
 image: /assets/img/nibbles/nibbles-resized.png
 ---
 

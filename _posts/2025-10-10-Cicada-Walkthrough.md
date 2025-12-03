@@ -4,7 +4,7 @@ description: Cicada è una macchina Windows di difficoltà easy che si concentra
 author: dua2z3rr
 date: 2025-10-10 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Active Directory", "Area di Interesse: Protocols", "Area di Interesse: Common Services", "Area di Interesse: Security Tools", "Area di Interesse: Authentication", "Codice: Powershell"]
+tags: ["Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Active Directory", "Area di Interesse: Protocols", "Area di Interesse: Common Services", "Area di Interesse: Security Tools", "Area di Interesse: Authentication", "Codice: Powershell", "Servizio: SMB", "Servizio: WinRM", "Servizio: Windows", "Tecnica: Reconnaissance", "Tecnica: Pass the Hash", "Tecnica: Password Spraying", "Tecnica: Privilege Abuse"]
 image: /assets/img/cicada/cicada-resized.png
 ---
 

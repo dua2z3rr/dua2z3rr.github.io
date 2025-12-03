@@ -4,7 +4,7 @@ description: Shocker, sebbene complessivamente piuttosto semplice, dimostra la g
 author: dua2z3rr
 date: 2025-10-22 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Vulnerabilità: Remote Code Execution", "Codice: Bash", "Codice: Perl"]
+tags: ["Area di Interesse: Vulnerability Assessment", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Vulnerabilità: Remote Code Execution", "Codice: Bash", "Codice: Perl", "Servizio: Apache", "Servizio: CGI", "Tecnica: Reconnaissance", "Tecnica: Web Site Structure Discovery", "Tecnica: SUDO Exploitation"]
 image: /assets/img/shocker/shocker-resized.png
 ---
 

@@ -4,7 +4,7 @@ description: "Planning è una macchina Linux di difficoltà facile che prevede l
 author: dua2z3rr
 date: 2025-11-16 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Web Application", "Area di Interesse: Common Applications", "Area di Interesse: Custom Applications", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Clear Text Credentials", "Codice: Bash"]
+tags: ["Area di Interesse: Web Application", "Area di Interesse: Common Applications", "Area di Interesse: Custom Applications", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Clear Text Credentials", "Codice: Bash", "Servizio: SSH", "Servizio: NGINX", "Servizio: Grafana", "Tecnica: Reconnaissance", "Tecnica: Fuzzing", "Tecnica: Password Reuse", "Tecnica: Port Forwarding"]
 image: /assets/img/planning/planning-resized.png
 ---
 

@@ -4,7 +4,7 @@ description: "Titanic è una macchina Linux di difficoltà easy che presenta un 
 author: dua2z3rr
 date: 2025-11-23 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Databases", "Area di Interesse: Custom Applications", "Area di Interesse: Source Code Analysis", "Vulnerabilità: Arbitrary File Read", "Codice: Python"]
+tags: ["Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Area di Interesse: Databases", "Area di Interesse: Custom Applications", "Area di Interesse: Source Code Analysis", "Vulnerabilità: Arbitrary File Read", "Codice: Python", "Servizio: SSH", "Servizio: SQLite", "Servizio: Gitea", "Tecnica: Password Cracking"]
 image: /assets/img/titanic/titanic-resized.png
 ---
 

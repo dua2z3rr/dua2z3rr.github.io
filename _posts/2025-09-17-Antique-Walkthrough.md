@@ -4,7 +4,7 @@ description: "Antique è una macchina Linux di livello easy che ospita una stamp
 author: dua2z3rr
 date: 2025-09-17 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Protocols", "Area di Interesse: Common Services", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Arbitrary File Read", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Command Execution", "Codice: Python"]
+tags: ["Area di Interesse: Protocols", "Area di Interesse: Common Services", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Arbitrary File Read", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: Weak Authentication", "Vulnerabilità: Command Execution", "Codice: Python", "Servizio: SNMP", "Servizio: Telnet", "Tecnica: Reconnaissance", "Tecnica: Port Forwarding"]
 image: /assets/img/antique/antique-resized.png"
 ---
 

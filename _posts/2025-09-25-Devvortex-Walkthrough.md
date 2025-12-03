@@ -4,7 +4,7 @@ description: Devvortex è una macchina Linux di difficoltà easy che presenta un
 author: dua2z3rr
 date: 2025-09-25 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Common Applications", "Area di Interesse: Databases", "Area di Interesse: Web Application", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Information Disclosure", "Vulnerabilità: Misconfiguration"]
+tags: ["Area di Interesse: Common Applications", "Area di Interesse: Databases", "Area di Interesse: Web Application", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Information Disclosure", "Vulnerabilità: Misconfiguration", "Servizio: MySQL", "Servizio: Joomla", "Tecnica: Reconnaissance", "Tecnica: Web Site Structure Discovery", "Tecnica: Configuration Analysis", "Tecnica: Password Reuse", "Tecnica: Password Cracking"]
 image: /assets/img/devvortex/devvortex-resized.png
 ---
 

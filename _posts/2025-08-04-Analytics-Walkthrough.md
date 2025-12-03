@@ -4,7 +4,7 @@ description: "Analytics è una macchina Linux di difficoltà easy con servizi HT
 author: dua2z3rr
 date: 2025-08-04 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Common Applications", "Area di Interesse: Basic Authentication and Authorization", "Area di Interesse: Software and OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: Information Disclosure", "Vulnerabilità: Insecure Design", "Codice: Bash"]
+tags: ["Area di Interesse: Common Applications", "Area di Interesse: Basic Authentication and Authorization", "Area di Interesse: Software and OS exploitation", "Area di Interesse: Authentication", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Clear Text Credentials", "Vulnerabilità: Information Disclosure", "Vulnerabilità: Insecure Design", "Codice: Bash", "Servizio: Docker", "Servizio: Metabase", "Tecnica: Reconnaissance", "Tecnica: Configuration Analysis", "Tecnica: Password Reuse", "Tecnica: Kernel Exploitation", "Tecnica: API Abuse", "Tecnica: Linux Capabilities"]
 image: /assets/img/analytics/box-analytics-logo-resized.png
 ---
 

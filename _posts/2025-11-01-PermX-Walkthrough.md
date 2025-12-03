@@ -4,7 +4,7 @@ description: PermX è una macchina Linux di difficoltà easy che presenta un sis
 author: dua2z3rr
 date: 2025-11-01 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Web Application", "Area di Interesse: Common Applications", "Vulnerabilità: Arbitrary File Upload", "Codice: PHP", "Codice: Bash"]
+tags: ["Area di Interesse: Web Application", "Area di Interesse: Common Applications", "Vulnerabilità: Arbitrary File Upload", "Codice: PHP", "Codice: Bash", "Servizio: Apache", "Servizio: SSH", "Tecnica: Reconnaissance", "Tecnica: Fuzzing", "Tecnica: SUDO Exploitation"]
 image: /assets/img/permX/permX-resized.png
 ---
 

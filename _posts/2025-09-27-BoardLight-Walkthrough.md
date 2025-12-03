@@ -4,7 +4,7 @@ description: BoardLight è una macchina Linux di difficoltà easy che presenta u
 author: dua2z3rr
 date: 2025-09-29 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Code Injection", "Codice: PHP", "Codice: Bash"]
+tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Code Injection", "Codice: PHP", "Codice: Bash", "Servizio: Apache", "Servizio: Linux", "Tecnica: Reconnaissance", "Tecnica: Web Site Structure Discovery", "Tecnica: Fuzzing", "Tecnica: SUID Exploitation"]
 image: /assets/img/boardLight/boardLight-resized.png
 ---
 

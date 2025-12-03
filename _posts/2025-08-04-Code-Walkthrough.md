@@ -4,7 +4,7 @@ description: "Code è una macchina Linux di difficoltà easy che include un'appl
 author: dua2z3rr
 date: 2025-08-05 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Custom Applications", "Area di Interesse: Databases", "Area di Interesse: Security Tools", "Area di Interesse: Source Code Analysis", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Misconfiguration", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Directory Traversal", "Codice: Bash", "Codice: JavaScript", "Codice: Python", "Codice: SQL"]
+tags: ["Area di Interesse: Custom Applications", "Area di Interesse: Databases", "Area di Interesse: Security Tools", "Area di Interesse: Source Code Analysis", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Misconfiguration", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Directory Traversal", "Codice: Bash", "Codice: JavaScript", "Codice: Python", "Codice: SQL", "Servizio: SSH", "Servizio: SQLite", "Servizio: Gunicorn", "Tecnica: Reconnaissance", "Tecnica: Password Cracking", "Tecnica: SUDO Exploitation"]
 image: /assets/img/code/code-resized-2.png
 ---
 

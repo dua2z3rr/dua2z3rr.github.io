@@ -4,7 +4,7 @@ description: "Blue, sebbene sia probabilmente la macchina più easy su Hack The 
 author: dua2z3rr
 date: 2025-08-09 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution"]
+tags: ["Area di Interesse: Protocols", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Enterprise Network", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: Remote Code Execution", "Servizio: SMB", "Tecnica: Reconnaissance"]
 image: /assets/img/blue/blue-resized.png"
 ---
 

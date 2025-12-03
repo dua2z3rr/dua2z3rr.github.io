@@ -4,7 +4,7 @@ description: "Bizness è una macchina Linux di difficoltà easy che dimostra com
 author: dua2z3rr
 date: 2025-07-31 7:00:00
 categories: [Machines]
-tags: ["Categoria: Web Application", "Area di Interesse: Databases", "Area di Interesse: Common Applications", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Misconfiguration", "Vulnerabilità: Insecure Design", "Codice: Java", "Codice: Python"]
+tags: ["Categoria: Web Application", "Area di Interesse: Databases", "Area di Interesse: Common Applications", "Vulnerabilità: Weak Credentials", "Vulnerabilità: Remote Code Execution", "Vulnerabilità: Misconfiguration", "Vulnerabilità: Insecure Design", "Codice: Java", "Codice: Python", "Servizio: NGINX", "Servizio: Apache OFBiz", "Tecnica: Reconnaissance", "Tecnica: Web Site Structure Discovery", "Tecnica: Configuration Analysis", "Tecnica: Password Reuse", "Tecnica: Password Cracking"]
 image: /assets/img/bizness/bizness-logo-resized.png
 ---
 

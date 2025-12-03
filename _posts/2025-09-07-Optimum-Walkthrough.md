@@ -4,7 +4,7 @@ description: "Optimum è una macchina di livello beginner che si concentra princ
 author: dua2z3rr
 date: 2025-09-07 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Injections", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: OS Command Injection", "Codice: Python"]
+tags: ["Area di Interesse: Injections", "Area di Interesse: Software & OS exploitation", "Area di Interesse: Security Tools", "Area di Interesse: Web Application", "Area di Interesse: Vulnerability Assessment", "Vulnerabilità: OS Command Injection", "Codice: Python", "Servizio: HFS"]
 image: /assets/img/optimum/optimum-resized.png"
 ---
 

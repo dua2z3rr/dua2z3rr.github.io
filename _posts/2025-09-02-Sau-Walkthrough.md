@@ -4,7 +4,7 @@ description: "Sau è una macchina Linux a difficoltà facile che presenta un’i
 author: dua2z3rr
 date: 2025-09-02 1:00:00
 categories: [Machines]
-tags: ["Area di Interesse: Injections", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità: Server Side Request Forgery (SSRF)", "Codice: Bash"]
+tags: ["Area di Interesse: Injections", "Area di Interesse: Web Application", "Vulnerabilità: OS Command Injection", "Vulnerabilità: Server Side Request Forgery (SSRF)", "Codice: Bash", "Servizio: Maltrail", "Servizio: Request Baskets", "Tecnica: Reconnaissance", "Tecnica: SUDO Exploitation"]
 image: /assets/img/sau/sau-resized.png"
 ---
 
