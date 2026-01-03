@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://dua2z3rr.github.io/sitemap.xml
