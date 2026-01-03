@@ -1,0 +1,41 @@
+# _data/locales/en.yml
+
+# The tabs of sidebar
+tabs:
+  home: Home
+  categories: Topics
+  tags: Keywords
+  project: Projects
+  archives: Timeline
+  about: About Me
+
+# Altre traduzioni (opzionali ma utili)
+panel:
+  lastmod: "Recently Updated"
+  trending_tags: "Trending Tags"
+  toc: "Contents"
+
+post:
+  written_by: By
+  posted: Posted
+  updated: Updated
+  timeago:
+    day: days ago
+    hour: hours ago
+    minute: minutes ago
+    just_now: just now
+  words: words
+  pageview_measure: views
+  read_time:
+    unit: " min"
+    prompt: " read"
+  relate_posts: "Further Reading"
+  share: "Share"
+  button:
+    next: "Newer"
+    previous: "Older"
+    copy_code:
+      succeed: "Copied!"
+    share_link:
+      title: "Copy link"
+      succeed: "Link copied successfully!"
