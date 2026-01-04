@@ -1,9 +1,7 @@
 # _data/tag_groups.yml
 
-categories:
-  - web-application
-
 areas:
+  - web-application
   - databases
   - common-applications
   - enterprise-network
@@ -12,9 +10,11 @@ areas:
   - software-and-os-exploitation
   - security-tools
   - authentication
-  - niche-echnologies
+  - niche-technologies
   - protocols
   - telecom
+  - injections
+  - cryptography
 
 vulnerabilities:
   - weak-credentials
@@ -24,6 +24,9 @@ vulnerabilities:
   - default-credentials
   - weak-permissions
   - local-file-inclusion
+  - os-command-injection
+  - directory-traversal
+  - hardcoded-credentials
 
 languages:
   - java
@@ -35,6 +38,8 @@ services:
   - apache
   - smb
   - kerberos
+  - ssh
+  - openadmin
 
 techniques:
   - reconnaissance
@@ -45,3 +50,6 @@ techniques:
   - kerberoasting
   - fuzzing
   - password-reuse
+  - pivoting
+  - tunneling
+  - sudo-exploitation

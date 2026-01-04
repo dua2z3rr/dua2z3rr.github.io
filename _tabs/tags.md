@@ -47,21 +47,6 @@ order: 2
 
 {% assign all_tags = site.tags | sort %}
 
-<!-- Categories Section -->
-<div class="tag-section">
-  <h2 id="categories">Categories</h2>
-  <div class="tag-cloud">
-    {% for tag_data in all_tags %}
-      {% assign tag_name = tag_data[0] %}
-      {% if site.data.tag_groups.categories contains tag_name %}
-        <a href="{{ site.baseurl }}/tags/{{ tag_name | slugify }}/" class="tag-badge">
-          {{ tag_name }} <span class="tag-count">({{ tag_data[1].size }})</span>
-        </a>
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
-
 <!-- Areas of Interest -->
 <div class="tag-section">
   <h2 id="areas">Areas of Interest</h2>
