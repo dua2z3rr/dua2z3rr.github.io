@@ -1,0 +1,43 @@
+# _data/tag_groups.yml
+
+categories:
+  - hackthebox
+  - writeup
+  - ctf
+  - tutorial
+
+areas:
+  - web-security
+  - network-security
+  - privilege-escalation
+  - enumeration
+
+vulnerabilities:
+  - lfi
+  - rfi
+  - sqli
+  - xss
+  - rce
+  - xxe
+
+languages:
+  - python
+  - bash
+  - powershell
+  - ruby
+  - php
+
+services:
+  - ssh
+  - ftp
+  - apache
+  - nginx
+  - smb
+  - mysql
+
+techniques:
+  - reverse-shell
+  - buffer-overflow
+  - brute-force
+  - password-cracking
+  - social-engineering
