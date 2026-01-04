@@ -120,7 +120,7 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
+    repo: dua2z3rr/dua2z3rr.github.io # <gh-username>/<repo>
     repo_id: R_kgDOQyp0Og
     category: Comments
     category_id: DIC_kwDOQyp0Os4C0ikg
