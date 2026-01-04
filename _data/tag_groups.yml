@@ -1,43 +1,40 @@
 # _data/tag_groups.yml
 
 categories:
-  - hackthebox
-  - writeup
-  - ctf
-  - tutorial
+  - web-application
 
 areas:
-  - web-security
-  - network-security
-  - privilege-escalation
-  - enumeration
+  - databases
+  - common-applications
+  - enterprise-network
+  - vulnerability-assessment
+  - active-directory
+  - software-and-os-exploitation
+  - security-tools
+  - authentication
 
 vulnerabilities:
-  - lfi
-  - rfi
-  - sqli
-  - xss
-  - rce
-  - xxe
+  - weak-credentials
+  - remote-code-execution
+  - misconfiguration
+  - insecure-design
+  - default-credentials
+  - weak-permissions
 
 languages:
+  - java
   - python
-  - bash
-  - powershell
-  - ruby
-  - php
 
 services:
-  - ssh
-  - ftp
-  - apache
   - nginx
+  - apache-ofbiz
   - smb
-  - mysql
+  - kerberos
 
 techniques:
-  - reverse-shell
-  - buffer-overflow
-  - brute-force
+  - reconnaissance
+  - web-site-structure-discovery
+  - configuration-analysis
+  - password-reuse
   - password-cracking
-  - social-engineering
+  - kerberoasting

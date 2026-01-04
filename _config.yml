@@ -14,7 +14,7 @@ timezone: Europe/Rome
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: D23R - Cybersecurity Blog # the main title
+title: D23R Cybersecurity Blog # the main title
 
 tagline: HackTheBox Walkthroughs & Security Research # it will display as the subtitle
 
