@@ -12,6 +12,9 @@ areas:
   - software-and-os-exploitation
   - security-tools
   - authentication
+  - niche-echnologies
+  - protocols
+  - telecom
 
 vulnerabilities:
   - weak-credentials
@@ -20,14 +23,16 @@ vulnerabilities:
   - insecure-design
   - default-credentials
   - weak-permissions
+  - local-file-inclusion
 
 languages:
   - java
   - python
+  - php
 
 services:
   - nginx
-  - apache-ofbiz
+  - apache
   - smb
   - kerberos
 
@@ -38,3 +43,5 @@ techniques:
   - password-reuse
   - password-cracking
   - kerberoasting
+  - fuzzing
+  - password-reuse
