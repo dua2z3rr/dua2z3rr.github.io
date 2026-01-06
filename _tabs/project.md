@@ -9,9 +9,4 @@ order: 3
 
 ## Active Projects
 
-### Project 1: tmp
-tmp...
-
-### Project 2: tmp
-tmp...
-
+Work in progress!
