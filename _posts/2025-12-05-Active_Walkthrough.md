@@ -3,7 +3,7 @@ title: "Active Walkthrough - HTB Easy | GPP Passwords & Kerberoasting"
 description: "Complete walkthrough of Active from Hack The Box. Covers GPP password exploitation, Kerberoasting attack, and Active Directory privilege escalation techniques used in real-world penetration testing."
 author: dua2z3rr
 date: 2025-12-05 1:00:00
-categories: [HackTheBox, Walkthroughs]
+categories: [HackTheBox, Machines]
 tags: ["enterprise-network", "vulnerability-assessment", "active-directory", "software-and-os-exploitation", "security-tools", "authentication", "default-credentials", "weak-permissions", "anonymous-or-guest-access", "smb", "kerberos", "reconnaissance", "password-cracking", "kerberoasting"]
 image: /assets/img/active/active-resized.png
 ---
