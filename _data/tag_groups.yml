@@ -28,11 +28,13 @@ vulnerabilities:
   - directory-traversal
   - hardcoded-credentials
   - anonymous-or-guest-access
+  - arbitrary-file-upload
 
 languages:
   - java
   - python
   - php
+  - asp
 
 services:
   - nginx
@@ -41,6 +43,8 @@ services:
   - kerberos
   - ssh
   - openadmin
+  - iis
+  - ftp
 
 techniques:
   - reconnaissance
