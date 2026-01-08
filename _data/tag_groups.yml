@@ -15,6 +15,8 @@ areas:
   - telecom
   - injections
   - cryptography
+  - custom-applications
+  - source-code-analysis
 
 vulnerabilities:
   - weak-credentials
@@ -29,12 +31,15 @@ vulnerabilities:
   - hardcoded-credentials
   - anonymous-or-guest-access
   - arbitrary-file-upload
+  - clear-text-credentials
 
 languages:
   - java
   - python
   - php
   - asp
+  - bash
+  - javascript
 
 services:
   - nginx
@@ -45,6 +50,9 @@ services:
   - openadmin
   - iis
   - ftp
+  - mysql
+  - nodejs
+  - sqlite
 
 techniques:
   - reconnaissance
@@ -58,3 +66,5 @@ techniques:
   - pivoting
   - tunneling
   - sudo-exploitation
+  - user-enumeration
+  - system-exploitation
