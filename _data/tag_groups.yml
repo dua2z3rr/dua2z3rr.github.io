@@ -53,6 +53,7 @@ services:
   - mysql
   - nodejs
   - sqlite
+  - nibbleblog
 
 techniques:
   - reconnaissance
@@ -68,3 +69,4 @@ techniques:
   - sudo-exploitation
   - user-enumeration
   - system-exploitation
+  - brute-force-attack
