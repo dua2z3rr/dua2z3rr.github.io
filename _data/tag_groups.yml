@@ -33,6 +33,7 @@ vulnerabilities:
   - arbitrary-file-upload
   - clear-text-credentials
   - arbitrary-file-read
+  - sensitive-data-exposure
 
 languages:
   - java
@@ -57,6 +58,8 @@ services:
   - nibbleblog
   - gitea
   - grafana
+  - pfsense
+  - lighthttpd
 
 techniques:
   - reconnaissance
