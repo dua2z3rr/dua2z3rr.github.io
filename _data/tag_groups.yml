@@ -56,6 +56,7 @@ services:
   - sqlite
   - nibbleblog
   - gitea
+  - grafana
 
 techniques:
   - reconnaissance
@@ -72,3 +73,4 @@ techniques:
   - user-enumeration
   - system-exploitation
   - brute-force-attack
+  - port-forwarding
