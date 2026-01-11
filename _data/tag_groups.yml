@@ -32,6 +32,7 @@ vulnerabilities:
   - anonymous-or-guest-access
   - arbitrary-file-upload
   - clear-text-credentials
+  - arbitrary-file-read
 
 languages:
   - java
@@ -54,6 +55,7 @@ services:
   - nodejs
   - sqlite
   - nibbleblog
+  - gitea
 
 techniques:
   - reconnaissance
