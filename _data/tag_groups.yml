@@ -17,6 +17,10 @@ areas:
   - cryptography
   - custom-applications
   - source-code-analysis
+  - forensics
+  - iot
+  - broken-authentication-and-authorization
+  - host
 
 vulnerabilities:
   - weak-credentials
@@ -34,6 +38,7 @@ vulnerabilities:
   - clear-text-credentials
   - arbitrary-file-read
   - sensitive-data-exposure
+  - information-disclosure
 
 languages:
   - java
@@ -60,6 +65,7 @@ services:
   - grafana
   - pfsense
   - lighthttpd
+  - pi-hole
 
 techniques:
   - reconnaissance
