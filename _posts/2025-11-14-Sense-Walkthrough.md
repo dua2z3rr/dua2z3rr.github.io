@@ -320,9 +320,7 @@ sh: can't access tty; job control turned off
 root
 ```
 
-**Direct root access achieved!**
-
-We can grab both the user and root flags and complete the box.
+**Root flag obtained!** Box completed.
 
 ---
 

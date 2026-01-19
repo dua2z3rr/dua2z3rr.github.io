@@ -274,9 +274,7 @@ session => 1
 Server username: NT AUTHORITY\SYSTEM
 ```
 
-**SYSTEM privileges achieved!**
-
-Both user and root flags can now be collected. Box completed.
+**Root flag obtained!** Box completed.
 
 ---
 

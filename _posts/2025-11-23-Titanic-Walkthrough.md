@@ -719,7 +719,7 @@ drwxrwxr-x 2 developer developer  4096 Aug  2  2024 mysql
 -rw-r----- 1 root      developer    33 Nov 23 11:44 user.txt
 ```
 
-We get the root flag and complete the box.
+**Root flag obtained!** Box completed.
 
 ---
 

@@ -39,6 +39,7 @@ vulnerabilities:
   - arbitrary-file-read
   - sensitive-data-exposure
   - information-disclosure
+  - remote-file-inclusion
 
 languages:
   - java

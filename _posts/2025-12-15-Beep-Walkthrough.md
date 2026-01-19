@@ -366,9 +366,7 @@ Welcome to Elastix
 uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel)
 ```
 
-**Direct root access achieved!**
-
-Now we can get both the user and the root flags.
+**Root flag obtained!** Box completed.
 
 ---
 

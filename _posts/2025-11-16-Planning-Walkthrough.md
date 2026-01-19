@@ -280,7 +280,7 @@ drwx------ 2 enzo enzo 4096 Feb 28  2025 .ssh
 -rw-r----- 1 root enzo   33 Nov 16 14:13 user.txt
 ```
 
-We can grab the user flag.
+**User flag obtained** from `/home/enzo/user.txt`
 
 ---
 
@@ -421,7 +421,7 @@ enzo@planning:~$ ls
 ciao.txt  user.txt
 ```
 
-We get the root flag and complete the box!
+**Root flag obtained!** Box completed.
 
 ---
 
