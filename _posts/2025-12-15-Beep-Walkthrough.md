@@ -97,7 +97,7 @@ Examining page source reveals no version information directly. However, knowing 
 
 ### Open Relay Check
 
-Before heading into t3esting exploits for Elastix, i wanted to swiftly enumerate the SMTP service. 
+Before heading into testing exploits for Elastix, i wanted to swiftly enumerate the SMTP service. 
 
 Testing if SMTP server is an open relay:
 
