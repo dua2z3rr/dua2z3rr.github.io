@@ -3,36 +3,14 @@ title: "Nibbles Walkthrough - HTB Easy | Nibbleblog RCE & Sudo Script Exploitati
 description: "Complete walkthrough of Nibbles from Hack The Box. Covers web enumeration, Nibbleblog 4.0.3 authentication bypass, arbitrary file upload RCE exploitation, and sudo script privilege escalation through writable monitor.sh."
 author: dua2z3rr
 date: 2025-11-28 1:00:00
-categories: [HackTheBox, Walkthroughs]
-tags:
-  # Box-specific techniques
-  - nibbleblog-rce
-  - file-upload
-  - default-credentials
-  - sudo-exploitation
-  - writable-script
-  
-  # General classification
-  - htb-easy
-  - linux
-  - web-exploitation
-  - privilege-escalation
-  
-  # Tools and services
-  - metasploit
-  - ffuf
-  - nibbleblog
-  
+categories: [HackTheBox, Machines]
+tags: ["vulnerability-assessment", "software-and-os-exploitation", "security-tools", "remote-code-execution", "default-credentials", "nibbleblog", "user-enumeration", "web-site-structure-discovery", "brute-force-attack", "sudo-exploitation"]
 image: /assets/img/nibbles/nibbles-resized.png
 ---
+
 ## Overview
 
 Nibbles is a fairly straightforward box that demonstrates the risks of default credentials and misconfigured sudo permissions. While relatively simple, the inclusion of a login blacklist mechanism makes finding valid credentials slightly more challenging. The box features a Nibbleblog installation vulnerable to arbitrary file upload, leading to remote code execution.
-
-**Box Details:**
-- **OS:** Ubuntu Linux
-- **Difficulty:** Easy
-- **Key Techniques:** Web Enumeration, Default Credentials, File Upload RCE, Sudo Script Exploitation
 
 ---
 
@@ -312,11 +290,11 @@ sudo /home/nibbler/personal/stuff/monitor.sh
 
 ### What Surprised Me
 
-The combination of default credentials and a writable sudo script felt almost *too* simple, but it perfectly demonstrates a real-world scenario. I've seen production systems where sysadmins set up monitoring scripts with sudo permissions and then forget about them. The fact that `monitor.sh` was **world-writable** (`777` permissions) is a critical misconfiguration that I've actually encountered in the wild—people set overly permissive permissions "just to make it work" and never revisit them.
+The combination of default credentials and a writable sudo script felt almost *too* simple, but it perfectly demonstrates a real-world scenario. I've seen production systems where sysadmins set up monitoring scripts with sudo permissions and then forget about them. The fact that `monitor.sh` was **world-writable** (`777` permissions) is a critical misconfiguration. People set overly permissive permissions "just to make it work" and never revisit them. I've done it too in the past, but we need to be more careful when dealing with permissions.
 
 ### Main Mistake
 
-I wasted over an hour trying to upload PHP reverse shells through the page creation feature before realizing the PHP code wasn't being executed—it was just displayed as plain text. I should have immediately looked for file upload functionality elsewhere in the application instead of repeatedly trying different PHP payloads in the same place. The lesson: if an attack vector isn't working after 2-3 attempts, **move on and find another approach** rather than beating your head against the same wall.
+I wasted around half an hour trying to upload PHP reverse shells through the page creation feature before realizing the PHP code wasn't being executed—it was just displayed as plain text. I should have immediately looked for file upload functionality elsewhere in the application instead of repeatedly trying different PHP payloads in the same place. The lesson: find all possible attack vectors, then **execute the exploits**.
 
 ### Alternative Approaches
 
@@ -324,8 +302,8 @@ Instead of using Metasploit for the file upload exploitation, I could have manua
 
 ### Open Question
 
-The Nibbleblog file upload vulnerability (CVE-2015-6967) is from 2015, yet this box uses it in 2017-2018. This makes me wonder: **how long do organizations typically take to patch known CMS vulnerabilities in production?** I've read that many small businesses run outdated CMS installations for years, but I'm curious about the actual statistics. Also, are there automated scanners that specifically look for outdated blog platforms like Nibbleblog, WordPress, Joomla with known vulnerabilities?
+The Nibbleblog file upload vulnerability (CVE-2015-6967) is from 2015, yet this box uses it in 2017-2018. This makes me wonder: **how long do organizations typically take to patch known CMS vulnerabilities in production?** How many small businesses run outdated CMS installations for years? I'm curious about the actual statistics. Also, are there automated scanners that specifically look for outdated blog platforms like Nibbleblog, WordPress, Joomla with known vulnerabilities?
 
 ---
 
-**Completed this box? What was your approach to discovering the admin credentials?** Reach out on [Twitter](https://twitter.com/dua2z3rr) or email at dua2z3rr@gmail.com—I'm curious if others brute-forced the password or guessed it like I did!
+**Completed this box? What was your approach to discovering the admin credentials?** Comment down below!
