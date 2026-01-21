@@ -42,6 +42,7 @@ vulnerabilities:
   - information-disclosure
   - remote-file-inclusion
   - sql-injection
+  - code-injection
 
 languages:
   - java
@@ -79,6 +80,7 @@ services:
   - mosh-mobile-shell
   - windows
   - winrm
+  - linux
 
 techniques:
   - reconnaissance
@@ -99,3 +101,4 @@ techniques:
   - pass-the-hash
   - password-spraying
   - privilege-abuse
+  - suid-exploitation
