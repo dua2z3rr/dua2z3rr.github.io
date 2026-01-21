@@ -74,6 +74,7 @@ services:
   - git
   - cgi
   - webdav
+  - mosh-mobile-shell
 
 techniques:
   - reconnaissance
