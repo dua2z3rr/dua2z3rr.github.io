@@ -40,6 +40,7 @@ vulnerabilities:
   - sensitive-data-exposure
   - information-disclosure
   - remote-file-inclusion
+  - sql-injection
 
 languages:
   - java
