@@ -21,6 +21,7 @@ areas:
   - iot
   - broken-authentication-and-authorization
   - host
+  - common-services
 
 vulnerabilities:
   - weak-credentials
@@ -51,6 +52,7 @@ languages:
   - javascript
   - sql
   - perl
+  - powershell
 
 services:
   - nginx
@@ -75,6 +77,8 @@ services:
   - cgi
   - webdav
   - mosh-mobile-shell
+  - windows
+  - winrm
 
 techniques:
   - reconnaissance
@@ -92,3 +96,6 @@ techniques:
   - system-exploitation
   - brute-force-attack
   - port-forwarding
+  - pass-the-hash
+  - password-spraying
+  - privilege-abuse
