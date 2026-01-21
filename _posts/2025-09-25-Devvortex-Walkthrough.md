@@ -2,7 +2,7 @@
 title: Devvortex Walkthrough - HTB Easy | Joomla Information Disclosure & Apport-CLI Privilege Escalation
 description: Complete walkthrough of Devvortex from Hack The Box. Covers exploiting Joomla CMS vulnerability for information disclosure, credential extraction from configuration files, template injection for reverse shell, MySQL database enumeration, bcrypt hash cracking, and exploiting apport-cli (CVE-2023-1326) to gain root access.
 author: dua2z3rr
-date: 2025-09-25 1:00:00
+date: 2026-09-25 1:00:00
 categories:
   - HackTheBox
   - Machines
