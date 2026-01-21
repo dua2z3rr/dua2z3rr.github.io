@@ -48,6 +48,7 @@ languages:
   - asp
   - bash
   - javascript
+  - sql
 
 services:
   - nginx
@@ -67,6 +68,8 @@ services:
   - pfsense
   - lighthttpd
   - pi-hole
+  - cms
+  - git
 
 techniques:
   - reconnaissance
