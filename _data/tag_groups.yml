@@ -49,6 +49,7 @@ languages:
   - bash
   - javascript
   - sql
+  - perl
 
 services:
   - nginx
@@ -70,6 +71,7 @@ services:
   - pi-hole
   - cms
   - git
+  - cgi
 
 techniques:
   - reconnaissance
