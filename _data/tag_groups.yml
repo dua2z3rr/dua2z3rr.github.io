@@ -22,6 +22,7 @@ areas:
   - broken-authentication-and-authorization
   - host
   - common-services
+  - session-management-and-hijacking
 
 vulnerabilities:
   - weak-credentials
@@ -45,6 +46,7 @@ vulnerabilities:
   - code-injection
   - command-execution
   - weak-authentication
+  - cross-site-scripting-xss
 
 languages:
   - java
@@ -87,6 +89,7 @@ services:
   - spring-boot
   - snmp
   - telnet
+  - werkzeug
 
 techniques:
   - reconnaissance
@@ -108,3 +111,4 @@ techniques:
   - password-spraying
   - privilege-abuse
   - suid-exploitation
+  - cookie-manipulation
