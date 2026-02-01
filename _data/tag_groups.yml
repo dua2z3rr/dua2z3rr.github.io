@@ -47,6 +47,7 @@ vulnerabilities:
   - command-execution
   - weak-authentication
   - cross-site-scripting-xss
+  - server-side-request-forgery-ssrf
 
 languages:
   - java
@@ -92,6 +93,8 @@ services:
   - werkzeug
   - wordpress
   - hfs
+  - maltrail
+  - request-baskets
 
 techniques:
   - reconnaissance
