@@ -82,6 +82,7 @@ services:
   - winrm
   - joomla
   - linux
+  - spring-boot
 
 techniques:
   - reconnaissance
