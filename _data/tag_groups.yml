@@ -91,6 +91,7 @@ services:
   - telnet
   - werkzeug
   - wordpress
+  - hfs
 
 techniques:
   - reconnaissance
