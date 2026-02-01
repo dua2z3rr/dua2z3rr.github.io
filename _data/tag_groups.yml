@@ -43,6 +43,8 @@ vulnerabilities:
   - remote-file-inclusion
   - sql-injection
   - code-injection
+  - command-execution
+  - weak-authentication
 
 languages:
   - java
@@ -83,6 +85,8 @@ services:
   - joomla
   - linux
   - spring-boot
+  - snmp
+  - telnet
 
 techniques:
   - reconnaissance
