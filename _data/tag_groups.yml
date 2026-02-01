@@ -79,6 +79,7 @@ services:
   - mosh-mobile-shell
   - windows
   - winrm
+  - joomla
 
 techniques:
   - reconnaissance
