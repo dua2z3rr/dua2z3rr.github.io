@@ -90,6 +90,7 @@ services:
   - snmp
   - telnet
   - werkzeug
+  - wordpress
 
 techniques:
   - reconnaissance
@@ -112,3 +113,4 @@ techniques:
   - privilege-abuse
   - suid-exploitation
   - cookie-manipulation
+  - decompilation
