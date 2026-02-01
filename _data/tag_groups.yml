@@ -115,3 +115,4 @@ techniques:
   - suid-exploitation
   - cookie-manipulation
   - decompilation
+  - exploit-modification
