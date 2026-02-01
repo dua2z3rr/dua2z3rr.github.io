@@ -4,7 +4,7 @@ description: "Granny, while similar to Grandpa, can be exploited through differe
 author: dua2z3rr
 date: 2025-09-19 2:00:00
 categories: [HackTheBox, Machines]
-tags: ["Vulnerability Assessment", "Software and OS exploitation", "Security Tools", "Arbitrary File Upload", "Misconfiguration", "ASP", "IIS", "WebDav", "Reconnaissance"]
+tags: ["vulnerability-assessment", "software-and-os-exploitation", "security-tools", "arbitrary-file-upload", "misconfiguration", "asp", "iis", "webdav", "reconnaissance"]
 image: /assets/img/granny/granny-resized.png
 ---
 
