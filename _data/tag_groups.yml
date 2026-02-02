@@ -49,6 +49,7 @@ vulnerabilities:
   - cross-site-scripting-xss
   - server-side-request-forgery-ssrf
   - group-membership
+  - code-execution
 
 languages:
   - java
@@ -122,3 +123,4 @@ techniques:
   - decompilation
   - exploit-modification
   - password-capture
+  - scheduled-job-abuse
