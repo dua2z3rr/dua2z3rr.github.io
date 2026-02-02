@@ -104,6 +104,7 @@ services:
   - request-baskets
   - ldap
   - keepass
+  - tomcat
 
 techniques:
   - reconnaissance
@@ -131,3 +132,4 @@ techniques:
   - password-capture
   - scheduled-job-abuse
   - packet-capture-analysis
+  - password-dump
