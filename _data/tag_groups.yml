@@ -48,6 +48,7 @@ vulnerabilities:
   - weak-authentication
   - cross-site-scripting-xss
   - server-side-request-forgery-ssrf
+  - group-membership
 
 languages:
   - java
@@ -95,6 +96,7 @@ services:
   - hfs
   - maltrail
   - request-baskets
+  - ldap
 
 techniques:
   - reconnaissance
@@ -119,3 +121,4 @@ techniques:
   - cookie-manipulation
   - decompilation
   - exploit-modification
+  - password-capture
