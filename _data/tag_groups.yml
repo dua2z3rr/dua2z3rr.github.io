@@ -103,6 +103,7 @@ services:
   - maltrail
   - request-baskets
   - ldap
+  - keepass
 
 techniques:
   - reconnaissance
