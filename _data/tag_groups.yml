@@ -107,6 +107,8 @@ services:
   - tomcat
   - samba
   - gunicorn
+  - docker
+  - metabase
 
 techniques:
   - reconnaissance
@@ -135,3 +137,6 @@ techniques:
   - scheduled-job-abuse
   - packet-capture-analysis
   - password-dump
+  - api-abuse
+  - kernel-exploitation
+  - linux-capabilities
