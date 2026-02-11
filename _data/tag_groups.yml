@@ -112,6 +112,8 @@ services:
   - docker
   - metabase
   - rails
+  - dns
+  - exchange
 
 techniques:
   - reconnaissance
@@ -143,3 +145,4 @@ techniques:
   - api-abuse
   - kernel-exploitation
   - linux-capabilities
+  - ad-dcsync
