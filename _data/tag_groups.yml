@@ -115,6 +115,7 @@ services:
   - rails
   - dns
   - exchange
+  - nostromo
 
 techniques:
   - reconnaissance
