@@ -149,3 +149,4 @@ techniques:
   - linux-capabilities
   - ad-dcsync
   - asreproasting
+  - active-directory-certificate-services
