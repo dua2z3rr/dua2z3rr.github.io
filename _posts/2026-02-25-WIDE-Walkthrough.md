@@ -1,5 +1,5 @@
 ---
-title: "WIDE - HTB Challenge | Hardcoded Password"
+title: "WIDE - HTB Very Easy Challenge | Hardcoded Password"
 description: "Walkthrough for WIDE challenge from Hack The Box. A reversing challenge where Ghidra is used to decompile an ELF binary and extract a hardcoded decryption key, which unlocks an encrypted dimension entry containing the flag."
 author: dua2z3rr
 date: 2026-02-25 1:00:00
