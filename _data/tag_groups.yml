@@ -116,6 +116,7 @@ services:
   - dns
   - exchange
   - nostromo
+  - mssql
 
 techniques:
   - reconnaissance
