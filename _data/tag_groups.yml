@@ -117,6 +117,7 @@ services:
   - exchange
   - nostromo
   - mssql
+  - flask
 
 techniques:
   - reconnaissance
@@ -151,3 +152,4 @@ techniques:
   - ad-dcsync
   - asreproasting
   - active-directory-certificate-services
+  - sandbox-escape
