@@ -57,6 +57,7 @@ vulnerabilities:
   - insecure-direct-object-reference-idor
   - deserialization
   - autologon-credentials
+  - arbitrary-file-write
 
 languages:
   - java
@@ -118,6 +119,8 @@ services:
   - nostromo
   - mssql
   - flask
+  - hmailserver
+  - libreoffice
 
 techniques:
   - reconnaissance
@@ -153,3 +156,6 @@ techniques:
   - asreproasting
   - active-directory-certificate-services
   - sandbox-escape
+  - impersonation
+  - phishing
+  - potato-exploits
