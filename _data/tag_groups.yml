@@ -58,6 +58,7 @@ vulnerabilities:
   - deserialization
   - autologon-credentials
   - arbitrary-file-write
+  - race-condition
 
 languages:
   - java
@@ -121,6 +122,7 @@ services:
   - flask
   - hmailserver
   - libreoffice
+  - openssl
 
 techniques:
   - reconnaissance
@@ -160,3 +162,4 @@ techniques:
   - phishing
   - potato-exploits
   - password-reset
+  - authentication-bypass
