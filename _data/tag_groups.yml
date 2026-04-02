@@ -26,6 +26,7 @@ areas:
   - common-security-controls
   - log-analysis
   - security-operations
+  - wireless
 
 vulnerabilities:
   - weak-credentials
@@ -123,6 +124,9 @@ services:
   - hmailserver
   - libreoffice
   - openssl
+  - openwrt
+  - wifi
+  - plc
 
 techniques:
   - reconnaissance
@@ -163,3 +167,7 @@ techniques:
   - potato-exploits
   - password-reset
   - authentication-bypass
+  - network-misconfiguration
+  - password-guessing
+  - wps-pin-attack
+  - wps-pin-bruteforce
