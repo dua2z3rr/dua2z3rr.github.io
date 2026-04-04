@@ -27,6 +27,8 @@ areas:
   - log-analysis
   - security-operations
   - wireless
+  - reverse-engineering
+  - steganography
 
 vulnerabilities:
   - weak-credentials
@@ -60,6 +62,7 @@ vulnerabilities:
   - autologon-credentials
   - arbitrary-file-write
   - race-condition
+  - buffer-overflow
 
 languages:
   - java
@@ -72,6 +75,7 @@ languages:
   - perl
   - powershell
   - ruby
+  - c
 
 services:
   - nginx
@@ -127,6 +131,7 @@ services:
   - openwrt
   - wifi
   - plc
+  - lxd
 
 techniques:
   - reconnaissance
@@ -171,3 +176,5 @@ techniques:
   - password-guessing
   - wps-pin-attack
   - wps-pin-bruteforce
+  - binary-exploitation
+  - exploit-development
