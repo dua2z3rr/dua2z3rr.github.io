@@ -63,6 +63,7 @@ vulnerabilities:
   - arbitrary-file-write
   - race-condition
   - buffer-overflow
+  - php-type-juggling
 
 languages:
   - java
@@ -132,6 +133,8 @@ services:
   - wifi
   - plc
   - lxd
+  - exe
+  - laravel
 
 techniques:
   - reconnaissance
@@ -178,3 +181,5 @@ techniques:
   - wps-pin-bruteforce
   - binary-exploitation
   - exploit-development
+  - binary-analysis
+  - decrypt
