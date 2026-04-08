@@ -172,7 +172,7 @@ The private key for SSH login is very interesting. The algorithm used is **ZipCr
 
 ### ZipCrypto Deflate Plaintext Attack
 
-ZipCrypto Deflate has a known attack called plaintext attack. This attack exploits the plaintext bytes (in our case the private key header) that we know the encrypted file has to discover the 3 registers (K0, K1, and K2) that were used by the algorithm to encrypt the zip. With these 3 registers we can then decrypt it.
+ZipCrypto Deflate has a known attack called plaintext attack. This attack exploits the plaintext bytes (in our case the known file `bash_logout`) that we know the encrypted file has to discover the 3 registers (K0, K1, and K2) that were used by the algorithm to encrypt the zip. With these 3 registers we can then decrypt it.
 
 First, let's download the necessary tool and all the commands to execute it:
 
