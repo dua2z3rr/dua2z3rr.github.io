@@ -29,6 +29,8 @@ areas:
   - wireless
   - reverse-engineering
   - steganography
+  - person
+  - social-engineering
 
 vulnerabilities:
   - weak-credentials
@@ -77,6 +79,7 @@ languages:
   - powershell
   - ruby
   - c
+  - vbscript
 
 services:
   - nginx
@@ -135,6 +138,8 @@ services:
   - lxd
   - exe
   - laravel
+  - macros
+  - openoffice
 
 techniques:
   - reconnaissance
@@ -183,3 +188,4 @@ techniques:
   - exploit-development
   - binary-analysis
   - decrypt
+  - antivirus-bypass
