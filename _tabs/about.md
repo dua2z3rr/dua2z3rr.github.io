@@ -8,7 +8,7 @@ order: 5
 I am **dua2z3rr**, and this site was created as a personal archive of my progress in the world of cybersecurity.
 
 ## The Journey
-For about 9 months I have been dedicated to self-studying cybersecurity, focusing mainly on the Hack The Box platform. Every completed box represents not only a challenge overcome, but also a new methodology learned and documented.
+For about 14 months I have been dedicated to self-studying cybersecurity, focusing mainly on the Hack The Box platform. Every completed box represents not only a challenge overcome, but also a new methodology learned and documented.
 
 ## Site Objective
 This space was created with a dual purpose:
@@ -22,7 +22,6 @@ At the moment I focus on the fundamentals of penetration testing, with particula
 - Web Application Security
 - Privilege Escalation (Linux/Windows)
 - Exploitation of known vulnerabilities
-- Digital Forensics (via HTB Sherlocks)
 
 In parallel, I am developing a growing interest in **malware development**, an area I intend to explore in the coming months.
 
