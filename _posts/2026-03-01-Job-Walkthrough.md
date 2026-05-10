@@ -388,7 +388,9 @@ Directory of C:\inetpub\wwwroot
 C:\inetpub\wwwroot>type hello.aspx
 type hello.aspx
 ```
-```aspx
+
+```
+
 <%@ Page Language="c#" AutoEventWireup="false" CodeBehind="Default.aspx.vb" %>
 <html xmlns="www.w3.org/1999/xhtml">
 <head runat="server">
@@ -404,6 +406,7 @@ type hello.aspx
 </form>
 </body>
 </html>
+
 ```
 
 **ASPX files work.**
