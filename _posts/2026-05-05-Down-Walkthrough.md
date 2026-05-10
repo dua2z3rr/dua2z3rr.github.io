@@ -1,5 +1,5 @@
 ---
-title: Down Walkthrough - HTB Medium | SSRF Multiple URL Bypass, Command Injection & Password Manager Bruteforce
+title: Down Walkthrough - HTB Medium | SSRF Multiple URL Bypass & Password Manager Bruteforce
 description: Complete walkthrough of Down from Hack The Box. An easy Linux machine featuring SSRF vulnerability exploiting curl's multiple URL feature to bypass file:// scheme filter and leak index.php source code. Parameter discovery reveals expertmode=tcp with netcat command injection through port parameter exploiting intval() validation bypass. Password manager vault file (pswm) in user home directory cracked with rockyou wordlist reveals SSH credentials enabling sudo access to root.
 author: dua2z3rr
 date: 2026-05-05 1:00:00
