@@ -1,3 +1,5 @@
+
+
 # Areas
 web-application: "Web Application"
 vulnerability-assessment: "Vulnerability Assessment"
@@ -140,7 +142,7 @@ wordpress: "Wordpress"
 
 # Techniques
 binary-analysis: "Binary Analysis"
-password-reset: "Password Reuse"
+password-reset: "Password Reset"
 password-cracking: "Password Cracking"
 decompilation: "Decompilation"
 authentication-bypass: "Authentication bypass"
@@ -180,3 +182,10 @@ impersonation: "Impersonation"
 potato-exploits: "Potato Exploits"
 kerberoasting: "Kerberoasting"
 packet-capture-analysis: "Packet Capture Analysis"
+pivoting: "Pivoting"
+port-forwarding: "Port Forwarding"
+password-capture: "Password Capture"
+scheduled-job-abuse: "Scheduled Job Abuse"
+password-reuse: "Password Reuse"
+password-spraying: "Password Spraying"
+password-dump: "Password Dump"
