@@ -1,5 +1,5 @@
 ---
-title: "El Pipo - HTB Very Easy Challenge | Buffer Overflow"
+title: "El Pipo Walkthrough - HTB Very Easy Challenge | Buffer Overflow"
 description: "Walkthrough for El Pipo challenge from Hack The Box. A very easy pwn challenge involving a simple buffer overflow that directly reveals the flag without requiring ROP chains or address manipulation."
 author: dua2z3rr
 date: 2026-02-25 3:00:00
@@ -9,7 +9,7 @@ categories:
 tags: ["pwn"]
 ---
 
-## Challenge Overview
+## Challenge Description
 
 An ancient spirit, El Pipo, has taken control of this place. Face your fears and try to drive it away with your most vicious scream!
 

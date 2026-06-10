@@ -1,5 +1,5 @@
 ---
-title: "baby nginxatsu - HTB Easy Challenge | Nginx Misconfiguration"
+title: "baby nginxatsu Walkthrough - HTB Easy Challenge | Nginx Misconfiguration"
 description: "Walkthrough of Baby NginxAtsu from Hack The Box. An easy web challenge featuring nginx configuration file generation functionality with directory listing vulnerability on /storage. Database backup file (tar.gz) accessible through autoindex reveals SQLite database containing admin credentials. MD5 password hash cracked via hashcat with rockyou wordlist enables admin account access and flag retrieval."
 author: dua2z3rr
 date: 2026-06-10 1:00:00

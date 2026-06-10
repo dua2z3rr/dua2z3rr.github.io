@@ -1,5 +1,5 @@
 ---
-title: "WIDE - HTB Very Easy Challenge | Hardcoded Password"
+title: "WIDE Walkthrough - HTB Very Easy Challenge | Hardcoded Password"
 description: "Walkthrough for WIDE challenge from Hack The Box. A reversing challenge where Ghidra is used to decompile an ELF binary and extract a hardcoded decryption key, which unlocks an encrypted dimension entry containing the flag."
 author: dua2z3rr
 date: 2026-02-25 1:00:00
@@ -9,7 +9,7 @@ categories:
 tags: ["reversing"]
 ---
 
-## Challenge Overview
+## Challenge Description
 
 We've received reports that Draeger has stashed a huge arsenal in the pocket dimension Flaggle Alpha. You've managed to smuggle a discarded access terminal to the Widely Inflated Dimension Editor from his headquarters, but the entry for the dimension has been encrypted. Can you make it inside and take control?
 

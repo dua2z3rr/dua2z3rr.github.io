@@ -1,5 +1,5 @@
 ---
-title: "Baby RE - HTB Easy Challenge | Hardcoded Key & Static Analysis"
+title: "Baby RE Walkthrough - HTB Easy Challenge | Hardcoded Key & Static Analysis"
 description: "Walkthrough for Baby RE challenge from Hack The Box. A reversing challenge where the `strings` command reveals a partial flag, and Ghidra is used to decompile the binary and recover the complete hardcoded key."
 author: dua2z3rr
 date: 2026-02-25 2:00:00
@@ -9,7 +9,7 @@ categories:
 tags: ["reversing"]
 ---
 
-## Challenge Overview
+## Challenge Description
 
 Show us your basic skills! (P.S. There are 4 ways to solve this, are you willing to try them all?)
 

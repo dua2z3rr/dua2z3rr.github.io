@@ -1,5 +1,5 @@
 ---
-title: "flipper equation - OliCyber-IT Hard Challenge | AES CBC Bit Flipping Attack"
+title: "Flipper Equation Walkthrough - OliCyber-IT Hard Challenge | AES CBC Bit Flipping Attack"
 description: "Walkthrough for flipper equation challenge from OliCyber-IT. A cryptography and web challenge featuring a Flask application with AES CBC encryption vulnerable to bit flipping attacks. The application requires solving 1 billion equations to obtain the flag, but by manipulating the session token through XOR operations on CBC ciphertext blocks, the points value can be forged to bypass the requirement."
 author: dua2z3rr
 date: 2026-03-09 1:00:00
@@ -8,7 +8,7 @@ categories:
 tags: ["crypto"]
 ---
 
-## Challenge Overview
+## Challenge Description
 
 I invented a fun game to learn how to solve first-degree equations.
 
