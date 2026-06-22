@@ -11,7 +11,7 @@ tags: ["web"]
 
 ## Challenge Overview
 
-Pandora discovered the presence of a mole within the ministry. To proceed with caution, she must obtain the master control password for the ministry, which is stored in a password manager. Can you hack into the password manager?
+This policy is cursed, can you bypass it?
 
 ---
 
@@ -27,9 +27,9 @@ As soon as we access the challenge site, we're presented with this screen:
 
 ![cps evaluator base](assets/img/cursed_stale_policy/cps-base.png)
 
-### What Is a CSP?
+### What's a CSP?
 
-CSP stands for Content Security Policy and is recognized as a "browser technology" whose primary goal is to defend a site against attacks such as XSS. It works by detailing the paths and sources from which resources can be safely loaded. For example, a policy might allow loading/executing resources from the same domain (`'self'`), as well as controlling inline resources and the execution of functions like `eval`.
+CSP stands for Content Security Policy and is recognized as a browser technology whose primary goal is to defend a site against attacks such as XSS. It works by detailing the paths and sources from which resources can be safely loaded. For example, a policy might allow loading/executing resources from the same domain (`'self'`), as well as controlling inline resources and the execution of functions like `eval`.
 
 CSPs are often implemented through response headers or by embedding meta elements in the HTML page.
 
