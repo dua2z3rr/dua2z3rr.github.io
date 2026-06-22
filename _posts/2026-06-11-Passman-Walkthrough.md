@@ -73,7 +73,7 @@ Let's open the site and create an account.
 
 After logging in we're redirected to the home page, where we can add records to the db as saved passwords.
 
-![home page with one saved password](assets/img/passman/home-page.png)
+![home page with one saved password](assets/img/passman/register.png)
 
 After creating a record, I go to Burp Suite and check which request was sent.
 
