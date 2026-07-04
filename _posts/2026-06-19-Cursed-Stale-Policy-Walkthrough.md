@@ -1,6 +1,6 @@
 ---
 title: "Cursed Stale Policy - HTB Easy Challenge | CSP Bypass via Static Nonce"
-description: "Walkthrough for Cursed Stale Policy challenge from Hack The Box. An easy web challenge where the Content Security Policy uses a non-randomized (stale) nonce, allowing an attacker to craft an XSS payload with the known nonce to bypass the CSP and exfiltrate the bot's cookies containing the flag."
+description: "Walkthrough for the Cursed Stale Policy challenge from Hack The Box. An easy web challenge where the Content Security Policy uses a non-randomized (stale) nonce, allowing an attacker to craft an XSS payload with the known nonce to bypass the CSP and exfiltrate the bot's cookies containing the flag."
 author: dua2z3rr
 date: 2026-06-19 1:00:00
 categories:

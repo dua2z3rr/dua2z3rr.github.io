@@ -1,6 +1,6 @@
 ---
 title: "Passman Walkthrough - HTB Easy Challenge | GraphQL Broken Access Control"
-description: "Walkthrough for Passman challenge from Hack The Box. An easy web challenge where a GraphQL UpdatePassword mutation enforces authentication but not authorization, allowing an attacker to reset the admin's password and retrieve the flag stored in the password manager."
+description: "Walkthrough for the Passman challenge from Hack The Box. An easy web challenge where a GraphQL UpdatePassword mutation enforces authentication but not authorization, allowing an attacker to reset the admin's password and retrieve the flag stored in the password manager."
 author: dua2z3rr
 date: 2026-06-11 1:00:00
 categories:
