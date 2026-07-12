@@ -109,9 +109,9 @@ font-size: 0.85em;
     {% endfor %}
 </div>
 </div>
-<!-- Other Tags (not in any group) -->
+<!-- Challenges (not in any group) -->
 <div class="tag-section">
-<h2 id="other">Other Tags</h2>
+<h2 id="other">Challenges</h2>
 <div class="tag-cloud">
     {% for tag_data in all_tags %}
       {% assign tag_name = tag_data[0] %}

@@ -9,18 +9,17 @@ categories:
 tags:
   - web-application
   - vulnerability-assessment
-  - custom-applications
-  - authentication-bypass
-  - source-code-analysis
-  - java
+  - broken-authentication-and-authorization
+  - authentication
+  - clear-text-credentials
+  - weak-permissions
+  - bash
+  - javascript
   - jwt
-  - ssh
-  - ssh-certificates
-  - privilege-abuse
-  - password-reuse
-  - custom-exploit-development
-  - cve-exploitation
-  - insecure-design
+  - openssh
+  - linux
+  - password-spraying
+  - authentication-bypass
 image: /assets/img/principal/principal-resized.png
 ---
 
@@ -128,7 +127,7 @@ Since this is a login page, we can go straight to trying a PoC for CVE-2026-2900
 
 Let's visit the website and check out the login page:
 
-![principal login page](assets/img/principal/login-page.png){: width="842" }
+![principal login page|842](assets/img/principal/login-page.png)
 
 ### CVE-2026-29000 Research
 

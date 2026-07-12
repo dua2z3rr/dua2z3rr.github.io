@@ -140,6 +140,8 @@ services:
   - laravel
   - macros
   - openoffice
+  - jwt
+  - openssh
 
 techniques:
   - reconnaissance
