@@ -79,6 +79,7 @@ sql: "SQL"
 perl: "Perl"
 powershell: "Powershell"
 ruby: "Ruby"
+vbscript: "VBScript"
 
 # Services
 ssh: "SSH"
