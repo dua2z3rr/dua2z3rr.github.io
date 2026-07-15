@@ -1,5 +1,5 @@
 ---
-title: Redelegate Walkthrough - HTB Hard | KeePass Cracking, Constrained Delegation Abuse & DCSync
+title: Redelegate Walkthrough - HTB Hard | KeePass Cracking & Constrained Delegation Abuse
 description: Complete walkthrough of Redelegate from Hack The Box. A hard Windows Active Directory machine where anonymous FTP exposes a KeePass database that, once cracked with a password-policy-based wordlist, reveals MSSQL credentials. Domain account enumeration through MSSQL feeds a password spray that validates Marie.Curie, whose HELPDESK membership allows resetting Helen.Frost's password. Helen holds SeEnableDelegationPrivilege and GenericAll over the FS01 machine account, which is abused to configure constrained delegation (S4U2self + S4U2proxy) toward the Domain Controller's CIFS service, ultimately leading to a DCSync and full domain compromise.
 author: dua2z3rr
 date: 2026-07-13 1:00:00
