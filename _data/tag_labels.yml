@@ -142,6 +142,7 @@ winrm: "WinRM"
 wordpress: "Wordpress"
 jwt: "JWT"
 openssh: "OpenSSH"
+mariadb: "MariaDB"
 
 # Techniques
 binary-analysis: "Binary Analysis"
