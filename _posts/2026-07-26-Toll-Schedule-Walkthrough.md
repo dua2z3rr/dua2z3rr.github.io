@@ -2,7 +2,7 @@
 title: "Toll Schedule - HTB Easy Challenge | Greedy Minimum-Wait Assignment"
 description: "Walkthrough for the Toll Schedule challenge from Hack The Box. An easy coding challenge where convoys with known arrival times must each be seated at a distinct clearance opening no earlier than their arrival, minimizing the total wait. Sorting both lists and greedily assigning each convoy the earliest still-available clearance yields the optimal total."
 author: dua2z3rr
-date: 2026-07-26 1:00:00
+date: 2026-07-26 2:00:00
 categories:
   - HackTheBox
   - Challenges
