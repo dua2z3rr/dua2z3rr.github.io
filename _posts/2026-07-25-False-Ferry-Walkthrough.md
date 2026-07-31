@@ -5,8 +5,8 @@ author: dua2z3rr
 date: 2026-07-25 1:00:00
 categories:
   - HackTheBox
-  - Challenges
   - "Cyber Apocalypse CTF 2026: The Salt Crown"
+  - Challenges
 tags:
   - cloud
 ---
