@@ -1,5 +1,5 @@
 ---
-title: "False Ferry - HTB Easy Challenge | AWS SSM Parameter Disclosure & IAM Role Assumption"
+title: "False Ferry - HTB Easy Challenge | AWS SSM Parameter Disclosure"
 description: "Walkthrough for the False Ferry challenge from Hack The Box. An easy cloud challenge where a locked-down IAM user is still allowed to run ssm:DescribeParameters, exposing an AUTHORIZED crossing parameter. Reading it leaks an IAM role to assume along with its external ID, and assuming that role grants access to a versioned S3 object that holds the flag."
 author: dua2z3rr
 date: 2026-07-25 1:00:00
