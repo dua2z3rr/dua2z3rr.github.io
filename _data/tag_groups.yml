@@ -145,6 +145,7 @@ services:
   - mariadb
   - otp
   - web-api
+  - containers
 
 techniques:
   - reconnaissance

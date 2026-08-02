@@ -145,6 +145,7 @@ openssh: "OpenSSH"
 mariadb: "MariaDB"
 otp: "OTP"
 web-api: "Web API"
+containers: "Containers"
 
 # Techniques
 binary-analysis: "Binary Analysis"
