@@ -23,7 +23,7 @@ In the zip file we are given, we find 2 files:
 
 Instead of completing the Sherlock on Linux, I preferred to use Windows as the operating system thanks to the **Event Viewer**, which lets us read the logs clearly.
 
-![Desktop View](assets/img/phantom_check/operation-blackout-2025-phantom-check-visualizzatore-eventi.png)
+![Desktop View](assets/img/phantom_check/operation-blackout-2025-phantom-check-events.png)
 
 ---
 
