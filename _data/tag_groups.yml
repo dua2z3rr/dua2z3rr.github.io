@@ -195,3 +195,5 @@ techniques:
   - binary-analysis
   - decrypt
   - antivirus-bypass
+  - kerberos-abuse
+  - unconstrained-delegation

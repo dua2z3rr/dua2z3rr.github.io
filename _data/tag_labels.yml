@@ -194,6 +194,8 @@ scheduled-job-abuse: "Scheduled Job Abuse"
 password-reuse: "Password Reuse"
 password-spraying: "Password Spraying"
 password-dump: "Password Dump"
+kerberos-abuse: "Kerberos Abuse"
+unconstrained-delegation: "Unconstrained Delegation"
 
 # Challenges
 crypto: "Crypto"
