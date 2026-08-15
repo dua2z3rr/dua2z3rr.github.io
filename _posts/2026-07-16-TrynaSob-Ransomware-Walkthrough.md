@@ -1,5 +1,5 @@
 ---
-title: "TrynaSob Ransomware - HTB Easy Challenge | Prompt Manipulation of an AI Ransom Negotiator"
+title: "TrynaSob Ransomware - HTB Easy AI/ML Challenge | Prompt Manipulation of an AI Ransom Negotiator"
 description: "Complete walkthrough of TrynaSob Ransomware from Hack The Box. An easy AI/ML challenge featuring an AI ransom negotiator chatbot that hands out a temporary decryption key to anyone who submits a valid promo code. After a base64-encoded prompt injection attempt fails, simply asking the AI for an example promo code makes it reveal a valid one, and submitting that code back tricks the chatbot into returning the decryption key that forms the flag."
 author: dua2z3rr
 date: 2026-07-16 1:00:00

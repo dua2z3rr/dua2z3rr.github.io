@@ -1,5 +1,5 @@
 ---
-title: "Commnet - HTB Easy Challenge | Patching an IDOR in a Node.js Messaging API"
+title: "Commnet - HTB Easy Secure Coding Challenge | Patching an IDOR in a Node.js Messaging API"
 description: "Complete walkthrough of Commnet from Hack The Box. An easy secure-coding challenge where a Node.js/Express messaging API exposes a message-by-ID endpoint that never verifies the requester is the sender or recipient. Reproducing the provided exploit reveals an IDOR (Insecure Direct Object Reference) that leaks a message meant for another enclave, and the fix adds the session user id plus a WHERE clause checking sender_id or recipient_id to restore proper authorization."
 author: dua2z3rr
 date: 2026-07-12 1:00:00

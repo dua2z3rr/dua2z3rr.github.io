@@ -1,5 +1,5 @@
 ---
-title: "baby BoneChewerCon Walkthrough - HTB Easy Challenge | Symfony Debug Mode Information Disclosure"
+title: "baby BoneChewerCon Walkthrough - HTB Easy Web Challenge | Symfony Debug Mode Information Disclosure"
 description: "Walkthrough for the baby BoneChewerCon challenge from Hack The Box. An easy web challenge where a maintenance page with a booking form throws a Symfony debugger error. The debug mode exposes sensitive environment variables including the APP_KEY which contains the flag."
 author: dua2z3rr
 date: 2026-02-24 1:00:00

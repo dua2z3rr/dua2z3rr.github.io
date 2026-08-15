@@ -1,5 +1,5 @@
 ---
-title: "Canvas - HTB Easy Challenge | JavaScript Obfuscation Reversing"
+title: "Canvas - HTB Easy Misc Challenge | JavaScript Obfuscation Reversing"
 description: "Complete walkthrough of Canvas from Hack The Box. An easy misc challenge featuring a heavily obfuscated JavaScript login script serving a static website. Analyzing the login.js source reveals an array of hexadecimal byte values matching the HTB{...} flag format. Converting the hex bytes to their ASCII characters with a short Python script directly recovers the flag."
 author: dua2z3rr
 date: 2026-07-03 1:00:00
