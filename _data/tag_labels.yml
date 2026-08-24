@@ -1,5 +1,3 @@
-
-
 # Areas
 web-application: "Web Application"
 vulnerability-assessment: "Vulnerability Assessment"
@@ -146,6 +144,7 @@ mariadb: "MariaDB"
 otp: "OTP"
 web-api: "Web API"
 containers: "Containers"
+sftp: "SFTP"
 
 # Techniques
 binary-analysis: "Binary Analysis"

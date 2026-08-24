@@ -146,6 +146,7 @@ services:
   - otp
   - web-api
   - containers
+  - sftp
 
 techniques:
   - reconnaissance
