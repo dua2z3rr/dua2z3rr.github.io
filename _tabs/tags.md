@@ -109,9 +109,36 @@ font-size: 0.85em;
     {% endfor %}
 </div>
 </div>
-<!-- Challenges (not in any group) -->
+<!-- Sherlocks -->
 <div class="tag-section">
-<h2 id="other">Challenges</h2>
+<h2 id="sherlock">Sherlocks</h2>
+<div class="tag-cloud">
+    {% for tag_data in all_tags %}
+      {% assign tag_name = tag_data[0] %}
+      {% if site.data.tag_groups.sherlock contains tag_name %}
+<a href="{{ site.baseurl }}/tags/{{ tag_name | slugify }}/" class="tag-badge">
+          {{ site.data.tag_labels[tag_name] | default: tag_name }} <span class="tag-count">({{ tag_data[1].size }})</span>
+</a>
+      {% endif %}
+    {% endfor %}
+</div>
+</div>
+<!-- Challenges -->
+<div class="tag-section">
+<h2 id="challenges">Challenges</h2>
+<div class="tag-cloud">
+    {% for tag_data in all_tags %}
+      {% assign tag_name = tag_data[0] %}
+      {% if site.data.tag_groups.challenges contains tag_name %}
+<a href="{{ site.baseurl }}/tags/{{ tag_name | slugify }}/" class="tag-badge">
+          {{ site.data.tag_labels[tag_name] | default: tag_name }} <span class="tag-count">({{ tag_data[1].size }})</span>
+</a>
+      {% endif %}
+    {% endfor %}
+</div>
+</div>
+{% comment %} Local-only diagnostic: lists any tag not placed in a group. Renders only in development (jekyll serve); hidden in production builds, so end users never see it. {% endcomment %}
+{% if jekyll.environment == "development" %}
 <div class="tag-cloud">
     {% for tag_data in all_tags %}
       {% assign tag_name = tag_data[0] %}
@@ -122,10 +149,10 @@ font-size: 0.85em;
         {% endif %}
       {% endfor %}
       {% unless in_group %}
-        <a href="{{ site.baseurl }}/tags/{{ tag_name | slugify }}/" class="tag-badge">
+<a href="{{ site.baseurl }}/tags/{{ tag_name | slugify }}/" class="tag-badge">
           {{ site.data.tag_labels[tag_name] | default: tag_name }} <span class="tag-count">({{ tag_data[1].size }})</span>
-        </a>
+</a>
       {% endunless %}
     {% endfor %}
 </div>
-</div>
+{% endif %}

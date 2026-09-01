@@ -196,6 +196,12 @@ password-dump: "Password Dump"
 kerberos-abuse: "Kerberos Abuse"
 unconstrained-delegation: "Unconstrained Delegation"
 
+# Sherlock
+soc: "SOC"
+dfir: "DFIR"
+threat-intelligence: "Threat Intelligence"
+cloud: "Cloud"
+
 # Challenges
 crypto: "Crypto"
 misc: "Misc"
@@ -204,6 +210,5 @@ reversing: "Reversing"
 web: "Web"
 secure-coding: "Secure Coding"
 ai-or-ml: "AI/ML"
-cloud: "Cloud"
 coding: "Coding"
 mobile: "Mobile"

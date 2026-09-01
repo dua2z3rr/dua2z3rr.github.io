@@ -198,3 +198,20 @@ techniques:
   - antivirus-bypass
   - kerberos-abuse
   - unconstrained-delegation
+
+sherlock:
+  - soc
+  - dfir
+  - threat-intelligence
+  - cloud 
+
+challenges:
+  - web
+  - crypto
+  - pwn
+  - reversing
+  - misc
+  - mobile 
+  - coding
+  - secure-coding
+  - ai-or-ml

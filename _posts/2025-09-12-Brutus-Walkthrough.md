@@ -1,20 +1,21 @@
 ---
-title: Brutus Walkthrough - HTB Very Easy Sherlock | Linux auth.log & wtmp Forensics
-description: This very-easy Sherlock walks through the compromise of a Confluence server that was breached via an SSH brute-force attack. After gaining access, the attacker performed additional actions — privilege escalation, persistence, and command execution — all of which can be reconstructed from Unix authentication artifacts.
+title: Brutus Walkthrough - HTB Very Easy Sherlock | Linux auth.log Forensics
+description: Complete walkthrough of Brutus from Hack The Box. A very easy DFIR Sherlock investigating a Confluence server compromised through an SSH brute-force attack. Analyzing the Unix auth.log and wtmp artifacts, we reconstruct the attacker's IP, the compromised account, the manual login and its session number, the backdoor account created for persistence, and the malicious script downloaded with sudo.
 author: dua2z3rr
 date: 2025-09-13 1:00:00
 categories:
+  - HackTheBox
   - Sherlocks
-  - DFIR
-tags: []
+tags:
+  - dfir
 image: /assets/img/brutus/brutus-resized.png
 ---
 
-## Overview
+## Challenge Description
 
 In this Sherlock, you will familiarize yourself with Unix auth.log and wtmp logs. We'll explore a scenario where a Confluence server was brute-forced via its SSH service. After gaining access to the server, the attacker performed additional activities, which we can track using auth.log. Although auth.log is primarily used for brute-force analysis, we will delve into the full potential of this artifact in our investigation, including aspects of privilege escalation, persistence, and even some visibility into command execution.
 
-### Provided Artifacts
+## Artifacts
 
 To complete this Sherlock we are given a zip containing 3 files:
 
@@ -22,13 +23,9 @@ To complete this Sherlock we are given a zip containing 3 files:
 2. **wtmp**: a file that tracks logins and logouts on a Linux system. Its contents can be read with the `utmpdump` command. It is found at `/var/log/btmp`.
 3. **utmp.py**: a Python script to read wtmp.
 
----
+## Solution
 
-## Initial Compromise
-
-### The Attacker's Brute-Force IP
-
-> **Question 1:** Analyze the auth.log. What is the IP address used by the attacker to carry out a brute-force attack?
+### Analyze the auth.log. What is the IP address used by the attacker to carry out a brute-force attack?
 
 Let's start reading the `auth.log` file from the beginning.
 
@@ -48,9 +45,7 @@ We see that the failed login attempts come from the same IP. These login attempt
 
 **Answer:** `65.2.161.68`
 
-### The Compromised Account
-
-> **Question 2:** The brute-force attempts were successful and the attacker gained access to an account on the server. What is the username of the compromised account?
+### The brute-force attempts were successful and the attacker gained access to an account on the server. What is the username of the compromised account?
 
 We see, right at the start of the file (line 12), that the attack succeeded against the **root** user.
 
@@ -66,13 +61,7 @@ Mar  6 06:19:54 ip-172-31-35-28 systemd: pam_unix(systemd-user:session): session
 
 **Answer:** `root`
 
----
-
-## Interactive Access
-
-### Manual Login Timestamp (wtmp)
-
-> **Question 3:** Identify the UTC timestamp when the attacker manually logged into the server and started a terminal session to accomplish their objectives. The login time will be different from the authentication time, and it is found in the wtmp artifact.
+### Identify the UTC timestamp when the attacker manually logged into the server and started a terminal session to accomplish their objectives. The login time will be different from the authentication time, and it is found in the wtmp artifact.
 
 Using the `utmp.py` Python script in the zip, we can see the login dates. The first times the attacker authenticated as **root** were thanks to the brute-force attack — we can tell because the session disconnects instantly. So we take the date of when the attacker connected as **root** for the last time.
 
@@ -89,9 +78,7 @@ Using the `utmp.py` Python script in the zip, we can see the login dates. The fi
 
 **Answer:** `2024-03-06 06:32:45`
 
-### SSH Session Number
-
-> **Question 4:** SSH login sessions are tracked and assigned a session number upon login. What is the session number assigned to the attacker's session for the user from question 2?
+### SSH login sessions are tracked and assigned a session number upon login. What is the session number assigned to the attacker's session for the user from question 2?
 
 The session number can be read under the log entry that reports the successful login.
 
@@ -105,13 +92,7 @@ The session we need to give as the answer is always the one where the attacker l
 
 **Answer:** `37`
 
----
-
-## Persistence
-
-### The Backdoor Account
-
-> **Question 5:** The attacker added a new user as part of their persistence strategy on the server and granted this account elevated privileges. What is the name of this account?
+### The attacker added a new user as part of their persistence strategy on the server and granted this account elevated privileges. What is the name of this account?
 
 We can see in the `auth.log` file, at line 338, the creation by root of a new user.
 
@@ -123,9 +104,7 @@ Mar  6 06:34:31 ip-172-31-35-28 chfn[2605]: changed user 'cyberjunkie' informati
 
 **Answer:** `cyberjunkie`
 
-### MITRE ATT&CK Sub-Technique
-
-> **Question 6:** What is the MITRE ATT&CK sub-technique ID used for persistence via the creation of a new account?
+### What is the MITRE ATT&CK sub-technique ID used for persistence via the creation of a new account?
 
 Let's search online for the answer.
 
@@ -139,13 +118,7 @@ The attacker created a local user.
 
 **Answer:** `T1136.001`
 
----
-
-## Timeline & Execution
-
-### First SSH Session Termination
-
-> **Question 7:** At what time did the attacker's first SSH session end according to auth.log?
+### At what time did the attacker's first SSH session end according to auth.log?
 
 To answer this question we just need to look at the attacker's first session in the wtmp file (we need this format for the answer) and read when it ended (DEAD).
 
@@ -156,9 +129,7 @@ To answer this question we just need to look at the attacker's first session in 
 
 **Answer:** `2024-03-06 06:37:24`
 
-### Malicious Script Download via sudo
-
-> **Question 8:** The attacker logged into their backdoor account and used elevated privileges to download a script. What is the full command executed using sudo?
+### The attacker logged into their backdoor account and used elevated privileges to download a script. What is the full command executed using sudo?
 
 Let's check the commands used after the **cyberjunkie** account logged in.
 

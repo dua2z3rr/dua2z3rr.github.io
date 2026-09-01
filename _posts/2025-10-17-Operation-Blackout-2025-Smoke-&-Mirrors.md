@@ -1,22 +1,23 @@
 ---
 title: "Operation Blackout 2025: Smoke & Mirrors Walkthrough - HTB Very Easy Sherlock | Defense Evasion Forensics"
-description: In Smoke & Mirrors we analyze the provided event logs and forensic artifacts to uncover how the attacker disabled or tampered with security features. The goal is to identify the tools, commands, and scripts used to reduce visibility and reconstruct how the attacker managed to operate undetected.
+description: Complete walkthrough of Operation Blackout 2025 - Smoke & Mirrors from Hack The Box. A very easy DFIR Sherlock that analyzes PowerShell and Sysmon event logs to uncover how the attacker disabled security controls. We recover the registry key used to turn off LSA protection, the command that disabled Windows Defender, the AMSI function patched in memory, the command to reboot into Safe Mode, and the command that disabled PowerShell history logging.
 author: dua2z3rr
 date: 2025-10-18 1:00:00
 categories:
+  - HackTheBox
   - Sherlocks
-  - DFIR
-tags: []
+tags:
+  - dfir
 image: /assets/img/smoke_and_mirrors/smoke_and_mirrors-resized.png
 ---
 
-## Overview
+## Challenge Description
 
 Byte Doctor Reyes is investigating a stealthy post-breach attack where several expected security logs and Windows Defender alerts appear to be missing. He suspects the attacker employed defense evasion techniques to disable or manipulate security controls, significantly complicating detection efforts.
 
 Using the exported event logs, your objective is to uncover how the attacker compromised the system's defenses to remain undetected.
 
-### Provided Artifacts
+## Artifacts
 
 To complete this Sherlock, we need to review 3 **.evtx** files simultaneously:
 
@@ -24,13 +25,9 @@ To complete this Sherlock, we need to review 3 **.evtx** files simultaneously:
 2. Microsoft-Windows-Powershell-Operational
 3. Microsoft-Windows-Sysmon-Operational
 
----
+## Solution
 
-## Disabling Security Controls
-
-### LSA Protection Registry Key
-
-> **Question 1:** The attacker disabled LSA protection on the compromised host by modifying a registry key. What is the full path of that registry key?
+### The attacker disabled LSA protection on the compromised host by modifying a registry key. What is the full path of that registry key?
 
 Knowing that the attacker modified a registry key related to LSA protection, we can filter for commands like `reg add`. We get this as the first result:
 
@@ -64,9 +61,7 @@ Knowing that the attacker modified a registry key related to LSA protection, we 
 
 **Answer:** `HKLM\SYSTEM\CurrentControlSet\Control\LSA`
 
-### Disabling Windows Defender
-
-> **Question 2:** Which PowerShell command did the attacker run first to disable Windows Defender?
+### Which PowerShell command did the attacker run first to disable Windows Defender?
 
 If we want to disable **Windows Defender**, it's commonly done with the `Set-MpPreference` command. Searching for this command we find this log:
 
@@ -100,9 +95,7 @@ If we want to disable **Windows Defender**, it's commonly done with the `Set-MpP
 
 **Answer:** `Set-MpPreference -DisableIOAVProtection $true -DisableEmailScanning $true -DisableBlockAtFirstSeen $true`
 
-### AMSI Bypass Patch
-
-> **Question 3:** The attacker loaded an AMSI patch written in PowerShell. Which function in the DLL is patched by the script to effectively disable AMSI?
+### The attacker loaded an AMSI patch written in PowerShell. Which function in the DLL is patched by the script to effectively disable AMSI?
 
 Searching for `.dll` in the files we find this log:
 
@@ -134,13 +127,7 @@ Searching for `.dll` in the files we find this log:
 
 **Answer:** `AmsiScanBuffer`
 
----
-
-## Covering Tracks
-
-### Reboot into Safe Mode
-
-> **Question 4:** Which command did the attacker use to reboot the machine into Safe Mode?
+### Which command did the attacker use to reboot the machine into Safe Mode?
 
 By filtering for the word safe we can find this log containing the answer:
 
@@ -192,9 +179,7 @@ By filtering for the word safe we can find this log containing the answer:
 
 **Answer:** `bcdedit.exe /set safeboot network`
 
-### Disabling PowerShell History
-
-> **Question 5:** Which PowerShell command did the attacker use to disable PowerShell command-history logging?
+### Which PowerShell command did the attacker use to disable PowerShell command-history logging?
 
 Searching online for which command is usually used to disable command history in PowerShell, we find `Set-PSReadlineOption -HistorySaveStyle SaveNothing`. Searching for it in the logs, we find the same command was used.
 

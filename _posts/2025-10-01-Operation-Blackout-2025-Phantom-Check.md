@@ -1,20 +1,21 @@
 ---
 title: "Operation Blackout 2025: Phantom Check Walkthrough - HTB Very Easy Sherlock | PowerShell VM-Detection Forensics"
-description: Phantom Check illustrates common virtualization-detection techniques used by attackers. By investigating PowerShell event logs we identify the WMI queries, process comparisons, and registry lookups the attacker used to determine whether the host was a virtual machine — the kind of behavior we can turn into detection rules.
+description: Complete walkthrough of Operation Blackout 2025 - Phantom Check from Hack The Box. A very easy DFIR Sherlock that analyzes PowerShell event logs to reconstruct the attacker's anti-virtualization checks. We identify the WMI class and query used, the loaded VM-detection function and the registry key it reads, the VirtualBox process checks, and the two virtualization platforms the script ultimately detected.
 author: dua2z3rr
 date: 2025-10-08 1:00:00
 categories:
+  - HackTheBox
   - Sherlocks
-  - DFIR
-tags: []
+tags:
+  - dfir
 image: /assets/img/phantom_check/phantom_check-resized.png
 ---
 
-## Overview
+## Challenge Description
 
 Talion suspects that the threat actor carried out anti-virtualization checks to avoid detection in sandboxed environments. Your task is to analyze the event logs and identify the specific techniques used for virtualization detection. Byte Doctor requires evidence of the registry checks or processes the attacker executed to perform these checks.
 
-### Provided Artifacts
+## Artifacts
 
 In the zip file we are given, we find 2 files:
 
@@ -23,15 +24,11 @@ In the zip file we are given, we find 2 files:
 
 Instead of completing the Sherlock on Linux, I preferred to use Windows as the operating system thanks to the **Event Viewer**, which lets us read the logs clearly.
 
-![Desktop View](assets/img/phantom_check/operation-blackout-2025-phantom-check-events.png)
+![Desktop View](assets/img/phantom_check/operation-blackout-2025-phantom-check-visualizzatore-eventi.png)
 
----
+## Solution
 
-## WMI-Based Virtualization Checks
-
-### Model & Manufacturer WMI Class
-
-> **Question 1:** Which WMI class did the attacker use to retrieve the model and manufacturer information for virtualization detection?
+### Which WMI class did the attacker use to retrieve the model and manufacturer information for virtualization detection?
 
 In the **Windows-Powershell-Operational.evtx** file we can filter (Ctrl+F) for the word class, and the first result we see is this event:
 
@@ -63,9 +60,7 @@ In the **Windows-Powershell-Operational.evtx** file we can filter (Ctrl+F) for t
 
 **Answer:** `Win32_ComputerSystem`
 
-### Thermal Zone Temperature Query
-
-> **Question 2:** Which WMI query did the attacker run to retrieve the machine's current temperature value?
+### Which WMI query did the attacker run to retrieve the machine's current temperature value?
 
 Like the previous question, we can filter for keywords from the question. Let's start with the word **temperature**. Here's the first result:
 
@@ -99,13 +94,7 @@ We can see the contents of the query.
 
 **Answer:** `SELECT * FROM MSAcpi_ThermalZoneTemperature`
 
----
-
-## The Check-VM Script
-
-### PowerShell Function Name
-
-> **Question 3:** The attacker loaded a PowerShell script to detect virtualization. What is the name of the script's function?
+### The attacker loaded a PowerShell script to detect virtualization. What is the name of the script's function?
 
 By filtering for words related to virtualization such as VM, Virtualization, etc., we can greatly narrow the search. Next, we can further filter the previous result by considering only events with ID 4104 (Execute a Remote Command). Among the results we get this event:
 
@@ -139,9 +128,7 @@ By filtering for words related to virtualization such as VM, Virtualization, etc
 
 **Answer:** `Check-VM`
 
-### Queried Services Registry Key
-
-> **Question 4:** Which registry key did the script mentioned above query to retrieve the service details for virtualization detection?
+### Which registry key did the script mentioned above query to retrieve the service details for virtualization detection?
 
 Considering the previous script, we can search again for keywords such as **service**. We'll find this event:
 
@@ -175,9 +162,7 @@ Considering the previous script, we can search again for keywords such as **serv
 
 **Answer:** `HKLM:\SYSTEM\ControlSet001\Services`
 
-### VirtualBox Process Checks
-
-> **Question 5:** The VM-detection script can also identify VirtualBox. Which processes does it compare to determine whether the system is running VirtualBox?
+### The VM-detection script can also identify VirtualBox. Which processes does it compare to determine whether the system is running VirtualBox?
 
 If we check the script we found earlier (identifiable by the link at the top of the code) we get:
 
@@ -214,9 +199,7 @@ We can see the names of the processes being compared.
 
 **Answer:** `vboxservice.exe, vboxtray.exe`
 
-### Detected Virtualization Platforms
-
-> **Question 6:** The VM-detection script prints any detection with the prefix 'This is a'. Which two virtualization platforms did the script detect?
+### The VM-detection script prints any detection with the prefix 'This is a'. Which two virtualization platforms did the script detect?
 
 We filter the logs for the English prefix (**This is a**). We read the first result:
 

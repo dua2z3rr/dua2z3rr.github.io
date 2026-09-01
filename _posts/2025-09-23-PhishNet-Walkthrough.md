@@ -1,20 +1,21 @@
 ---
-title: PhishNet Walkthrough - HTB Very Easy Sherlock | Email Header & Phishing Analysis
-description: An accounting team receives an urgent payment request from a known vendor. The email looks legitimate but contains a suspicious link and a .zip attachment hiding malware. Our job is to analyze the email headers and reconstruct the attacker's scheme.
+title: PhishNet Walkthrough - HTB Very Easy Sherlock | Email Header Analysis
+description: Complete walkthrough of PhishNet from Hack The Box. A very easy SOC Sherlock where an accounting team receives a fake urgent payment request. Analyzing the email headers we recover the originating IP, the real forwarding path, the sender and Reply-To addresses, and the SPF result, then move to the phishing URL and spoofed company before extracting the malicious ZIP attachment and the .bat payload hidden inside it.
 author: dua2z3rr
 date: 2025-09-23 1:00:00
 categories:
+  - HackTheBox
   - Sherlocks
-  - SOC
-tags: []
+tags:
+  - soc
 image: /assets/img/phishNet/phishNet-resized.png
 ---
 
-## Overview
+## Challenge Description
 
 An accounting team receives an urgent payment request from a known vendor. The email appears legitimate but contains a suspicious link and a .zip attachment hiding malware. Your task is to analyze the email headers, and uncover the attacker's scheme.
 
-### Provided Artifact
+## Artifacts
 
 The material for this Sherlock is a single file. This file is called **email.eml** and it is the phishing email we need to analyze today to answer the questions. Since the file is small, it is reproduced below:
 
@@ -100,85 +101,57 @@ After the first 15 lines we're presented with the path the email took to reach i
 
 Finally we find the email body in HTML format. The first thing that jumps out is a link in the middle of the email. This URL triggers the download of the zip at the bottom of the file, which for now is transformed by base64 encoding.
 
----
+## Solution
 
-## Email Header Analysis
-
-### Originating IP
-
-> **Question 1:** What is the source IP address of the sender?
+### What is the source IP address of the sender?
 
 To answer this question we just need to read the **X-Originating-IP** field at the start of the file.
 
 **Answer:** `45.67.89.10`
 
-### Forwarding Mail Server
-
-> **Question 2:** Which mail server forwarded this email before it reached the victim?
+### Which mail server forwarded this email before it reached the victim?
 
 Looking only at the names of the domains the email passed through, we wouldn't be able to tell the order they were traversed in. We'd probably think that the last server to forward the email is the one at the bottom. Instead, by looking at the dates on which the email reached each server, we see that the last one is the one at the top, **mail.business-finance.com**.
 
 **Answer:** `203.0.113.25`
 
-### Sender Address
-
-> **Question 3:** What is the sender's email address?
+### What is the sender's email address?
 
 We read the email headers to find the **From:** field.
 
 **Answer:** `finance@business-finance.com`
 
-### Reply-To Address
-
-> **Question 4:** What is the email address specified in the "Reply-To" field of the email?
+### What is the email address specified in the "Reply-To" field of the email?
 
 We read the **Reply-To** field.
 
 **Answer:** `support@business-finance.com`
 
-### SPF Result
-
-> **Question 5:** What is the SPF (Sender Policy Framework) verification result for this email?
+### What is the SPF (Sender Policy Framework) verification result for this email?
 
 We read the **Received-SPF** field at the start of the file.
 
 **Answer:** `PASS`
 
----
-
-## Phishing Content
-
-### Phishing URL Domain
-
-> **Question 6:** Which domain is used in the phishing URL inside the email?
+### Which domain is used in the phishing URL inside the email?
 
 We read the domain inside the link that the attacker included in the body of the email.
 
 **Answer:** `secure.business-finance.com`
 
-### Spoofed Company Name
-
-> **Question 7:** What is the name of the fake company used in the email?
+### What is the name of the fake company used in the email?
 
 We read the email and find references to a company.
 
 **Answer:** `Business Finance Ltd.`
 
----
-
-## Malicious Attachment
-
-### Attachment Name
-
-> **Question 8:** What is the name of the attachment included in the email?
+### What is the name of the attachment included in the email?
 
 We read the end of the email where all the file's fields are written.
 
 **Answer:** `Invoice_2025_Payment.zip`
 
-### SHA-256 Hash
-
-> **Question 9:** What is the SHA-256 hash of the attachment?
+### What is the SHA-256 hash of the attachment?
 
 To get the answer, we need to copy the base64 string at the bottom of the email and open a terminal. Then, use this command:
 
@@ -188,9 +161,7 @@ echo "UEsDBBQAAAAIABh/WloXPY4qcxITALvMGQAYAAAAaW52b2ljZV9kb2N1bWVudC5wZGYuYmF0zL
 
 **Answer:** `8379C41239E9AF845B2AB6C27A7509AE8804D7D73E455C800A551B22BA25BB4A`
 
-### Payload Inside the ZIP
-
-> **Question 10:** What is the name of the malicious file contained inside the ZIP attachment?
+### What is the name of the malicious file contained inside the ZIP attachment?
 
 To get this answer we need to remove the `sha256sum` command from the previous question's command.
 
@@ -203,13 +174,7 @@ We see a file name inside the output.
 
 **Answer:** `invoice_document.pdf.bat`
 
----
-
-## MITRE ATT&CK Mapping
-
-### Associated Techniques
-
-> **Question 11:** Which MITRE ATT&CK techniques are associated with this attack?
+### Which MITRE ATT&CK techniques are associated with this attack?
 
 Let's run this search online: **MITRE ATT&CK technique phishing**
 
