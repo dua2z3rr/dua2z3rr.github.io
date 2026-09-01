@@ -3,7 +3,7 @@ title: "Legacy Walkthrough - HTB Easy | MS08-067 SMB Exploitation"
 description: "Complete walkthrough of Legacy from Hack The Box. A fairly simple easy-level machine demonstrating the potential security risks of the SMB protocol on Windows. A single publicly available exploit is sufficient to gain administrator access."
 author: dua2z3rr
 date: 2025-08-12 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "protocols", "software-and-os-exploitation", "security-tools", "remote-code-execution", "samba"]
 image: /assets/img/legacy/legacy-resized.png
 ---

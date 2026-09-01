@@ -3,7 +3,7 @@ title: "Dog Walkthrough - HTB Easy | BackdropCMS RCE & Sudo Privilege Escalation
 description: "Complete walkthrough of Dog from Hack The Box. Covers discovering sensitive information through exposed Git repository, credential extraction, exploiting BackdropCMS admin privileges for Remote Code Execution via malicious archive upload, password reuse for SSH access, and exploiting sudo misconfiguration with the Bee CLI utility to gain root access."
 author: dua2z3rr
 date: 2025-10-24 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["remote-code-execution", "arbitrary-file-upload", "php", "sql", "bash", "mysql", "cms", "git", "user-enumeration"]
 image: /assets/img/dog/dog-resized.png
 ---

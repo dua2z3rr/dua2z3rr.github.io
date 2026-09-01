@@ -4,8 +4,8 @@ description: "Complete walkthrough of Retro from Hack The Box. An easy Windows m
 author: dua2z3rr
 date: 2026-02-23 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["weak-credentials", "anonymous-or-guest-access", "active-directory-certificate-services"]
 image: /assets/img/retro/retro-resized.png
 ---

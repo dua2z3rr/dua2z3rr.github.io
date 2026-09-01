@@ -3,7 +3,7 @@ title: "Underpass Walkthrough - HTB Easy | Daloradius & Mosh Privilege Escalatio
 description: "Complete walkthrough of Underpass from Hack The Box. Covers UDP port enumeration to discover SNMP service, extracting information about Daloradius installation, accessing operator panel using default credentials, cracking MD5 password hash for SSH access, and exploiting mosh-server sudo permissions to gain root access through mobile shell connection."
 author: dua2z3rr
 date: 2025-10-12 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "common-applications", "default-credentials", "ssh", "mosh-mobile-shell", "password-cracking"]
 image: /assets/img/underpass/underpass-resized.png
 ---

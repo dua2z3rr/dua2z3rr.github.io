@@ -3,7 +3,7 @@ title: "Netmon Walkthrough - HTB Easy | FTP Anonymous Access & PRTG RCE Exploita
 description: "Complete walkthrough of Netmon from Hack The Box. An easy Windows machine with simple enumeration and direct exploitation. A PRTG Network Monitor service is running on the HTTP port, while an FTP server with anonymous access allows reading of PRTG configuration files. The PRTG version (18.1.37.13946) is vulnerable to Remote Code Execution (RCE) identified as CVE-2018-9276, exploitable to obtain a shell with SYSTEM privileges."
 author: dua2z3rr
 date: 2025-08-16 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "protocols", "software-and-os-exploitation", "remote-code-execution", "weak-authentication", "anonymous-or-guest-access", "ftp", "reconnaissance"]
 image: /assets/img/netmon/netmon-resized.png
 ---

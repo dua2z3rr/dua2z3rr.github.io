@@ -4,8 +4,8 @@ description: "Walkthrough for the Baby RE challenge from Hack The Box. A reversi
 author: dua2z3rr
 date: 2026-02-25 2:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags: ["reversing"]
 ---
 

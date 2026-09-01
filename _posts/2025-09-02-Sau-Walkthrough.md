@@ -3,7 +3,7 @@ title: "Sau Walkthrough - HTB Easy | Request Baskets SSRF & Maltrail RCE"
 description: "Complete walkthrough of Sau from Hack The Box. An easy Linux machine featuring a Request Baskets instance vulnerable to Server-Side Request Forgery (SSRF) via CVE-2023-27163. Exploiting this vulnerability grants access to a Maltrail instance vulnerable to unauthenticated OS Command Injection, allowing us to obtain a reverse shell on the machine as user puma. A sudo misconfiguration is then exploited to obtain a root shell."
 author: dua2z3rr
 date: 2025-09-02 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "injections", "os-command-injection", "server-side-request-forgery-ssrf", "bash", "maltrail", "request-baskets", "reconnaissance", "sudo-exploitation"]
 image: /assets/img/sau/sau-resized.png
 ---

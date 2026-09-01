@@ -3,7 +3,7 @@ title: "Beep Walkthrough - HTB Easy | Elastix LFI & Legacy SSH Exploitation"
 description: "Complete walkthrough of Beep from Hack The Box. Covers service enumeration with 15+ open ports, Elastix 2.2.0 Local File Inclusion exploitation (CVE-2012-4869), credential extraction from amportal.conf, and SSH access using deprecated Diffie-Hellman key exchange algorithms."
 author: dua2z3rr
 date: 2025-12-15 1:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "niche-technologies", "protocols", "telecom", "local-file-inclusion", "remote-code-execution", "php", "python", "apache", "web-site-structure-discovery", "fuzzing", "password-reuse"]
 image: /assets/img/beep/beep-resized.png
 ---

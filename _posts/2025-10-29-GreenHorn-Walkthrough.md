@@ -3,7 +3,7 @@ title: "GreenHorn Walkthrough - HTB Easy | Pluck CMS RCE & Password Depixelizati
 description: "Complete walkthrough of GreenHorn from Hack The Box. Covers exploiting Pluck CMS vulnerability for Remote Code Execution, credential extraction from Gitea repository, SHA-512 hash cracking, and depixelizing obfuscated passwords from PDF files to gain root access."
 author: dua2z3rr
 date: 2025-10-29 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["remote-file-inclusion", "weak-credentials", "remote-code-execution", "information-disclosure", "php", "ssh", "nginx", "gitea", "password-reuse", "password-cracking"]
 image: /assets/img/greenHorn/greenHorn-resized.png
 ---

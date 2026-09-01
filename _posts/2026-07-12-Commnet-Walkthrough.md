@@ -4,8 +4,8 @@ description: "Complete walkthrough of Commnet from Hack The Box. An easy secure-
 author: dua2z3rr
 date: 2026-07-12 1:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags: ["secure-coding"]
 ---
 

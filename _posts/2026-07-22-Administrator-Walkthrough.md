@@ -4,8 +4,8 @@ description: "Complete walkthrough of Administrator from Hack The Box. A medium 
 author: dua2z3rr
 date: 2026-07-22 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["enterprise-network", "vulnerability-assessment", "active-directory", "protocols", "common-services", "security-tools", "group-membership", "misconfiguration", "powershell", "smb", "ftp", "kerberos", "winrm", "reconnaissance", "password-cracking", "kerberoasting"]
 image: /assets/img/administrator/administrator-resized.png
 ---

@@ -4,8 +4,8 @@ description: Complete walkthrough of Dream Job-1 from Hack The Box. A very easy 
 author: dua2z3rr
 date: 2025-10-26 1:00:00
 categories:
-  - HackTheBox
   - Sherlocks
+  - HackTheBox
 tags:
   - threat-intelligence
 image: /assets/img/dream-job-1/dream-job-1-resized.png

@@ -3,7 +3,7 @@ title: "CozyHosting Walkthrough - HTB Easy | Spring Boot Actuator Exposure & Pos
 description: "Complete walkthrough of CozyHosting from Hack The Box. Covers Spring Boot Actuator endpoint enumeration, session hijacking through exposed sessions, OS command injection via hostname parameter, hardcoded credential extraction from JAR files, PostgreSQL database enumeration, bcrypt hash cracking, and SSH sudo privilege escalation through GTFOBins."
 author: dua2z3rr
 date: 2025-09-23 2:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "databases", "injections", "os-command-injection", "java", "bash", "ssh", "nginx", "spring-boot", "user-enumeration", "fuzzing", "configuration-analysis", "password-cracking"]
 image: /assets/img/cozyHosting/cozyHosting-resized.png
 ---

@@ -3,7 +3,7 @@ title: "Sense Walkthrough - HTB Easy | pfSense RCE & Weak SSL Certificates"
 description: "Sense, while not requiring many steps to complete, can be challenging for some as the publicly available proof of concept exploit is highly unreliable. An alternative method exploiting the same vulnerability is necessary to successfully gain access. This walkthrough covers fuzzing for sensitive files, credential discovery, and exploiting pfSense 2.1.3 via CVE-2014-4688 with proper SSL certificate handling."
 author: dua2z3rr
 date: 2025-11-14 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["vulnerability-assessment", "software-and-os-exploitation", "security-tools", "authentication", "remote-code-execution", "clear-text-credentials", "sensitive-data-exposure", "php", "pfsense", "lighthttpd", "web-site-structure-discovery"]
 image: /assets/img/sense/sense-resized.png
 ---

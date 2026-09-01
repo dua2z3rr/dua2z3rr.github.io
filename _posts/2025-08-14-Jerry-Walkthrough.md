@@ -3,7 +3,7 @@ title: "Jerry Walkthrough - HTB Easy | Apache Tomcat Default Credentials & WAR F
 description: "Complete walkthrough of Jerry from Hack The Box. An easy Windows machine demonstrating how to exploit Apache Tomcat, obtaining an NT Authority\\SYSTEM shell and completely compromising the target."
 author: dua2z3rr
 date: 2025-08-14 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "common-services", "security-tools", "remote-code-execution", "arbitrary-file-upload", "default-credentials", "java", "tomcat", "brute-force-attack", "password-dump"]
 image: /assets/img/jerry/jerry-resized.png
 ---

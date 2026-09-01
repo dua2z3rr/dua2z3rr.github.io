@@ -4,8 +4,8 @@ description: "Walkthrough for the El Pipo challenge from Hack The Box. A very ea
 author: dua2z3rr
 date: 2026-02-25 3:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags: ["pwn"]
 ---
 

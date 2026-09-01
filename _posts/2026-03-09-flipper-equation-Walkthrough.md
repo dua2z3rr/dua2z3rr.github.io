@@ -4,6 +4,7 @@ description: "Walkthrough for the flipper equation challenge from OliCyber-IT. A
 author: dua2z3rr
 date: 2026-03-09 1:00:00
 categories:
+  - Challenges
   - OliCyber-IT
 tags: ["crypto"]
 ---

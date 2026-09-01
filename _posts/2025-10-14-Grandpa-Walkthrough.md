@@ -3,7 +3,7 @@ title: "Grandpa Walkthrough - HTB Easy | IIS 6.0 WebDAV Exploitation & Process M
 description: "Complete walkthrough of Grandpa from Hack The Box. Covers exploiting the widely exploited CVE-2017-7269 vulnerability in Microsoft IIS 6.0 WebDAV, process migration techniques for stable shell access, and privilege escalation using MS15-051 kernel exploit to gain SYSTEM access on Windows Server 2003."
 author: dua2z3rr
 date: 2025-10-14 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["vulnerability-assessment", "software-and-os-exploitation", "security-tools", "arbitrary-file-upload", "misconfiguration", "asp", "iis", "webdav", "reconnaissance"]
 image: /assets/img/granpa/granpa-resized.png
 ---

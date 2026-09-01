@@ -4,8 +4,8 @@ description: Complete walkthrough of Brutus from Hack The Box. A very easy DFIR 
 author: dua2z3rr
 date: 2025-09-13 1:00:00
 categories:
-  - HackTheBox
   - Sherlocks
+  - HackTheBox
 tags:
   - dfir
 image: /assets/img/brutus/brutus-resized.png

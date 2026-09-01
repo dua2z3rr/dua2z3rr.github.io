@@ -4,8 +4,8 @@ description: "Walkthrough for the WIDE challenge from Hack The Box. A reversing 
 author: dua2z3rr
 date: 2026-02-25 1:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags: ["reversing"]
 ---
 

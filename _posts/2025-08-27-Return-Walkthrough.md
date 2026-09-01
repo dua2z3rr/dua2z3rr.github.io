@@ -3,7 +3,7 @@ title: "Return Walkthrough - HTB Easy | LDAP Credential Capture & Server Operato
 description: "Complete walkthrough of Return from Hack The Box. An easy Windows machine featuring a network printer administration panel that stores LDAP credentials. These credentials can be intercepted by inserting a malicious LDAP server, thus allowing us to obtain a foothold on the server via the WinRM service. The user is a member of a privileged group, further exploited to obtain system access."
 author: dua2z3rr
 date: 2025-08-27 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "active-directory", "protocols", "common-services", "authentication", "group-membership", "weak-authentication", "information-disclosure", "smb", "ldap", "winrm", "reconnaissance", "password-capture"]
 image: /assets/img/return/return-resized.png
 ---

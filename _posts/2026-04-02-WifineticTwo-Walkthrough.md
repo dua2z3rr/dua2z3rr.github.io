@@ -4,8 +4,8 @@ description: Complete walkthrough of WifineticTwo from Hack The Box. A medium Li
 author: dua2z3rr
 date: 2026-04-02 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags:
   - enterprise-network
   - vulnerability-assessment

@@ -3,7 +3,7 @@ title: "Planning Walkthrough - HTB Easy | Grafana CVE & Cron Management RCE"
 description: "Planning is an easy difficulty Linux machine that involves web enumeration, subdomain fuzzing, and exploiting a vulnerable Grafana instance via CVE-2024-9264. After gaining initial access to a Docker container, an exposed password allows lateral movement to the host system due to password reuse. Finally, a custom cron management application with root privileges can be exploited to achieve full system compromise."
 author: dua2z3rr
 date: 2025-11-16 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "common-applications", "custom-applications", "remote-code-execution", "clear-text-credentials", "bash", "ssh", "nginx", "grafana", "reconnaissance", "fuzzing", "password-reuse", "port-forwarding"]
 image: /assets/img/planning/planning-resized.png
 ---

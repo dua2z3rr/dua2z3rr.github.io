@@ -3,7 +3,7 @@ title: "Nibbles Walkthrough - HTB Easy | Nibbleblog RCE & Sudo Script Exploitati
 description: "Complete walkthrough of Nibbles from Hack The Box. Covers web enumeration, Nibbleblog 4.0.3 authentication bypass, arbitrary file upload RCE exploitation, and sudo script privilege escalation through writable monitor.sh."
 author: dua2z3rr
 date: 2025-11-28 1:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["vulnerability-assessment", "software-and-os-exploitation", "security-tools", "remote-code-execution", "default-credentials", "nibbleblog", "user-enumeration", "web-site-structure-discovery", "brute-force-attack", "sudo-exploitation"]
 image: /assets/img/nibbles/nibbles-resized.png
 ---

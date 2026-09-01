@@ -4,8 +4,8 @@ description: Complete walkthrough of Principal from Hack The Box. A medium Linux
 author: dua2z3rr
 date: 2026-07-11 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags:
   - web-application
   - vulnerability-assessment

@@ -3,7 +3,7 @@ title: "Codify Walkthrough - HTB Easy | vm2 RCE & Bash Wildcard Exploitation"
 description: "Complete walkthrough of Codify from Hack The Box. Covers vm2 sandbox escape (CVE-2023-30547), Node.js RCE exploitation, SQLite database extraction, bcrypt password cracking, and bash wildcard privilege escalation."
 author: dua2z3rr
 date: 2025-11-30 1:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "databases", "custom-applications", "injections", "source-code-analysis", "weak-credentials", "remote-code-execution", "clear-text-credentials", "default-credentials", "misconfiguration", "bash", "javascript", "mysql", "nodejs", "sqlite", "reconnaissance", "user-enumeration", "web-site-structure-discovery", "system-exploitation", "password-reuse", "password-cracking", "sudo-exploitation"]
 image: /assets/img/codify/codify-resized.png
 ---

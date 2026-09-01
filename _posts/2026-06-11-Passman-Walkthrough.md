@@ -4,8 +4,8 @@ description: "Walkthrough for the Passman challenge from Hack The Box. An easy w
 author: dua2z3rr
 date: 2026-06-11 1:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags: ["web"]
 ---
 

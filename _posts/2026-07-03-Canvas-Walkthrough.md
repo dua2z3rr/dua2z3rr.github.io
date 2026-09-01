@@ -4,8 +4,8 @@ description: "Complete walkthrough of Canvas from Hack The Box. An easy misc cha
 author: dua2z3rr
 date: 2026-07-03 1:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags: ["misc"]
 ---
 

@@ -3,7 +3,7 @@ title: "PermX Walkthrough - HTB Easy | Chamilo LMS RCE & Symlink Privilege Escal
 description: "Complete walkthrough of PermX from Hack The Box. Covers exploiting Chamilo Learning Management System via unrestricted file upload vulnerability (CVE-2023-4220), credential extraction from configuration files, password reuse for SSH access, and exploiting sudo misconfiguration through symlink manipulation to gain root access."
 author: dua2z3rr
 date: 2025-11-01 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "common-applications", "arbitrary-file-upload", "php", "bash", "apache", "ssh", "reconnaissance", "fuzzing", "sudo-exploitation"]
 image: /assets/img/permX/permX-resized.png
 ---

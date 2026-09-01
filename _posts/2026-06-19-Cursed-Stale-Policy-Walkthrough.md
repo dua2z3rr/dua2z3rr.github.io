@@ -4,8 +4,8 @@ description: "Walkthrough for the Cursed Stale Policy challenge from Hack The Bo
 author: dua2z3rr
 date: 2026-06-19 1:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags: ["web"]
 ---
 

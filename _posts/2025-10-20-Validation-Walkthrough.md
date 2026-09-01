@@ -3,7 +3,7 @@ title: "Validation Walkthrough - HTB Easy | Second-Order SQL Injection & Passwor
 description: "Complete walkthrough of Validation from Hack The Box. Covers exploiting a web application vulnerable to second-order SQL Injection to write a PHP web shell into the system for Remote Code Execution (RCE). After initial access, privilege escalation is achieved by exploiting database password reuse, leading to root-level access on the machine."
 author: dua2z3rr
 date: 2025-10-20 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "injections", "sql-injection", "misconfiguration", "mysql", "reconnaissance"]
 image: /assets/img/validation/validation-resized.png
 ---

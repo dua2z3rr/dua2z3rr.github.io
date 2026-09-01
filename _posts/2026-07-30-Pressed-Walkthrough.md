@@ -4,8 +4,8 @@ description: "Complete walkthrough of Pressed from Hack The Box. A hard Linux ma
 author: dua2z3rr
 date: 2026-07-30 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "vulnerability-assessment", "broken-authentication-and-authorization", "software-and-os-exploitation", "security-tools", "information-disclosure", "wordpress", "cms", "otp", "web-api", "reconnaissance", "web-site-structure-discovery"]
 image: /assets/img/pressed/pressed-resized.png
 ---

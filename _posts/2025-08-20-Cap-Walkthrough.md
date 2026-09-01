@@ -3,7 +3,7 @@ title: "Cap Walkthrough - HTB Easy | IDOR PCAP Access & Python Capabilities Expl
 description: "Complete walkthrough of Cap from Hack The Box. An easy Linux machine running an HTTP server with administrative functionalities, including network capture execution. Inadequate controls create an Insecure Direct Object Reference (IDOR) vulnerability that allows access to another user's capture. The capture contains plaintext credentials and can be exploited to obtain an initial foothold. A Linux capability is then used to escalate privileges to root."
 author: dua2z3rr
 date: 2025-08-20 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["vulnerability-assessment", "security-operations", "common-security-controls", "log-analysis", "clear-text-credentials", "file-system-configuration", "insecure-direct-object-reference-idor", "python", "packet-capture-analysis", "password-reuse", "suid-exploitation"]
 image: /assets/img/cap/cap-resized.png
 ---

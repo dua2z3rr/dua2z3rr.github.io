@@ -4,8 +4,8 @@ description: Complete walkthrough of Redelegate from Hack The Box. A hard Window
 author: dua2z3rr
 date: 2026-07-13 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["enterprise-network", "active-directory", "sql", "powershell", "mssql", "ftp", "winrm", "keepass", "password-cracking", "ad-dcsync", "password-spraying"]
 image: /assets/img/redelegate/redelegate-resized.png
 ---

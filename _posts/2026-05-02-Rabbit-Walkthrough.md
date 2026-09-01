@@ -4,8 +4,8 @@ description: "Complete walkthrough of Rabbit from Hack The Box. An insane Window
 author: dua2z3rr
 date: 2026-05-02 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "enterprise-network", "vulnerability-assessment", "person", "injections", "active-directory", "security-tools", "authentication", "social-engineering", "sql-injection", "information-disclosure", "weak-permissions", "vbscript", "openoffice", "macros", "web-site-structure-discovery", "password-reuse", "password-cracking", "antivirus-bypass", "phishing"]
 image: /assets/img/rabbit/rabbit-resized.png
 ---

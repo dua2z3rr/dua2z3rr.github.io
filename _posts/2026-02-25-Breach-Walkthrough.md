@@ -4,8 +4,8 @@ description: "Complete walkthrough of Breach from Hack The Box. A medium Windows
 author: dua2z3rr
 date: 2026-02-25 5:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["enterprise-network", "active-directory", "protocols", "mssql", "password-cracking", "password-capture"]
 image: /assets/img/breach/breach-resized.png
 ---

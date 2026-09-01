@@ -3,7 +3,7 @@ title: "Chemistry Walkthrough - HTB Easy | Pymatgen RCE & AioHTTP Path Traversal
 description: "Complete walkthrough of Chemistry from Hack The Box. Covers exploiting pymatgen library RCE vulnerability (CVE-2024-23346) through malicious CIF file upload, credential extraction from SQLite database, MD5 hash cracking, and exploiting AioHTTP path traversal (CVE-2024-23334) to read root flag from internal web service."
 author: dua2z3rr
 date: 2025-11-05 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "custom-applications", "arbitrary-file-read", "remote-code-execution", "python"]
 image: /assets/img/chemistry/chemistry-resized.png
 ---

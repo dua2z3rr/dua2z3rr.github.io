@@ -4,8 +4,8 @@ description: Complete walkthrough of Orion from Hack The Box. A very easy Linux 
 author: dua2z3rr
 date: 2026-07-16 2:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "broken-authentication-and-authorization", "remote-code-execution", "clear-text-credentials", "bash", "mariadb", "mysql", "nginx", "telnet", "openssh", "linux", "password-cracking", "authentication-bypass"]
 image: /assets/img/orion/orion-resized.png
 ---

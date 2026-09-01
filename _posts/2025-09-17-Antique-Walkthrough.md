@@ -3,7 +3,7 @@ title: "Antique Walkthrough - HTB Easy | SNMP Enumeration & CUPS Arbitrary File 
 description: "Antique is an easy-difficulty Linux machine hosting a network printer that exposes credentials via an SNMP string, allowing access to the telnet service. A foothold can be obtained by exploiting printer functionality. The CUPS administration service is running locally. This service can be further exploited to gain root access on the server."
 author: dua2z3rr
 date: 2025-09-17 1:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "protocols", "common-services", "software-and-os-exploitation", "authentication", "arbitrary-file-read", "clear-text-credentials", "weak-authentication", "command-execution", "python", "snmp", "telnet", "reconnaissance", "port-forwarding"]
 image: /assets/img/antique/antique-resized.png
 ---

@@ -3,7 +3,7 @@ title: "Headless Walkthrough - HTB Easy | Blind XSS Cookie Theft & Command Injec
 description: "Headless is an easy-difficulty Linux-based machine hosting a Python Werkzeug server that runs a website. Within the site there is a customer support form vulnerable to blind Cross-Site Scripting (XSS) via the User-Agent header. This flaw is exploited to steal the administrator cookie, allowing access to the admin dashboard. This page is vulnerable to command injection, enabling the establishment of a reverse shell on the machine. Analyzing user mail reveals a script that doesn't use absolute paths: the attacker exploits this weakness to obtain a shell as root."
 author: dua2z3rr
 date: 2025-09-15 1:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "session-management-and-hijacking", "injections", "os-command-injection", "cross-site-scripting-xss", "misconfiguration", "bash", "javascript", "werkzeug", "reconnaissance", "fuzzing", "cookie-manipulation", "sudo-exploitation", "privilege-abuse"]
 image: /assets/img/headless/headless-resized.png
 ---

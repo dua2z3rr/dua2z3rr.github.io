@@ -3,7 +3,7 @@ title: "Blocky Walkthrough - HTB Easy | Minecraft Plugin Credential Discovery & 
 description: "Complete walkthrough of Blocky from Hack The Box. Covers a fairly simple machine based on real-world scenarios, demonstrating risks associated with poor password management practices and exposure of internal files on publicly accessible systems. Highlights a major attack vector: Minecraft servers, often managed by inexperienced administrators, making them easy targets."
 author: dua2z3rr
 date: 2025-09-09 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "common-applications", "software-and-os-exploitation", "authentication", "misconfiguration", "hardcoded-credentials", "java", "wordpress", "web-site-structure-discovery", "password-reuse", "decompilation"]
 image: /assets/img/blocky/blocky-resized.png
 ---

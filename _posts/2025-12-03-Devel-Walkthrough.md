@@ -3,7 +3,7 @@ title: "Devel Walkthrough - HTB Easy | IIS File Upload & Windows PrivEsc"
 description: "Complete walkthrough of Devel from Hack The Box. Covers anonymous FTP access, arbitrary file upload to IIS, ASP webshell deployment, and Windows 7 privilege escalation using MS13-053."
 author: dua2z3rr
 date: 2025-12-03 1:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "protocols", "remote-code-execution", "arbitrary-file-upload", "asp", "iis", "ftp"]
 image: /assets/img/devel/devel-resized.png
 ---

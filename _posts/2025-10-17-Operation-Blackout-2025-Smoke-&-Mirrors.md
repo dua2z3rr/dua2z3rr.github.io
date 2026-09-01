@@ -4,8 +4,8 @@ description: Complete walkthrough of Operation Blackout 2025 - Smoke & Mirrors f
 author: dua2z3rr
 date: 2025-10-18 1:00:00
 categories:
-  - HackTheBox
   - Sherlocks
+  - HackTheBox
 tags:
   - dfir
 image: /assets/img/smoke_and_mirrors/smoke_and_mirrors-resized.png

@@ -3,7 +3,7 @@ title: "Cicada Walkthrough - HTB Easy | Active Directory Enumeration & SeBackupP
 description: "Complete walkthrough of Cicada from Hack The Box. Covers Active Directory enumeration for beginners, enumerating shares, discovering cleartext passwords in files, password spraying attacks, and exploiting SeBackupPrivilege to achieve full system compromise."
 author: dua2z3rr
 date: 2025-10-10 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "active-directory", "protocols", "common-services", "security-tools", "authentication", "hardcoded-credentials", "powershell", "smb", "winrm", "windows", "reconnaissance", "pass-the-hash", "password-spraying", "privilege-abuse"]
 image: /assets/img/cicada/cicada-resized.png
 ---

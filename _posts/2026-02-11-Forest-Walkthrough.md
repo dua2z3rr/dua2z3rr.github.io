@@ -3,7 +3,7 @@ title: "Forest Walkthrough - HTB Easy | AS-REP Roasting & DCSync via Exchange Pe
 description: "Complete walkthrough of Forest from Hack The Box. An easy Windows machine that showcases a Domain Controller (DC) for a domain in which Exchange Server has been installed. The DC allows anonymous LDAP binds, which are used to enumerate domain objects. The password for a service account with Kerberos pre-authentication disabled can be cracked to gain a foothold. The service account is found to be a member of the Account Operators group, which can be used to add users to privileged Exchange groups. The Exchange group membership is leveraged to gain DCSync privileges on the domain and dump the NTLM hashes, compromising the system."
 author: dua2z3rr
 date: 2026-02-11 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "active-directory", "security-tools", "group-membership", "misconfiguration", "dns", "kerberos", "ldap", "exchange", "reconnaissance", "user-enumeration", "password-cracking", "ad-dcsync", "privilege-abuse"]
 image: /assets/img/forest/forest-resized.png
 ---

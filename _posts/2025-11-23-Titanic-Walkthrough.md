@@ -3,7 +3,7 @@ title: "Titanic Walkthrough - HTB Easy | Gitea Repository Leak & ImageMagick CVE
 description: "Complete walkthrough of Titanic from Hack The Box. An easy Linux machine featuring an Apache server on port 80. Virtual host fuzzing reveals a Gitea server. Exploiting an Arbitrary File Read vulnerability in the booking functionality allows downloading Gitea's SQLite database, extracting and cracking user credentials. SSH access leads to discovering a cron job executing ImageMagick, vulnerable to CVE-2024-41817 for privilege escalation to root."
 author: dua2z3rr
 date: 2025-11-23 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "databases", "custom-applications", "source-code-analysis", "arbitrary-file-read", "python", "ssh", "sqlite", "gitea", "password-cracking"]
 image: /assets/img/titanic/titanic-resized.png
 ---

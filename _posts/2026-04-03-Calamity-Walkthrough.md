@@ -4,8 +4,8 @@ description: "Complete walkthrough of Calamity from Hack The Box. A hard Linux m
 author: dua2z3rr
 date: 2026-04-03 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "vulnerability-assessment", "injections", "reverse-engineering", "steganography", "buffer-overflow", "code-injection", "php", "c", "apache", "lxd", "reconnaissance", "web-site-structure-discovery", "binary-exploitation", "exploit-development"]
 image: /assets/img/calamity/calamity-resized.png
 ---

@@ -3,7 +3,7 @@ title: "Code Walkthrough - HTB Easy | Python Jail Bypass & Backup Script Path Tr
 description: "Complete walkthrough of Code from Hack The Box. An easy Linux machine featuring a Python Code Editor web application vulnerable to remote code execution (RCE) through a Python Jail bypass. After gaining access as user app-production, crackable credentials can be found in a sqlite3 database file. Using these credentials, access is obtained to another user, martin, who has sudo permissions for a backup script, backy.sh. This script contains a vulnerable code section that, when exploited, allows privilege escalation by creating a copy of the root folder."
 author: dua2z3rr
 date: 2025-08-05 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "databases", "custom-applications", "source-code-analysis", "security-tools", "remote-code-execution", "misconfiguration", "directory-traversal", "python", "sql", "bash", "javascript", "ssh", "sqlite", "gunicorn", "reconnaissance", "password-cracking", "sudo-exploitation"]
 image: /assets/img/code/code-resized-2.png
 ---

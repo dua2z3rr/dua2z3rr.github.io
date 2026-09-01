@@ -4,8 +4,8 @@ description: "Complete walkthrough of Data from Hack The Box. An easy Linux mach
 author: dua2z3rr
 date: 2026-08-01 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "enterprise-network", "common-applications", "protocols", "common-services", "python", "sql", "bash", "docker", "sqlite", "openssh", "grafana", "linux", "containers"]
 image: /assets/img/data/data-resized.png
 ---

@@ -3,7 +3,7 @@ title: "Sauna Walkthrough - HTB Easy | AS-REP Roasting & AutoLogon Credential Di
 description: "Complete walkthrough of Sauna from Hack The Box. An easy difficulty Windows machine that features Active Directory enumeration and exploitation. Possible usernames can be derived from employee full names listed on the website. With these usernames, an ASREPRoasting attack can be performed, which results in hash for an account that doesn't require Kerberos pre-authentication. This hash can be subjected to an offline brute force attack, in order to recover the plaintext password for a user that is able to WinRM to the box. Running WinPEAS reveals that another system user has been configured to automatically login and it identifies their password. This second user also has Windows remote management permissions. BloodHound reveals that this user has the DS-Replication-Get-Changes-All extended right, which allows them to dump password hashes from the Domain Controller in a DCSync attack. Executing this attack returns the hash of the primary domain administrator, which can be used with Impacket's psexec.py in order to gain a shell on the box as NT_AUTHORITY\\SYSTEM."
 author: dua2z3rr
 date: 2026-02-13 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "active-directory", "security-tools", "authentication", "misconfiguration", "autologon-credentials", "reconnaissance", "user-enumeration", "password-cracking", "asreproasting", "ad-dcsync", "pass-the-hash"]
 image: /assets/img/sauna/sauna-resized.png
 ---

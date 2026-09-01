@@ -3,7 +3,7 @@ title: "Optimum Walkthrough - HTB Easy | HttpFileServer RCE & MS16-032 Privilege
 description: "Complete walkthrough of Optimum from Hack The Box. A beginner-level machine focusing primarily on service enumeration with known exploits. Both exploits are easy to obtain and have associated Metasploit modules, making this machine fairly simple to complete."
 author: dua2z3rr
 date: 2025-09-07 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "injections", "software-and-os-exploitation", "security-tools", "os-command-injection", "python", "hfs"]
 image: /assets/img/optimum/optimum-resized.png
 ---

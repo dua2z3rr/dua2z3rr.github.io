@@ -3,7 +3,7 @@ title: "Precious Walkthrough - HTB Easy | PDFKit Command Injection & YAML Deseri
 description: "Complete walkthrough of Precious from Hack The Box. An Easy Difficulty Linux machine that focuses on the Ruby language. It hosts a custom Ruby web application using an outdated library, namely pdfkit, which is vulnerable to CVE-2022-25765, leading to an initial shell on the target machine. After pivoting using plaintext credentials found in a Gem repository config file, the box concludes with an insecure deserialization attack on a custom, outdated Ruby script."
 author: dua2z3rr
 date: 2026-02-07 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "custom-applications", "injections", "source-code-analysis", "software-and-os-exploitation", "remote-code-execution", "clear-text-credentials", "deserialization", "ruby", "rails", "nginx", "reconnaissance", "configuration-analysis", "pivoting", "sudo-exploitation"]
 image: /assets/img/precious/precious-resized.png
 ---

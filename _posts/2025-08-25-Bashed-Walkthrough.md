@@ -3,7 +3,7 @@ title: "Bashed Walkthrough - HTB Easy | phpbash Discovery & Cron Job Exploitatio
 description: "Complete walkthrough of Bashed from Hack The Box. A fairly easy machine focusing primarily on fuzzing and discovering important files. Basic access to crontab is limited."
 author: dua2z3rr
 date: 2025-08-25 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "common-applications", "os-command-injection", "code-execution", "apache", "reconnaissance", "web-site-structure-discovery", "sudo-exploitation", "scheduled-job-abuse"]
 image: /assets/img/bashed/bashed-resized.png
 ---

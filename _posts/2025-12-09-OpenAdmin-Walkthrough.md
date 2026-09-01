@@ -3,7 +3,7 @@ title: "OpenAdmin Walkthrough - HTB Easy | OpenNetAdmin RCE & Nano Privilege Esc
 description: "Complete walkthrough of OpenAdmin from Hack The Box. Covers OpenNetAdmin 18.1.1 command injection exploitation, database credential reuse, internal web application enumeration, SSH key cracking with john, and nano sudo privilege escalation via GTFOBins."
 author: dua2z3rr
 date: 2025-12-09 1:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "injections", "software-and-os-exploitation", "cryptography", "authentication", "local-file-inclusion", "weak-credentials", "os-command-injection", "directory-traversal", "hardcoded-credentials", "ssh", "openadmin", "reconnaissance", "web-site-structure-discovery", "pivoting", "tunneling", "password-reuse", "password-cracking", "sudo-exploitation"]
 image: /assets/img/openAdmin/openAdmin-resized.png
 ---

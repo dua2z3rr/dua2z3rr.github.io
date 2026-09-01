@@ -3,7 +3,7 @@ title: "Mirai Walkthrough - HTB Easy | IoT Default Credentials & USB Data Recove
 description: "Complete walkthrough of Mirai from Hack The Box. Covers exploiting misconfigured IoT devices using default Raspberry Pi credentials, gaining root access through Pi-hole admin panel, and recovering deleted files from USB storage using forensic techniques."
 author: dua2z3rr
 date: 2025-11-08 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "forensics", "niche-technologies", "iot", "broken-authentication-and-authorization", "host", "information-disclosure", "default-credentials", "pi-hole", "sudo-exploitation"]
 image: /assets/img/mirai/mirai-resized.png
 ---

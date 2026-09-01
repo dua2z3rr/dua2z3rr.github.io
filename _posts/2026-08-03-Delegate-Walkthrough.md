@@ -4,8 +4,8 @@ description: "Complete walkthrough of Delegate from Hack The Box. A medium Windo
 author: dua2z3rr
 date: 2026-08-03 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["enterprise-network", "active-directory", "dns", "kerberos", "winrm", "kerberos-abuse", "unconstrained-delegation"]
 image: /assets/img/delegate/delegate-resized.png
 ---

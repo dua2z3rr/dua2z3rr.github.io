@@ -3,7 +3,7 @@ title: "Broker Walkthrough - HTB Easy | Apache ActiveMQ RCE & Nginx Sudo Exploit
 description: "Complete walkthrough of Broker from Hack The Box. An easy Linux machine hosting a vulnerable version of Apache ActiveMQ. Version enumeration reveals it's vulnerable to Unauthenticated Remote Code Execution, which is exploited to gain user access. Post-exploitation enumeration reveals a sudo misconfiguration allowing the activemq user to execute sudo /usr/sbin/nginx, a flaw similar to the recent Zimbra disclosure, exploited to obtain root access."
 author: dua2z3rr
 date: 2025-09-05 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "common-applications", "software-and-os-exploitation", "remote-code-execution", "misconfiguration", "apache", "nginx", "reconnaissance", "exploit-modification", "system-exploitation", "sudo-exploitation", "privilege-abuse"]
 image: /assets/img/broker/broker-resized.png
 ---

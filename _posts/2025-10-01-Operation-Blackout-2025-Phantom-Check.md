@@ -4,8 +4,8 @@ description: Complete walkthrough of Operation Blackout 2025 - Phantom Check fro
 author: dua2z3rr
 date: 2025-10-08 1:00:00
 categories:
-  - HackTheBox
   - Sherlocks
+  - HackTheBox
 tags:
   - dfir
 image: /assets/img/phantom_check/phantom_check-resized.png

@@ -3,7 +3,7 @@ title: "Shocker Walkthrough - HTB Easy | Shellshock Vulnerability & Perl Sudo Ex
 description: "Complete walkthrough of Shocker from Hack The Box. Covers discovering CGI-bin scripts through directory fuzzing, exploiting the infamous Shellshock vulnerability (CVE-2014-6271) for remote code execution on Apache servers with mod_cgi enabled, and leveraging unrestricted Perl sudo permissions to escalate privileges to root."
 author: dua2z3rr
 date: 2025-10-22 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["vulnerability-assessment", "software-and-os-exploitation", "security-tools", "remote-code-execution", "bash", "perl", "apache", "cgi", "reconnaissance", "web-site-structure-discovery", "sudo-exploitation"]
 image: /assets/img/shocker/shocker-resized.png
 ---

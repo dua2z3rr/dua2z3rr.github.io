@@ -4,8 +4,8 @@ description: "Walkthrough for the baby BoneChewerCon challenge from Hack The Box
 author: dua2z3rr
 date: 2026-02-24 1:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags: ["web"]
 ---
 

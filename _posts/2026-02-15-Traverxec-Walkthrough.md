@@ -4,8 +4,8 @@ description: "Complete walkthrough of Traverxec from Hack The Box. An easy Linux
 author: dua2z3rr
 date: 2026-02-15 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["vulnerability-assessment", "software-and-os-exploitation", "security-tools", "authentication", "remote-code-execution", "nostromo", "password-cracking", "sudo-exploitation"]
 image: /assets/img/traverxec/traverxec-resized.png
 ---

@@ -4,8 +4,8 @@ description: Complete walkthrough of PhishNet from Hack The Box. A very easy SOC
 author: dua2z3rr
 date: 2025-09-23 1:00:00
 categories:
-  - HackTheBox
   - Sherlocks
+  - HackTheBox
 tags:
   - soc
 image: /assets/img/phishNet/phishNet-resized.png

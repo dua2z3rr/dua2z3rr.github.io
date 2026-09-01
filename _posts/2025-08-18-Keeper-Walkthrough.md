@@ -3,7 +3,7 @@ title: "Keeper Walkthrough - HTB Easy | Default Credentials & KeePass Memory Dum
 description: "Complete walkthrough of Keeper from Hack The Box. An easy Linux machine featuring a support ticketing system with default credentials. By enumerating the service, it's possible to identify plaintext credentials that allow SSH access. Through SSH access, a KeePass database dump is obtained, exploitable to recover the master password. After accessing the KeePass database, root's SSH keys are acquired, used to obtain a privileged shell on the host."
 author: dua2z3rr
 date: 2025-08-18 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "common-applications", "software-and-os-exploitation", "default-credentials", "bash", "keepass", "reconnaissance", "system-exploitation"]
 image: /assets/img/keeper/keeper-resized.png
 ---

@@ -4,8 +4,8 @@ description: Complete walkthrough of Job from Hack The Box. A medium Windows mac
 author: dua2z3rr
 date: 2026-03-01 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags:
   - web-application
   - vulnerability-assessment

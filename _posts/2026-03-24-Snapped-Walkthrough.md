@@ -4,8 +4,8 @@ description: "Complete walkthrough of Snapped from Hack The Box. A hard Linux ma
 author: dua2z3rr
 date: 2026-03-24 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "broken-authentication-and-authorization", "misconfiguration", "race-condition", "insecure-design", "bash", "nginx", "openssl", "linux", "reconnaissance", "password-cracking", "sandbox-escape", "suid-exploitation", "authentication-bypass"]
 image: /assets/img/snapped/snapped-resized.png
 ---

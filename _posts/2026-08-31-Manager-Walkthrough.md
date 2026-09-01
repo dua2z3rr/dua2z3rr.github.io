@@ -4,8 +4,8 @@ description: Complete walkthrough of Manager from Hack The Box. An easy mobile c
 author: dua2z3rr
 date: 2026-08-31 2:00:00
 categories:
-  - HackTheBox
   - Challenges
+  - HackTheBox
 tags:
   - mobile
 ---

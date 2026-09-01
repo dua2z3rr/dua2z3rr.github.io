@@ -3,7 +3,7 @@ title: "BoardLight Walkthrough - HTB Easy | Dolibarr CVE-2023-30253 & Enlightenm
 description: "Complete walkthrough of BoardLight from Hack The Box. Covers exploiting Dolibarr ERP/CRM instance vulnerable to CVE-2023-30253, credential extraction from configuration files, SSH access via password reuse, and exploiting enlightenment_sys SUID binary through CVE-2022-37706 to gain root access."
 author: dua2z3rr
 date: 2025-09-29 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "protocols", "software-and-os-exploitation", "code-injection", "php", "bash", "apache", "linux", "reconnaissance", "web-site-structure-discovery", "fuzzing", "suid-exploitation"]
 image: /assets/img/boardLight/boardLight-resized.png
 ---

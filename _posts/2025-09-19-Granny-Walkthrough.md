@@ -3,7 +3,7 @@ title: "Granny Walkthrough - HTB Easy | IIS WebDAV Arbitrary File Upload & Windo
 description: "Granny, while similar to Grandpa, can be exploited through different methods. The intended method to solve this machine is the well-known WebDAV upload vulnerability."
 author: dua2z3rr
 date: 2025-09-19 2:00:00
-categories: [HackTheBox, Machines]
+categories: [Machines, HackTheBox]
 tags: ["vulnerability-assessment", "software-and-os-exploitation", "security-tools", "arbitrary-file-upload", "misconfiguration", "asp", "iis", "webdav", "reconnaissance"]
 image: /assets/img/granny/granny-resized.png
 ---

@@ -4,8 +4,8 @@ description: "Complete walkthrough of Ransom from Hack The Box. A medium Linux m
 author: dua2z3rr
 date: 2026-04-07 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "vulnerability-assessment", "common-applications", "injections", "source-code-analysis", "reverse-engineering", "php-type-juggling", "insecure-design", "php", "javascript", "c", "ssh", "laravel", "exe", "binary-analysis", "password-reuse", "password-cracking", "decompilation", "authentication-bypass", "decrypt"]
 image: /assets/img/ransom/ransom-resized.png
 ---

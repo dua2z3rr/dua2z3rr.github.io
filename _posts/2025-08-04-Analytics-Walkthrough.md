@@ -3,7 +3,7 @@ title: "Analytics Walkthrough - HTB Easy | Metabase Pre-Auth RCE & GameOverlay K
 description: "Complete walkthrough of Analytics from Hack The Box. An easy Linux machine with exposed HTTP and SSH services. Web enumeration reveals a Metabase instance vulnerable to Pre-Authentication Remote Code Execution (CVE-2023-38646), exploited to gain a foothold inside a Docker container. Enumerating the container reveals environment variables containing credentials usable to access the host via SSH. Post-exploitation enumeration reveals the host's kernel version is vulnerable to GameOverlay, exploited to obtain root privileges."
 author: dua2z3rr
 date: 2025-08-04 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["web-application", "vulnerability-assessment", "common-applications", "broken-authentication-and-authorization", "software-and-os-exploitation", "authentication", "remote-code-execution", "clear-text-credentials", "information-disclosure", "insecure-design", "bash", "docker", "metabase", "reconnaissance", "configuration-analysis", "password-reuse", "kernel-exploitation", "api-abuse", "linux-capabilities"]
 image: /assets/img/analytics/box-analytics-logo-resized.png
 ---

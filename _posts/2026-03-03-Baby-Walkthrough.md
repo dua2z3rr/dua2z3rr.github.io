@@ -4,8 +4,8 @@ description: "Complete walkthrough of Baby from Hack The Box. An easy Windows Ac
 author: dua2z3rr
 date: 2026-03-03 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["enterprise-network", "vulnerability-assessment", "active-directory", "protocols", "common-services", "security-tools", "authentication", "default-credentials", "powershell", "winrm", "windows", "reconnaissance", "pass-the-hash", "password-spraying", "privilege-abuse", "password-reset"]
 image: /assets/img/baby/baby-resized.png
 ---

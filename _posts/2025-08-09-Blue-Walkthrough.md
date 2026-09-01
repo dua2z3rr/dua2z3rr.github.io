@@ -3,7 +3,7 @@ title: "Blue Walkthrough - HTB Easy | EternalBlue MS17-010 SMB Exploitation"
 description: "Complete walkthrough of Blue from Hack The Box. While probably the easiest machine on Hack The Box, it demonstrates the severity of the EternalBlue exploit, used in multiple large-scale ransomware and crypto-mining attacks after its public disclosure."
 author: dua2z3rr
 date: 2025-08-09 1:00:00
-categories: ["HackTheBox", "Machines"]
+categories: [Machines, HackTheBox]
 tags: ["enterprise-network", "vulnerability-assessment", "protocols", "software-and-os-exploitation", "security-tools", "remote-code-execution", "smb", "reconnaissance"]
 image: /assets/img/blue/blue-resized.png
 ---

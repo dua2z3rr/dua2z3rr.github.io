@@ -4,8 +4,8 @@ description: Complete walkthrough of Zero from Hack The Box. An insane Linux mac
 author: dua2z3rr
 date: 2026-08-24 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags:
   - web-application
   - enterprise-network

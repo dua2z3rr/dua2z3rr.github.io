@@ -4,8 +4,8 @@ description: Complete walkthrough of Phishing Email from LetsDefend. A very easy
 author: dua2z3rr
 date: 2026-09-01 1:00:00
 categories:
-  - LetsDefend
   - Sherlocks
+  - LetsDefend
 tags:
   - soc
 image: /assets/img/phishing_email/lets-defend-very-easy-resized.png

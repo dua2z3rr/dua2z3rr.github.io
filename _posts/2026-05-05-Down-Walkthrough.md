@@ -4,8 +4,8 @@ description: Complete walkthrough of Down from Hack The Box. An easy Linux machi
 author: dua2z3rr
 date: 2026-05-05 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "enterprise-network", "vulnerability-assessment", "broken-authentication-and-authorization", "custom-applications", "injections", "common-services", "source-code-analysis", "cryptography", "arbitrary-file-read", "remote-code-execution", "os-command-injection", "php", "python", "bash", "apache", "ssh", "reconnaissance", "fuzzing", "sudo-exploitation", "password-capture"]
 image: /assets/img/down/down-resized.png
 ---

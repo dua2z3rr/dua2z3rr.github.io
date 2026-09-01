@@ -4,9 +4,10 @@ description: "Walkthrough for the False Ferry sherlock from Hack The Box. An eas
 author: dua2z3rr
 date: 2026-07-25 1:00:00
 categories:
+  - CTF Competitions
+  - Sherlocks
   - HackTheBox
   - "Cyber Apocalypse CTF 2026: The Salt Crown"
-  - Sherlock
 tags:
   - cloud
 ---
