@@ -3,10 +3,16 @@
 # Generates SCOPED category pages for each parent -> child pair, i.e. posts whose
 # categories[0] == parent AND categories[1] == child.
 #
-# URL: /categories/<parent-slug>/<child-slug>/
+# URL: /categories/<parent-slug>-<child-slug>/   (single path segment on purpose)
 # These back the sub-category links on the Categories (Topics) page so that, e.g.,
 # "CTF Competitions -> Challenges" lists only the CTF challenge posts instead of the
 # global /categories/challenges/ page.
+#
+# NOTE on the single-segment URL: the theme's breadcrumb (topbar.html) links every
+# intermediate URL segment of a `category` page to `/<segment>/` (root-relative). A
+# two-level path like /categories/challenges/hackthebox/ would therefore emit a broken
+# link to /challenges/. Keeping the page one level under /categories/ avoids that
+# entirely without overriding any theme include.
 #
 # The global per-name pages (/categories/<name>/) are still produced by jekyll-archives
 # and remain used by each post's own category breadcrumb links.
@@ -29,7 +35,7 @@ module ScopedCategories
         (pairs[[parent, child]] ||= []) << post
       end
 
-      seen = {} # dest path => [parent, child], guards against slug collisions
+      seen = {} # slug => [parent, child], guards against slug collisions
 
       pairs.each do |(parent, child), posts|
         parent_slug = Jekyll::Utils.slugify(parent)
@@ -40,26 +46,26 @@ module ScopedCategories
         next if parent_slug.nil? || parent_slug.empty?
         next if child_slug.nil? || child_slug.empty?
 
-        dest = File.join(parent_slug, child_slug)
-        if seen.key?(dest)
+        slug = "#{parent_slug}-#{child_slug}"
+        if seen.key?(slug)
           Jekyll.logger.warn(
             'ScopedCategories:',
-            "slug collision at categories/#{dest} between #{seen[dest].inspect} " \
+            "slug collision at categories/#{slug} between #{seen[slug].inspect} " \
             "and #{[parent, child].inspect}; skipping the latter."
           )
           next
         end
-        seen[dest] = [parent, child]
+        seen[slug] = [parent, child]
 
         posts = posts.sort_by(&:date).reverse
-        site.pages << ScopedCategoryPage.new(site, parent, child, parent_slug, child_slug, posts)
+        site.pages << ScopedCategoryPage.new(site, parent, child, slug, posts)
       end
     end
   end
 
   class ScopedCategoryPage < Jekyll::PageWithoutAFile
-    def initialize(site, parent, child, parent_slug, child_slug, posts)
-      super(site, site.source, File.join('categories', parent_slug, child_slug), 'index.html')
+    def initialize(site, parent, child, slug, posts)
+      super(site, site.source, File.join('categories', slug), 'index.html')
 
       # NOTE: `parent`/`child` come from the site owner's own post front matter (trusted).
       # The Chirpy `category` layout renders {{ page.title }} unescaped, exactly like the
