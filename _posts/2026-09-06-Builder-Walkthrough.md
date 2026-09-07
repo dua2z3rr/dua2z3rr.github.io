@@ -4,8 +4,8 @@ description: Complete walkthrough of Builder from Hack The Box. Exploiting the J
 author: dua2z3rr
 date: 2026-09-06 1:00:00
 categories:
-  - HackTheBox
   - Machines
+  - HackTheBox
 tags: ["web-application", "common-applications", "arbitrary-file-read", "weak-credentials", "misconfiguration", "ssh", "docker", "reconnaissance", "user-enumeration", "configuration-analysis", "password-cracking"]
 image: /assets/img/builder/builder-resized.png
 ---
