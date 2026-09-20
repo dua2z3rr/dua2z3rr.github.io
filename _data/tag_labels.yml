@@ -29,6 +29,7 @@ software-and-os-exploitation: "Software & OS exploitation"
 telecom: "Telecom"
 person: "Person"
 social-engineering: "Social Engineering"
+virtualization: "Virtualization"
 
 # Vulnerabilities
 php-type-juggling: "PHP type juggling"
@@ -64,6 +65,7 @@ sql-injection: "SQL Injection"
 weak-authentication: "Weak Authentication"
 weak-credentials: "Weak Credentials"
 weak-permissions: "Weak Permissions"
+path-hijacking: "Path Hijacking"
 
 # Languages
 php: "PHP"
@@ -145,6 +147,7 @@ otp: "OTP"
 web-api: "Web API"
 containers: "Containers"
 sftp: "SFTP"
+zabbix: "Zabbix"
 
 # Techniques
 binary-analysis: "Binary Analysis"
