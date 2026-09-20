@@ -2,7 +2,7 @@
 title: "Zipper Walkthrough - HTB Hard | Zabbix API RCE & PATH Hijacking Privilege Escalation"
 description: "Complete walkthrough of Zipper from Hack The Box. A hard Linux machine running a Zabbix 3.0 monitoring instance, where guest access leaks the zapper username and an API brute force recovers weak credentials. The Zabbix scripting API is abused for remote code execution, first landing inside a Docker container and then on the host by targeting the Zabbix agent. A stable shell leads to a root-owned SUID binary that calls systemctl without an absolute path, which is exploited through PATH hijacking to obtain root."
 author: dua2z3rr
-date: 2026-09-10 1:00:00
+date: 2026-09-20 1:00:00
 categories:
   - Machines
   - HackTheBox
