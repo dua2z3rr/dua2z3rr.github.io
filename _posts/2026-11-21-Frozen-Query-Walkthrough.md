@@ -1,5 +1,5 @@
 ---
-title: "Frozen Query Walkthrough - GlacierCTF 2026 | HTTP QUERY Cache Abuse & Double-Gzip WAF Bypass"
+title: "Frozen Query Walkthrough - GlacierCTF 2026 | HTTP QUERY Cache Abuse"
 description: "Walkthrough for the Frozen Query challenge from GlacierCTF 2026. A web challenge abusing the new HTTP QUERY method: by reconstructing the cache key we read the flag from the auditor's cached response, bypassing the WAF blocklist with a double-gzip Content-Encoding that is only fully decoded after the WAF check."
 author: dua2z3rr
 date: 2026-11-21 2:00:00
