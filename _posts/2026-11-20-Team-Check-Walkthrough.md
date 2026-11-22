@@ -11,8 +11,6 @@ tags:
   - web
 ---
 
-{% raw %}
-
 ## Challenge Overview
 
 Lately, a lot of teams have started to use AI. We built a small web application to check if people use it for CTFs.
@@ -20,6 +18,8 @@ Lately, a lot of teams have started to use AI. We built a small web application 
 ---
 
 ## Solution
+
+{% raw %}
 
 ### Source Code
 
