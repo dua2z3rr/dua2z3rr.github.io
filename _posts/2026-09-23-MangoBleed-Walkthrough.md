@@ -4,8 +4,8 @@ description: Complete walkthrough of MangoBleed from Hack The Box. A very easy D
 author: dua2z3rr
 date: 2026-10-05 1:00:00
 categories:
-  - HackTheBox
   - Sherlocks
+  - HackTheBox
 tags:
   - dfir
 image: /assets/img/mangoBleed/mangoBleed-resized.png
